@@ -1,0 +1,250 @@
+{
+ "empresa": "Cofar Salud",
+ "dominio": "cofar.cl",
+ "fecha": "2026-09-12",
+ "pasada": 2,
+ "nota_pasada": "Segunda pasada sobre la auditoría del 2026-09-12 (BRIEF-P2.md): pasos 2, 10 y 11 del playbook más el inventario de la API pública. Complementa hallazgos.json (pasada 1, rama auditoria, PR #1) y no lo modifica. Los IDs continúan desde H14 para no chocar con H01-H13. Los valores del bloque resumen que no se volvieron a medir se copian de la pasada 1 y se marcan en resumen_nota.",
+ "plataforma": {
+  "nombre": "Next.js (App Router, Turbopack), desarrollo propio; backend de catálogo en services.cofar.cl (Railway); CDN CloudFront; CMS Strapi",
+  "version": null,
+  "evidencia": "header x-powered-by: Next.js y x-nextjs-prerender en evidencia/raw/home.headers; chunks /_next/static/chunks/turbopack-*.js y payload self.__next_f.push en evidencia/raw/home.html; NEXT_PUBLIC_API_URL=https://services.cofar.cl y rutas /mscontent/strapi/* en evidencia/js/_all.js; CNAME services.cofar.cl -> up.railway.app en evidencia/contacto/dns.txt"
+ },
+ "resumen": {
+  "productos_publicos_aprox": 3024,
+  "muestra_fichas": 21,
+  "cobertura_jsonld_product_pct": 0.0,
+  "cobertura_jsonld_product_dom_pct": 100.0,
+  "cobertura_precio_jsonld_pct": 0.0,
+  "cobertura_precio_jsonld_dom_pct": 100.0,
+  "gtin_validos_pct": null,
+  "asimetria_atributos_max_pct": 69.3,
+  "skus_datos_solo_en_nombre": 118,
+  "catalogo_oculto_pct": 0.1,
+  "fichas_una_sola_imagen_pct": 61.6,
+  "contradicciones_contacto": 2,
+  "enlaces_footer_404": 0,
+  "robots_ok": true,
+  "robots_bloquea_bots_ia": false,
+  "bots_ia_evaluados": 13,
+  "bots_ia_bloqueados": 0,
+  "llms_txt_ok": false,
+  "sitemap_ok": true,
+  "sitemap_archivos": 7,
+  "sitemap_urls_total": 3268,
+  "sitemap_productos_con_lastmod_pct": 0.0,
+  "og_tags_raw": 0,
+  "og_tags_dom": 0,
+  "meta_pixel_observado": "sí, en DOM vía GTM",
+  "gtm_observado": true,
+  "ga4_observado": true,
+  "google_ads_conversion_observado": true,
+  "feed_productos_publico": false,
+  "api_campos_por_producto": 66,
+  "api_campos_internos_detectados": 1,
+  "api_senales_rate_limit": 0,
+  "catalogo_publico_con_precios": true,
+  "api_catalogo_publica": "https://services.cofar.cl/products/2.0/?first=100&offset=0",
+  "dom_verificado": true,
+  "resumen_nota": "muestra_fichas=21 son las fichas vivas con DOM capturado en la pasada 1 sobre las que se midió el JSON-LD. cobertura_jsonld_product_pct y cobertura_precio_jsonld_pct siguen en 0 porque se refieren a la capa raw (la que ve un crawler sin JS); los campos *_dom_pct son la novedad de esta pasada. gtin, asimetría, skus_datos_solo_en_nombre, catalogo_oculto, imágenes, contactos y enlaces del footer vienen de la pasada 1 sin volver a medir."
+ },
+ "hallazgos": [
+  {
+   "id": "H14",
+   "paso": 4,
+   "gravedad": 4,
+   "capa": "mixto",
+   "titulo": "El JSON-LD Product solo lo crea el JavaScript y sale con marca 'no disponible' y stock siempre 'InStock'",
+   "descripcion": "Corrección a H04 de la pasada 1: 'cero JSON-LD' es cierto en el HTML del servidor (0 en 60 fichas) y falso en el DOM. Un componente React del bundle propio inserta con useEffect un <script type=application/ld+json id=product-structured-data> en el <head> de cada ficha, y otro inserta BreadcrumbList e ItemsList en categorías. Por eso ningún lector sin JavaScript lo ve y Google solo lo ve tras renderizar. Contenido observado en las 21 fichas vivas con DOM (Chrome 153 headless, pasada 1): name, sku, image (URL absoluta), url, category, offers.price (coincide 21/21 con la API), priceCurrency CLP. Problemas: brand.name = 'Marca no disponible' en 19/21 (el código usa el campo brand, que solo tienen los 75 dermocosméticos, e ignora laboratory.label, lleno en el 100% de los 2.731 medicamentos); en los 2 restantes brand.name es un objeto {label, value} en vez de texto; description = 'Descripcion no disponible' en 7/21; offers.availability = 'InStock' escrito fijo en el código, sin prefijo schema.org, y en 1 de 21 (011050004) la API dice stock 0 e isOutOfStock true; sin gtin, mpn, priceValidUntil, seller ni shippingDetails. En categorías el tipo es 'ItemsList' con 'itemsListElement', nombres que no existen en schema.org (los correctos son ItemList / itemListElement). En la home no hay Organization, WebSite ni LocalBusiness en ninguna capa. Lo que la API ya tiene y el JSON-LD no publica: laboratorio, principio activo y concentración, forma farmacéutica, cantidad por envase, condición de venta, refrigeración, stock real, precio normal cuando hay oferta, imágenes adicionales.",
+   "cifra": "21/21 fichas con Product en DOM y 0/60 en raw; 19/21 con marca 'Marca no disponible'; 7/21 con descripción 'Descripcion no disponible'; 21/21 InStock (1 con stock 0 en la API)",
+   "ejemplo_sku": "011000228 (Ziagen 300 mg, VIH): DOM JSON-LD = brand 'Marca no disponible', description 'Descripcion no disponible', category 'Seguro Complementario', price 600890 InStock; la API trae laboratory GlaxoSmithKline y principio activo Abacavir",
+   "evidencia": [
+    "evidencia/p2/jsonld_dom.json",
+    "evidencia/p2/jsonld_dom_analisis.txt",
+    "evidencia/p2/senales_meta_google.md",
+    "evidencia/dom/product_011000228.html",
+    "evidencia/dom/product_011050004.html",
+    "evidencia/dom/cat_diabetes-y-obesidad.html",
+    "evidencia/js/_all.js",
+    "evidencia/fichas/analisis_fichas.txt",
+    "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+    "https://services.cofar.cl/products/2.0/011000228"
+   ],
+   "resoluble_con_canonical": false
+  },
+  {
+   "id": "H15",
+   "paso": 10,
+   "gravedad": 3,
+   "capa": "mixto",
+   "titulo": "Cero Open Graph y Twitter Card también en el DOM: la ficha compartida solo lleva título y descripción, sin imagen",
+   "descripcion": "Dimensiona H04 para campañas y redes. En home, categoría y ficha (Ozempic 012522017 y Ziagen 011000228) hay 0 etiquetas og:* y 0 twitter:* tanto en raw como en DOM; el bundle no las genera (las 12 apariciones de 'og:' son nombres de variables minificadas). Tampoco hay link rel=image_src. Lo único que un lector de vistas previas puede tomar del <head> de una ficha es el <title>, la meta description y el canonical; en el raw hay 18 <img> y las 18 son logo e íconos, 0 de producto. No se simula cómo renderiza cada plataforma. Se confirma que no es un problema de que las etiquetas lleguen tarde por JS: no llegan nunca.",
+   "cifra": "0 og:* y 0 twitter:* en raw y DOM en home, categoría y 2 fichas; 0 imágenes de producto en el HTML de 50 fichas",
+   "ejemplo_sku": "012522017 (Ozempic 2 mg): el <head> raw trae <title>, meta description y canonical; ningún og:image, og:price ni og:type",
+   "evidencia": [
+    "evidencia/p2/senales_meta_google.md",
+    "evidencia/raw/home.html",
+    "evidencia/dom/home.html",
+    "evidencia/dom/product_012522017.html",
+    "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+    "evidencia/fichas/analisis_fichas.txt",
+    "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis"
+   ],
+   "resoluble_con_canonical": false
+  },
+  {
+   "id": "H16",
+   "paso": 10,
+   "gravedad": 2,
+   "capa": "dom",
+   "titulo": "Hay GTM, GA4, Google Ads, Meta Pixel y Merchant ID, pero no hay feed público ni dato de producto que alimentar",
+   "descripcion": "Observado en DOM (home, categoría, ficha): Google Tag Manager, GA4 (gtag/js?id=G-…), tag de conversión de Google Ads (gtag/js?id=AW-… y llamadas a googleads.g.doubleclick.net/pagead/viewthroughconversion), Meta Pixel (connect.facebook.net/en_US/fbevents.js y signals/config con domain=cofar.cl), Hotjar y Google Sign-In. En raw: nada de eso (0 fbq, 0 gtag, 0 googletagmanager). En el bundle propio: solo la inicialización de GTM (NEXT_PUBLIC_GTM_ID), Hotjar (NEXT_PUBLIC_HOTJAR_ID) y una constante GOOGLE_MERCHANT_ID; ni fbq( ni gtag( propios, así que el píxel y GA4 los inyecta GTM. dataLayer aparece 25 veces en el bundle con un evento 'purchase' con ecommerce.items. La meta google-site-verification solo existe en el DOM (la inserta el JS); en DNS hay 2 TXT google-site-verification y 1 facebook-domain-verification. Feed de productos: 12 rutas probadas (/feed, /feed.xml, /rss.xml, /merchant, /google, /facebook, /products.xml, /product-feed.xml, /google-merchant.xml, /facebook-feed.xml, /catalog.xml, /feed/products) responden 404 real; ni robots ni sitemap declaran uno; 'feed' no aparece en el bundle. Los IDs quedan en la evidencia y no se reportan; no se afirma nada sobre configuración de cuentas, eventos del píxel ni qué exige Merchant Center o el catálogo de Meta. Lectura: el tag está, el dato no. Sin OG, sin JSON-LD en servidor y sin feed observable, lo único que Meta y Google pueden leer de una ficha desde afuera es el título y la meta description.",
+   "cifra": "6 herramientas de medición/campaña cargadas en DOM; 0 en raw; 12 rutas de feed en 404; 0 feed declarado",
+   "ejemplo_sku": null,
+   "evidencia": [
+    "evidencia/p2/senales_meta_google.md",
+    "evidencia/p2/feeds_log.txt",
+    "evidencia/p2/feed_feed.headers",
+    "evidencia/dom/home.html",
+    "evidencia/dom/product_012522017.html",
+    "evidencia/js/_all.js",
+    "evidencia/contacto/txt_cofar.txt",
+    "https://cofar.cl/feed",
+    "https://cofar.cl/google-merchant.xml"
+   ],
+   "resoluble_con_canonical": false
+  },
+  {
+   "id": "H17",
+   "paso": 12,
+   "gravedad": 3,
+   "capa": "externo",
+   "titulo": "La API pública entrega a cada visitante los nombres internos de las decisiones de precio en 1.159 productos",
+   "descripcion": "Inventario de la API de catálogo que usa el propio navegador (services.cofar.cl/products/2.0, GET sin token; 3.024 productos volcados en la pasada 1, sin requests nuevos en esta). Cada producto trae 66 campos (contando anidados). Los comerciales y farmacéuticos (nombre, SKU, precios, laboratorio, principio activo, forma, cantidad, condición de venta, almacenamiento, refrigeración, imágenes, categorías) se muestran en la página (verificado contra el texto del DOM de 21 fichas). Los que NO se muestran y son internos-neutros: createdAt, equivalence, banderas de campaña (isBlackFriday/isCyberMonday/isCyberDay, todas false), maxQuantity, _id de plataforma, metaTitle/metaDescription, y stock, que solo toma dos valores (100 en 2.770 productos, 0 en 254): es una bandera, no un inventario. La única familia de campos que un visitante no debería ver es promoAvailable[]: promoId, discount (monto exacto), condbenef, promType, qtyItems y promoName. promoName tiene 449 valores distintos en 1.159 productos y leen como asuntos de correo internos: 'Re: Ajuste de precios (posicionamiento vs SB)' (413 productos), 'Carga Ofertas productos Lab Chile' (126), 'Re: MONITOREO MG NEGATIVO/BAJOS' (55), 'Re: Vencimientos en <100 días' (36), 'Posicionamiento Wegovy 15-05-2025 hasta 05-10-2025' (5), 'Oferta Ozempic 01-06-2026 hasta 05-10-2026' (2). La página muestra el precio de oferta, nunca ese nombre (0/8 fichas con promo). Con la misma claridad: no aparece ningún costo, margen numérico, proveedor, stock por bodega, dato de clientes ni credencial. Ritmo: 0 respuestas 429/403/503 y 0 cabeceras de límite en los 36 GET a la API y los 261 a cofar.cl de las dos pasadas; no se hizo prueba de carga. Esto no es una vulnerabilidad ni se reporta como tal: es un inventario de qué datos ya son públicos. Se marca para revisión humana del cliente y no se profundizó.",
+   "cifra": "1.159 de 3.024 productos exponen promoName; 449 nombres distintos; 0 campos de costo, margen, proveedor o clientes; 0 señales de límite de velocidad",
+   "ejemplo_sku": "Cualquier producto con offerPrice, por ejemplo los 413 con promoName 'Re: Ajuste de precios (posicionamiento vs SB)' (lista en evidencia/p2/api_inventario_extra.txt)",
+   "evidencia": [
+    "evidencia/p2/api_inventario.md",
+    "evidencia/p2/api_inventario_extra.txt",
+    "evidencia/api/catalogo_completo.json",
+    "evidencia/api_sku_012522017.json",
+    "evidencia/api_sku_012522017.headers",
+    "evidencia/dump_catalogo.log",
+    "evidencia/js/_all.js",
+    "https://services.cofar.cl/products/2.0/?first=100&offset=0"
+   ],
+   "resoluble_con_canonical": false
+  },
+  {
+   "id": "H18",
+   "paso": 2,
+   "gravedad": 2,
+   "capa": "raw",
+   "titulo": "robots.txt deja pasar a los 13 bots de IA revisados; los sitemaps de producto no declaran lastmod",
+   "descripcion": "Detalle del paso 2 que la pasada 1 dejó en una línea (H12). robots.txt (105 bytes, idéntico a las 13:07 y a las 14:03 UTC) tiene un solo grupo User-Agent: * con Allow: / y Disallow: /profile/* y /checkout/*, y declara el sitemap. No menciona a GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-User, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, CCBot, Bytespider ni meta-externalagent: los 13 heredan el permiso total. Conclusión con todas sus letras: el problema con los asistentes de IA es solo de contenido (H01: el HTML no trae dato de producto), no de permiso; abrir la puerta no cambiaría nada porque ya está abierta. llms.txt: 404 real. .well-known: nada. Sin meta robots ni x-robots-tag. Sitemaps: índice más 6 archivos, 3.268 URLs (3.118 productos, 137 categorías, 13 estáticas). Los 4 sitemaps de producto no traen lastmod, changefreq ni priority (sí image:image). Los de categorías y estáticas traen lastmod, pero con la hora exacta de la petición (2026-09-12T13:07:22Z en las 137 categorías), es decir, se generan al vuelo y no informan cambios reales. El índice se sirve con s-maxage de un año desde CloudFront. Cruce con la pasada 1 sin repetir: 93 URLs muertas con 200 (H05), 4 SKUs malformados, canonical distinto del sitemap en 31/50 (H06); sin lastmod no hay forma externa de saber desde cuándo esas 93 están ahí.",
+   "cifra": "13 de 13 bots de IA permitidos; 0 de 3.118 URLs de producto con lastmod; 150 URLs con lastmod igual a la hora de la petición",
+   "ejemplo_sku": null,
+   "evidencia": [
+    "evidencia/p2/bots_ia.md",
+    "evidencia/p2/robots_2026-09-12.txt",
+    "evidencia/raw/robots.html",
+    "evidencia/raw/llms.headers",
+    "evidencia/raw/sitemap.html",
+    "evidencia/raw/sitemap.headers",
+    "evidencia/sitemaps/sitemap_PLP.xml",
+    "evidencia/sitemaps/sitemap_PDP_sitemap-productos-medicamentos.xml",
+    "https://cofar.cl/robots.txt",
+    "https://cofar.cl/sitemap.xml"
+   ],
+   "resoluble_con_canonical": false
+  }
+ ],
+ "hipotesis_brief": [
+  {
+   "hipotesis": "A. robots.txt bloquea a los bots de IA y por eso no leen el catálogo",
+   "estado": "desinflada",
+   "hallazgo_id": "H18",
+   "detalle": "No bloquea a ninguno de los 13 revisados; solo hay un grupo * con Allow: /. El problema es de contenido (H01), no de permiso."
+  },
+  {
+   "hipotesis": "B. Open Graph y Twitter Card ausentes también en el DOM (no los inyecta JS)",
+   "estado": "confirmada",
+   "hallazgo_id": "H15",
+   "detalle": "0 og:* y 0 twitter:* en raw y DOM de home, categoría y 2 fichas; el bundle no los genera."
+  },
+  {
+   "hipotesis": "C. Cero JSON-LD Product y Organization en todo el sitio (H04, pasada 1)",
+   "estado": "parcial",
+   "hallazgo_id": "H14",
+   "detalle": "Cierto en raw (0/60). Falso en DOM: 21/21 fichas tienen Product inyectado por JS, con marca 'no disponible' en 19, descripción placeholder en 7 y availability fijo InStock. Organization sigue ausente en todas las capas. Cambia el diagnóstico: Google puede leer un Product incompleto; los crawlers sin JS, nada."
+  },
+  {
+   "hipotesis": "D. La API pública expone datos internos que un visitante no debería ver",
+   "estado": "parcial",
+   "hallazgo_id": "H17",
+   "detalle": "Sí en una familia de campos (promoAvailable: nombres internos de promoción, monto de descuento, ids). No hay costo, margen, proveedor, stock por bodega ni datos de clientes."
+  },
+  {
+   "hipotesis": "E. Hubo señales de límite de velocidad en la pasada 1",
+   "estado": "desinflada",
+   "hallazgo_id": "H17",
+   "detalle": "0 respuestas 429/403/503 y 0 cabeceras de límite en 36 GET a la API y 261 a cofar.cl. Sin prueba de carga."
+  },
+  {
+   "hipotesis": "F. Existe un feed público de catálogo (Google/Meta)",
+   "estado": "desinflada",
+   "hallazgo_id": "H16",
+   "detalle": "12 rutas probadas responden 404 real; nada declarado en robots, sitemap ni bundle. Un feed privado subido a las plataformas no es observable desde afuera."
+  },
+  {
+   "hipotesis": "G. Los asistentes de IA no saben qué vende Cofar (paso 11)",
+   "estado": "no_verificable",
+   "hallazgo_id": null,
+   "detalle": "Sin ANTHROPIC_API_KEY no se consultó a un modelo. Observación puntual con búsqueda web del entorno (índice orientado a EE. UU., 2026-09-12): Cofar no aparece en la consulta de Ozempic 2 mg, aparece en la posición 5 en Rybelsus 14 mg y en la 9 en Gonal F 900 UI; en ninguna el resumen usó datos de Cofar. No es una medición; ver evidencia/p2/busquedas_web.md."
+  }
+ ],
+ "no_verificado": [
+  {
+   "que": "Paso 11 como lo pide el playbook: respuesta literal de un modelo a '¿Qué vende Cofar Salud (cofar.cl)? ¿Qué productos y precios tienen?'",
+   "por_que": "Sin ANTHROPIC_API_KEY en el entorno (igual que en la pasada 1). Se reemplazó por el contraste raw VIH/oncológico vs dermocosmética (evidencia/p2/jsonld_dom_analisis.txt) y por 3 búsquedas web puntuales (evidencia/p2/busquedas_web.md). Para cerrarlo: hacer la pregunta desde el chat con y sin búsqueda web y pegar la respuesta en evidencia/p2/busquedas_web.md."
+  },
+  {
+   "que": "Posicionamiento real de Cofar en Google Chile para sus productos",
+   "por_que": "La búsqueda web del entorno es un índice orientado a EE. UU. y cada consulta se hizo una sola vez; sirve como observación puntual, no como medición. Haría falta Search Console del cliente o un rank tracker con ubicación Chile."
+  },
+  {
+   "que": "Si CloudFront o un WAF responden distinto a GPTBot, ClaudeBot u otros por User-Agent",
+   "por_que": "La regla del repo es usar siempre el User-Agent identificable de Relevo; no se suplantó ningún bot. robots.txt los permite, pero un bloqueo en el borde no sería visible con este método."
+  },
+  {
+   "que": "Eventos configurados en el Meta Pixel y en GTM (ViewContent, AddToCart, Purchase), y qué exige hoy Google Merchant Center o el catálogo de Meta",
+   "por_que": "Solo se observó la carga de los scripts en el DOM; no se ejecutó GTM ni se inspeccionó su contenedor. Las reglas de esas plataformas se verifican aparte."
+  },
+  {
+   "que": "Si Google acepta o rechaza el JSON-LD Product inyectado por JS (marca placeholder, availability sin prefijo schema.org, ItemsList)",
+   "por_que": "No se usó la prueba de resultados enriquecidos de Google ni Search Console. Se reporta lo observado en el DOM y en el código que lo genera."
+  },
+  {
+   "que": "Existencia de un feed privado de catálogo ya subido a Merchant Center o a Meta",
+   "por_que": "No es observable desde afuera. Solo se verificó que no hay uno público en 12 rutas habituales ni declarado en robots/sitemap/bundle."
+  },
+  {
+   "que": "Uso y alcance de promoAvailable[].promoName más allá de lo leído",
+   "por_que": "Por encuadre del BRIEF-P2 se describe en una línea y se marca para revisión humana; no se cruzó con otros datos ni se probó ningún endpoint adicional."
+  },
+  {
+   "que": "Endpoints que requieren sesión (/api/checkout/*, /api/orders/*, /mscustomer/*) y /products/1.0/coverage/{sku}?rut=",
+   "por_que": "Fuera de alcance: requieren cuenta o un RUT de paciente. Solo se listan porque aparecen en el bundle."
+  },
+  {
+   "que": "Validación de hallazgos-p2.json contra .claude/skills/auditoria/hallazgos.schema.json tal como está en el repo",
+   "por_que": "El archivo no es JSON válido. Se validó contra evidencia/hallazgos.schema.reparado.json (cuatro arreglos de sintaxis documentados en evidencia/hallazgos.schema.reparado.NOTA.md)."
+  }
+ ],
+ "candidato_hallazgo_principal": "La puerta está abierta y la vitrina vacía: robots.txt deja pasar a los 13 bots de IA, Google Tag Manager, GA4, Google Ads y el píxel de Meta ya cargan en cada página, y hasta existe un JSON-LD de producto; pero todo el dato de producto se arma en el navegador y llega con marca 'no disponible' y stock siempre 'InStock', sin Open Graph, sin feed público y sin llms.txt. Para Meta, Google sin render y los asistentes de IA, cada ficha de Cofar es un título y una frase. Y la misma API que se lo negaría a ellos le cuenta a cualquier visitante el nombre interno de cada decisión de precio.",
+ "opciones_demo": [
+  "Comparador 'lo que ve tu paciente / lo que ve Google / lo que ve WhatsApp / lo que ve ChatGPT' para 5 fichas de especialidad, usando el JSON-LD real del DOM (con 'Marca no disponible') frente al que se generaría desde la API (con laboratorio, principio activo y stock real).",
+  "Generador de JSON-LD Product y og:* en servidor a partir de products/2.0/{sku}, mostrando lado a lado el bloque actual del cliente y el corregido, para las mismas fichas.",
+  "Feed de catálogo (formato TSV/XML) generado desde la API pública con los campos que hoy ya existen (sku, nombre, precio, oferta, imagen, laboratorio, disponibilidad real), como borrador para que el equipo lo cargue donde corresponda.",
+  "Página de 'qué saben los asistentes de IA' con las respuestas literales de 2 o 3 modelos a la pregunta fija del playbook, hecha desde el chat, frente a la respuesta que daría un chat conectado a la API pública."
+ ]
+}

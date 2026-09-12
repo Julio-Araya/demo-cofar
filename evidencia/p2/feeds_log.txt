@@ -1,0 +1,13 @@
+2026-09-12T14:03:36Z /robots.txt 200 text/plain 105 redirect=
+2026-09-12T14:03:38Z /feed 404 text/html; charset=utf-8 187246 redirect=
+2026-09-12T14:03:39Z /feed.xml 404 text/html; charset=utf-8 187217 redirect=
+2026-09-12T14:03:40Z /rss.xml 404 text/html; charset=utf-8 187351 redirect=
+2026-09-12T14:03:42Z /merchant 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:43Z /google 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:45Z /facebook 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:46Z /products.xml 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:47Z /product-feed.xml 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:49Z /google-merchant.xml 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:50Z /facebook-feed.xml 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:52Z /catalog.xml 404 text/html; charset=utf-8 187220 redirect=
+2026-09-12T14:03:53Z /feed/products 404 text/html; charset=utf-8 187220 redirect=

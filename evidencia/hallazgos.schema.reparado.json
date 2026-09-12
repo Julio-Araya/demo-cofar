@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hallazgos.json · Relevo Studio",
+  "type": "object",
+  "required": ["empresa", "dominio", "fecha", "plataforma", "resumen", "hallazgos", "hipotesis_brief", "no_verificado"],
+  "properties": {
+    "empresa": { "type": "string" },
+    "dominio": { "type": "string" },
+    "fecha": { "type": "string", "format": "date" },
+    "plataforma": {
+      "type": "object",
+      "required": ["nombre", "evidencia"],
+      "properties": {
+        "nombre": { "type": "string" },
+        "version": { "type": ["string", "null"] },
+        "evidencia": { "type": "string" }
+      }
+    },
+    "resumen": {
+      "type": "object",
+      "required": [
+        "productos_publicos_aprox",
+        "muestra_fichas",
+        "cobertura_jsonld_product_pct",
+        "cobertura_precio_jsonld_pct",
+        "gtin_validos_pct",
+        "asimetria_atributos_max_pct",
+        "skus_datos_solo_en_nombre",
+        "catalogo_oculto_pct",
+        "fichas_una_sola_imagen_pct",
+        "contradicciones_contacto",
+        "enlaces_footer_404",
+        "robots_ok",
+        "llms_txt_ok",
+        "sitemap_ok",
+        "catalogo_publico_con_precios",
+        "api_catalogo_publica",
+        "dom_verificado"
+      ],
+      "properties": {
+        "productos_publicos_aprox": { "type": "integer" },
+        "muestra_fichas": { "type": "integer" },
+        "cobertura_jsonld_product_pct": { "type": "number" },
+        "cobertura_precio_jsonld_pct": { "type": "number" },
+        "gtin_validos_pct": { "type": ["number", "null"] },
+        "asimetria_atributos_max_pct": { "type": ["number", "null"], "description": "Diferencia entre la subcategoría con mejor y peor cobertura del atributo clave" },
+        "skus_datos_solo_en_nombre": { "type": "integer" },
+        "catalogo_oculto_pct": { "type": ["number", "null"] },
+        "fichas_una_sola_imagen_pct": { "type": "number" },
+        "contradicciones_contacto": { "type": "integer" },
+        "enlaces_footer_404": { "type": "integer" },
+        "robots_ok": { "type": "boolean" },
+        "llms_txt_ok": { "type": "boolean" },
+        "sitemap_ok": { "type": "boolean" },
+        "catalogo_publico_con_precios": { "type": "boolean", "description": "Construibilidad del demo: hay datos públicos con precio para armar chat o cotizador" },
+        "api_catalogo_publica": { "type": ["string", "null"], "description": "URL del endpoint si existe" },
+        "dom_verificado": { "type": "boolean" }
+      }
+    },
+    "cobertura_atributos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subcategoria", "n", "atributos"],
+        "properties": {
+          "subcategoria": { "type": "string" },
+          "n": { "type": "integer" },
+          "atributos": {
+            "type": "object",
+            "additionalProperties": { "type": "number" }
+          }
+        }
+      }
+    },
+    "hallazgos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "paso", "titulo", "gravedad", "capa", "descripcion", "evidencia"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^H[0-9]{2}$" },
+          "paso": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "titulo": { "type": "string", "maxLength": 120 },
+          "gravedad": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "capa": { "type": "string", "enum": ["raw", "jsonld", "dom", "externo", "mixto"] },
+          "descripcion": { "type": "string" },
+          "cifra": { "type": ["string", "null"], "description": "El número que va en el PDF, ya redactado. Ej: '60 SKUs con medidas solo en el nombre'" },
+          "ejemplo_sku": { "type": ["string", "null"], "description": "Un producto concreto para el demo, como RANSUS0336 en Epysa" },
+          "evidencia": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "description": "Ruta en evidencia/ o URL pública" }
+          },
+          "resoluble_con_canonical": { "type": "boolean", "description": "true si el cliente lo puede descartar con un fix trivial; baja el peso en el score" }
+        }
+      }
+    },
+    "hipotesis_brief": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["hipotesis", "estado", "detalle"],
+        "properties": {
+          "hipotesis": { "type": "string" },
+          "estado": { "type": "string", "enum": ["confirmada", "desinflada", "parcial", "no_verificable"] },
+          "detalle": { "type": "string" },
+          "hallazgo_id": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "no_verificado": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["que", "por_que"],
+        "properties": {
+          "que": { "type": "string" },
+          "por_que": { "type": "string" }
+        }
+      }
+    },
+    "candidato_hallazgo_principal": { "type": ["string", "null"] },
+    "opciones_demo": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,2168 @@
+{
+ "cat_diabetes-y-obesidad.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Diabetes y obesidad",
+     "item": "https://cofar.cl/category/medicamentos/diabetes-y-obesidad"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org/",
+   "@type": "ItemsList",
+   "numberOfItems": 21,
+   "itemListOrder": "https://schema.org/ItemListOrderDescending",
+   "itemsListElement": [
+    {
+     "@type": "ListItem",
+     "position": 0,
+     "item": {
+      "@type": "Product",
+      "name": "Glaupax XR 1000mg 30 Comp.Lp.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/012501226/glaupax-xr-1000mg-30-complp",
+      "image": "https://product-img.cofar.cl/products/2TyDcwZdQGFpy8cLG/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Pasteur",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012501226",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 10851,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Product",
+      "name": "Hipoglucin LP 1000mg 30 Comp.",
+      "description": "X30 Comprimidos de Liberación Prolongada",
+      "url": "https://cofar.cl/product/010437569/hipoglucin-lp-1000mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/2wp6H33Cidcc46mPY/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Laboratorio Chile",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010437569",
+      "category": "Descuentos Progresivos",
+      "offers": {
+       "@type": "Offer",
+       "price": 15851,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Product",
+      "name": "Fucus Especial 50mcg/50mcg/50mcg 50 Comp.",
+      "description": "Dosificación: 1 comprimido cada 8 horas\n\n                                                                            \nAdvertencia: Mantener fuera del alcance de los niños.",
+      "url": "https://cofar.cl/product/018119992/fucus-especial-50mcg50mcg50mcg-50-comp",
+      "image": "https://product-img.cofar.cl/products/3PNkXKBi5abmtMx95/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Knop",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "018119992",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 5590,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Product",
+      "name": "Rybelsus Semaglutida 14mg 90 Comprimidos Pack 3x2",
+      "description": "RYBELSUS® (Semaglutida) 14 mg - Pack 3x2\nRYBELSUS® 14mg es la dosis de mantenimiento establecida en el tratamiento de la diabetes mellitus tipo 2. Esta concentración de Semaglutida oral ofrece un control glucémico significativo al reducir el azúcar en sangre, favorecer la pérdida de peso y mejorar la sensibilidad a la insulina. El formato Pack 3x2 está diseñado para asegurar la continuidad terapéutica con un beneficio económico.\nBeneficios Clave del Tratamiento y la Promoción\nAhorro Promocional: El formato 3x2 permite obtener un suministro extendido, ideal para el tratamiento a largo plazo.\nMáxima Eficacia: La dosis de 14mg ha demostrado reducir significativamente los niveles de Hemoglobina Glicosilada (A1C).\nDoble Acción: Ayuda a mejorar el control de la glucosa y favorece la pérdida de peso como efecto asociado.\nComodidad: Monodosis oral diaria.\nSeguridad Cardiovascular: No se ha asociado con un aumento en el riesgo de eventos cardiovasculares graves.\nAdvertencias Importantes de Seguridad\nAdvertencia sobre Tumores Tiroideos: La Semaglutida, como análogo de GLP-1, puede causar tumores tiroideos. Busque atención médica inmediata si nota síntomas como ronquera, dificultad para tragar o bultos en el cuello.\nContraindicación Absoluta: No usar si tiene antecedentes personales o familiares de Carcinoma Medular de Tiroides (CMT) o Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2).\nPrescripción Obligatoria: Este producto requiere Receta Médica Simple para su dispensación.\nPosología y Forma de Administración (Cómo tomar RYBELSUS®)\nSiga rigurosamente la dosis de 14mg y las indicaciones proporcionadas por su médico especialista.\nInstrucciones CRÍTICAS para la Administración:\nTome el comprimido por la mañana, con el estómago completamente vacío.\nIngiera con un sorbo pequeño de agua pura (no más de 120ml).\nNo parta, triture o mastique el comprimido. Tráguese entero.\nEspere al menos 30 minutos antes de comer, beber o tomar cualquier otro medicamento oral, ya que esto afecta la absorción del medicamento.\nAdvertencias y Condiciones Importantes\nInsuficiencia Renal y Pancreatitis: Informe a su médico si padece pancreatitis o insuficiencia renal.\nRetinopatía: Precaución si tiene retinopatía diabética, ya que los cambios rápidos en la glucemia pueden agravar las condiciones visuales.\nEfectos Secundarios Comunes: Náuseas, diarrea, estreñimiento, dolor abdominal y pérdida de apetito. Si persisten, consulte a su médico.\nDetalles del Producto\nPrincipio Activo: Semaglutida 14mg\nForma Farmacéutica: Comprimidos Orales\nContenido Neto Total: 90 Comprimidos (3 Cajas de 30)\nTipo de Producto: Antidiabético\nCondición de Venta: Receta Médica Simple",
+      "url": "https://cofar.cl/product/012520006/rybelsus-semaglutida-14mg-90-comprimidos-pack-3x2",
+      "image": "https://product-img.cofar.cl/products/3yjFGZPTNJC3MCfuX/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Novo Nordisk",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012520006",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 351368,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Product",
+      "name": "Hipoglucin 1g 30 Comp.Rec.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/010435765/hipoglucin-1g-30-comprec",
+      "image": "https://product-img.cofar.cl/products/3zdtqjZr68EmGJ5rj/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Laboratorio Chile",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010435765",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 23029,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "Product",
+      "name": "Victoza Liraglutida 6mg/ml 1 Dispositivo Prellenado Multidosis",
+      "description": "VICTOZA® (Liraglutida) 6 mg/ml es un tratamiento inyectable diario de última generación desarrollado por el laboratorio Novo Nordisk, indicado para el manejo de adultos diagnosticados con diabetes mellitus tipo 2 cuyo control glucémico no ha sido suficiente con terapias orales convencionales.\nEl producto se presenta en un cómodo dispositivo prellenado multidosis (lápiz inyector) para administración por vía subcutánea una vez al día.\nComo análogo del receptor de GLP-1 (una hormona producida de forma natural por el organismo después de comer), la Liraglutida actúa de manera selectiva sobre la regulación de la glucosa y aporta múltiples beneficios clínicos:\nControl Glucémico Inteligente: Estimula de forma directa la producción de insulina por el páncreas únicamente cuando los niveles de glucosa en la sangre están elevados, evitando caídas bruscas de azúcar (hipoglucemias).\nSupresión del Glucagón: Disminuye la liberación excesiva de glucagón, reduciendo la producción de glucosa desde el hígado.\nControl del Apetito y Saciedad: Ralentiza ligeramente el vaciado del estómago y actúa a nivel cerebral regulando las señales de hambre, lo que favorece una pérdida de peso corporal y reducción de grasa como un beneficio metabólico asociado.\nProtección Cardiovascular: Contribuye a disminuir el riesgo de complicaciones cardiovasculares graves en personas que padecen diabetes tipo 2 con enfermedad cardiovascular establecida.\nNota: La terapia con Victoza debe complementarse siempre con una planificación alimentaria adecuada y ejercicio físico diario, bajo la estricta guía y monitoreo de su médico tratante.\n2. Modo de Uso y Dosificación\nPara asegurar la correcta absorción y la máxima efectividad de la Liraglutida, siga detalladamente estas indicaciones:\nEsquema de Administración Diaria: Victoza se inyecta una vez al día, idealmente a la misma hora, con o sin alimentos.\nProgresión de Dosis Común: Habitualmente el tratamiento inicia con una dosis de 0,6 mg diarios durante al menos una semana para facilitar la adaptación digestiva del cuerpo. Posteriormente, su médico le indicará subir la dosis a 1,2 mg diarios o, en caso de ser requerido, a la dosis máxima de 1,8 mg diarios.\nVía Subcutánea: Aplique la inyección exclusivamente debajo de la piel (vía subcutánea) en el abdomen, el muslo o la parte superior del brazo. No inyectar por vía intravenosa o intramuscular.\nUso de Agujas Desechables: El dispositivo es multidosis y requiere la colocación de una aguja estéril nueva antes de cada inyección diaria. Retire la aguja de forma segura después de cada aplicación. (Nota: Las agujas se adquieren por separado).\n3. Advertencias de Seguridad Importantes\nRiesgo de Tumores en la Glándula Tiroides (Células C)\nEstudios de laboratorio en roedores revelaron que la Liraglutida puede inducir el desarrollo de tumores tiroideos. Todavía se desconoce si este efecto se replica en seres humanos.\nMonitoreo Clínico: Consulte a su especialista de inmediato si nota hinchazón, un bulto en el cuello, ronquera persistente, dificultad al tragar o falta de aire.\nContraindicación Absoluta: No utilice VICTOZA® si usted o algún familiar directo tiene antecedentes de Carcinoma Medular de Tiroides (CMT) o padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 / NEM 2).\nPrecauciones Generales\nPancreatitis Aguda: Suspenda el uso inmediatamente y busque atención médica de urgencia si experimenta un dolor abdominal severo, continuo y punzante que se propague hacia la espalda, acompañado o no de vómitos.\nDeshidratación y Cuidado Renal: Los efectos adversos gastrointestinales como náuseas, diarrea o vómitos intensos pueden provocar deshidratación severa, afectando la función de los riñones. Mantenga una hidratación constante con agua pura.\nInsuficiencias: Debe usarse con precaución y bajo estricta vigilancia médica si el paciente presenta insuficiencia hepática, insuficiencia renal severa o antecedentes de trastornos digestivos graves (como gastroparesia).\nDiabetes Tipo 1: Este medicamento no está indicado para pacientes con diabetes mellitus tipo 1 ni para el tratamiento de la cetoacidosis diabética.\nEmbarazo y Lactancia: Su uso está completamente contraindicado.\n4. Efectos Secundarios Posibles\nMuy Frecuentes (especialmente durante las primeras semanas de tratamiento o al incrementar la dosis): Náuseas, diarrea, vómitos, estreñimiento, dolor o malestar abdominal, indigestión y pérdida del apetito. Por lo general, estos efectos son de carácter leve a moderado, temporales y disminuyen progresivamente.\nGraves (requieren evaluación médica inmediata): Reacciones de hipersensibilidad (hinchazón de rostro, labios o garganta, urticaria severa, dificultad para respirar), hipoglucemia (principalmente si se combina con insulina o sulfonilureas) y problemas de la vesícula biliar (como dolor agudo en la zona superior derecha del abdomen).\n5. Información Comercial y Especificaciones\nNombre del Producto: VICTOZA®\nPrincipio Activo: Liraglutida (cada ml contiene 6 mg de Liraglutida).\nPresentación: Caja con 1 dispositivo prellenado multidosis (lápiz inyector) de 3 ml de solución inyectable. (Nota: Las agujas se adquieren por separado).\nLaboratorio: Novo Nordisk.\nRegistro Sanitario ISP: B-2249/17.\nCondiciones de Almacenamiento (Cadena de Frío):\nAntes del primer uso (sin abrir): Conservar obligatoriamente en refrigeración constante entre 2°C y 8°C. No congelar. Proteger de la luz solar directa.\nDurante el uso (una vez abierto): Puede conservarse refrigerado (2°C a 8°C) o a temperatura ambiente (no mayor a 25°C) por un período máximo de 1 mes. Coloque siempre el capuchón del lápiz después de cada inyección para resguardar la solución de la luz.\nSeguridad: Mantener estrictamente fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Requiere la presentación física y validación de una Receta Médica Simple al momento de la compra o retiro.",
+      "url": "https://cofar.cl/product/012520033/victoza-liraglutida-6mgml-1-dispositivo-prellenado-multidosis",
+      "image": "https://product-img.cofar.cl/products/5XJ8568GarcJLFhyN/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Novo Nordisk",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012520033",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 91950,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "item": {
+      "@type": "Product",
+      "name": "Glifortex 850mg 60 Comp.Rec.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/010032397/glifortex-850mg-60-comprec",
+      "image": "https://product-img.cofar.cl/products/5bdyMdmz8Ti8qm4P8/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Andrómaco",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010032397",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 21390,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "item": {
+      "@type": "Product",
+      "name": "Insulatard 100ui/ml 1 Susp.Iny.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/012522016/insulatard-100uiml-1-suspiny",
+      "image": "https://product-img.cofar.cl/products/72dGmswu9LWwMTsC9/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Novo Nordisk",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012522016",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 38980,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "item": {
+      "@type": "Product",
+      "name": "Rybelsus Semaglutida 3mg 30 comprimidos",
+      "description": "RYBELSUS® constituye la primera terapia oral aprobada dentro de la clase de agonistas del receptor de GLP-1 para ayudar a los adultos con diabetes mellitus tipo 2 a gestionar su nivel de glucosa, en combinación con una alimentación adecuada y actividad física. Su dispensación y monitoreo requieren la indicación de un especialista médico.\nInformación Crítica de Seguridad\nRiesgo de Neoplasias Tiroideas: Estudios preclínicos en animales (roedores) han demostrado que la Semaglutida y compuestos análogos pueden inducir el desarrollo de tumores tiroideos, incluyendo formas malignas. Actualmente, se ignora si este riesgo se traduce en humanos y si RYBELSUS® puede provocar tumores tiroideos o Carcinoma Medular de Tiroides (CMT).\n\nAcción Inmediata: Si detecta alguna masa o inflamación en el cuello, o experimenta ronquera persistente, dificultad para tragar o problemas respiratorios, debe buscar atención médica de urgencia.\nContraindicaciones Absolutas: No debe administrarse RYBELSUS® si usted o familiares directos tienen historial de CMT, o si padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2).\nHipersensibilidad: Evite su uso si ha manifestado previamente una reacción alérgica grave a la Semaglutida o a cualquiera de sus componentes.\nInstrucciones de Uso y Dosificación\n\nSiga estrictamente las indicaciones de su médico para la toma de RYBELSUS®.\nRestricción Diaria: La ingesta se limita a una tableta por día.\nMomento Clave: Debe consumirse por la mañana, antes de la primera ingesta del día (en ayunas).\nConsumo de Agua: Trague el comprimido completo utilizando únicamente una pequeña cantidad de agua natural (no exceder los 120 ml o 4 onzas).\nIntegridad del Comprimido: Está estrictamente prohibido moler, masticar o dividir la tableta. Debe ser deglutida intacta.\nPeríodo de Espera Vital: Después de la administración, debe esperar un mínimo de 30 minutos antes de consumir alimentos, bebidas o cualquier otra medicación oral. Este intervalo es esencial para garantizar la correcta absorción.\nOlvido de Dosis: En caso de olvidar una toma, simplemente ignore la dosis omitida y retome el esquema posológico normal al día siguiente. Nunca duplique la dosis para compensar la falta.\nAdvertencias sobre Condiciones Médicas Preexistentes\n\nEs crucial notificar a su profesional de la salud acerca de cualquier condición médica, pasada o presente, que incluya:\nAfecciones del páncreas (pancreatitis) o de los riñones.\nHistorial de complicaciones oculares vinculadas a la diabetes (retinopatía).\nSituación de embarazo, planes de concepción (la interrupción del tratamiento debe ocurrir 2 meses antes de buscar el embarazo) o período de lactancia (su uso no está aconsejado).\nReacciones Adversas Potencialmente Serias\n\nInterrumpa el medicamento y contacte a su médico inmediatamente si presenta los siguientes síntomas:\nPancreatitis Aguda: Dolor abdominal/estomacal severo y persistente.\nNivel Bajo de Azúcar (Hipoglucemia): El peligro se incrementa al usarlo concurrentemente con insulina o sulfonilureas. Señales de alerta incluyen mareos, confusión mental, temblores, sudoración excesiva y sensación de ansiedad.\nDeterioro Renal/Deshidratación: Episodios no resueltos de diarrea, náuseas o vómitos pueden llevar a deshidratación, afectando la función renal. Mantener una hidratación adecuada es primordial.\nReacciones de Hipersensibilidad Mayor: Inflamación del rostro, labios, lengua o garganta, dificultad respiratoria o para tragar, erupciones cutáneas o taquicardia.\nProblemas Bilares: Dolor en la sección superior del abdomen o coloración amarillenta en piel y ojos (ictericia).\n\nReacciones Adversas Frecuentes: Los efectos adversos reportados con mayor asiduidad incluyen: náuseas, dolor estomacal, diarrea, pérdida de apetito, vómitos y constipación. Estos suelen manifestarse con mayor intensidad al inicio de la terapia.\nEspecificaciones del Producto\nPresentación: Comprimidos para consumo oral.\nComposición: Antidiabético.\nFármaco Activo: Semaglutida 3mg.\nRequisito de Adquisición: Receta Médica Simple.\nCantidad: 30 Comprimidos.",
+      "url": "https://cofar.cl/product/012520001/rybelsus-semaglutida-3mg-30-comprimidos",
+      "image": "https://product-img.cofar.cl/products/82iEGiYmKKRrFWWdQ/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Novo Nordisk",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012520001",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 119995,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "item": {
+      "@type": "Product",
+      "name": "Glafornil XR 1000mg 30 Comp.Lp.",
+      "description": "X30 Comprimidos de Liberación Prolongada",
+      "url": "https://cofar.cl/product/012015001/glafornil-xr-1000mg-30-complp",
+      "image": "https://product-img.cofar.cl/products/8KJ35zZqZkvmBDw62/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Merck",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012015001",
+      "category": "Descuentos Progresivos",
+      "offers": {
+       "@type": "Offer",
+       "price": 22302,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "item": {
+      "@type": "Product",
+      "name": "Januvia Sitagliptina 100 mg 28 comprimidos recubiertos",
+      "description": "X28 Comprimidos Recubiertos",
+      "url": "https://cofar.cl/product/012025442/januvia-sitagliptina-100-mg-28-comprimidos-recubiertos",
+      "image": "https://product-img.cofar.cl/products/8njih4GM8juh5RZMP/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Merck",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012025442",
+      "category": "Descuentos Progresivos",
+      "offers": {
+       "@type": "Offer",
+       "price": 45274,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "item": {
+      "@type": "Product",
+      "name": "Vildavitae 50 mg Vildagliptina x 60 Comprimidos",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/012382014/vildavitae-50-mg-vildagliptina-x-60-comprimidos",
+      "image": "https://product-img.cofar.cl/products/8uhGjPEFtjirhhDst/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Galenicum Health",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012382014",
+      "category": "Descuentos Progresivos",
+      "offers": {
+       "@type": "Offer",
+       "price": 29839,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "item": {
+      "@type": "Product",
+      "name": "Glifortex XR 500mg 30 Comp.Lp.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/010039985/glifortex-xr-500mg-30-complp",
+      "image": "https://product-img.cofar.cl/products/AcAFJ7zo3HPZZNAKA/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Andrómaco",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010039985",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 8990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "item": {
+      "@type": "Product",
+      "name": "Glyxambi 25/5 30 Comp.Rec.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/010060016/glyxambi-255-30-comprec",
+      "image": "https://product-img.cofar.cl/products/B2yoqEytPbu8h4Jyj/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Medtrition",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010060016",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 91290,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "item": {
+      "@type": "Product",
+      "name": "Galvus Met Vildagliptina / Merformina 50/850 mg 28 comprimidos recubiertos",
+      "description": "X28 Comprimidos Recubiertos",
+      "url": "https://cofar.cl/product/010290329/galvus-met-vildagliptina--merformina-50850-mg-28-comprimidos-recubiertos",
+      "image": "https://product-img.cofar.cl/products/B5iQh4g7nWdAQoT6v/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Axon Pharma",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010290329",
+      "category": "Descuentos Progresivos",
+      "offers": {
+       "@type": "Offer",
+       "price": 36299,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 15,
+     "item": {
+      "@type": "Product",
+      "name": "Glafornil Metformina 1000 mg 30 comprimidos",
+      "description": "X30 Comprimidos Recubiertos",
+      "url": "https://cofar.cl/product/012016843/glafornil-metformina-1000-mg-30-comprimidos",
+      "image": "https://product-img.cofar.cl/products/BBzrZN6qcT74m5t8e/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Merck",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012016843",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 26058,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 16,
+     "item": {
+      "@type": "Product",
+      "name": "Mounjaro Kwikpen Tirzepatida 7.5mg/0.6ml 4 Dosis Agujas Desechables Incluidas 1 Dispositivo Prellenado Multidosis",
+      "description": "MOUNJARO® (Tirzepatida) de 7,5 mg representa el tercer escalón en el esquema de progresión de esta innovadora terapia metabólica. Esta concentración está diseñada específicamente para ser administrada durante el tercer mes de tratamiento (semanas 9 a 12), permitiendo un incremento paulatino y seguro en la potencia del fármaco una vez que el organismo se ha habituado a las dosis previas de 2,5 mg y 5 mg.\nEste medicamento se destaca por su exclusiva tecnología de doble receptor, siendo el primer tratamiento que actúa de forma simultánea como agonista de los receptores de las hormonas GIP (polipéptido insulinotrópico dependiente de glucosa) y GLP-1 (péptido similar al glucagón tipo 1). Esta sinergia optimiza de manera coordinada la respuesta del organismo ante la glucosa y la saciedad.\nLa presentación en formato KwikPen consiste en un dispositivo multidosis inyector muy sencillo de programar, que proporciona las dosis necesarias para cubrir de forma cómoda 4 semanas de terapia.\nIndicaciones Clínicas Autorizadas:\nManejo de la Diabetes Tipo 2: Indicado en pacientes adultos para lograr mejoras significativas en el control de la hemoglobina glicosilada (HbA1c), utilizándose solo (monoterapia) o combinado con otros medicamentos para la diabetes.\nControl Crónico del Peso Corporal: Indicado como soporte de una dieta de reducción calórica y un aumento de la actividad física diaria para la pérdida y mantenimiento de peso en adultos con un Índice de Masa Corporal (IMC) inicial mayor o igual a 30 kg/m2 (obesidad), o un IMC de entre 27 kg/m2 y 29,9 kg/m2 (sobrepeso) en presencia de al menos una comorbilidad relacionada con el exceso de peso (tales como hipertensión arterial, dislipidemia, prediabetes, diabetes tipo 2 o apnea del sueño).\n2. Guía de Administración y Pauta de Escalado\nEl aumento secuencial de la dosificación es la clave médica para asegurar que el cuerpo asimile el tratamiento con una excelente tolerancia digestiva.\nPlan de Dosificación Mensual Habitual:\nSemanas 1 a 4: 2,5 mg una vez por semana (Adaptación inicial).\nSemanas 5 a 8: 5,0 mg una vez por semana (Ajuste).\nSemanas 9 a 12 (Este Dispositivo): 7,5 mg una vez por semana (Fase de incremento intermedio).\nSemanas 13 en adelante: Según criterio de su médico, la dosis puede mantenerse en 7,5 mg o continuar la progresión en pasos de 2,5 mg hasta alcanzar la dosis máxima tolerada o el mantenimiento definitivo (hasta un límite de 15 mg semanales).\nPautas para una Correcta Aplicación Subcutánea:\nDía Fijo Semanal: Adminístrese el inyectable un día específico de la semana, a la hora que le resulte más conveniente, con o sin alimentos.\nÁrea de Inyección: Aplique exclusivamente por vía subcutánea (debajo de la piel) en el abdomen (dejando una distancia de seguridad respecto al ombligo), la parte superior del brazo o el muslo. Varíe o rote el punto exacto de la inyección en cada aplicación semanal. No debe administrarse por vía intramuscular ni endovenosa.\nManejo del Lápiz Multidosis KwikPen: El dispositivo contiene un total de 2,4 ml de solución, lo que rinde para 4 aplicaciones exactas de 0,6 ml (cada dosis aporta 7,5 mg de Tirzepatida). El empaque incluye agujas desechables estériles. Acople siempre una aguja nueva y sin usar antes de inyectar y deséchela de manera segura al terminar.\nEn Caso de Olvido: Si olvida una dosis y han pasado menos de 4 días (96 horas) de la fecha correspondiente, aplíquela en cuanto lo recuerde. Si han transcurrido más de 4 días, omita esa dosis por completo y espere a su día de inyección habitual de la semana siguiente. No se inyecte con un intervalo menor a 3 días respecto a la siguiente toma.\n3. Medidas de Seguridad y Advertencias Clínicas\nAlerta Preventiva sobre la Glándula Tiroides (Células C)\nEn estudios clínicos preclínicos con roedores, la Tirzepatida ocasionó tumores tiroideos. No se ha determinado si esta misma reacción fisiológica ocurre en pacientes humanos.\nAcción de Resguardo: Comuníquese con su especialista de inmediato si experimenta disfonía o ronquera persistente, problemas para tragar, dificultad al respirar o si palpa algún bulto o inflamación en la base del cuello.\nContraindicación Absoluta: Prohibido su uso si usted o algún familiar directo cuenta con antecedentes de Carcinoma Medular de Tiroides (CMT) o padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 o NEM 2).\nPrecauciones Generales de Salud\nPancreatitis Aguda: Interrumpa el tratamiento de forma inmediata y acuda a un centro asistencial de urgencia si presenta un dolor abdominal severo, continuo y punzante que se irradie hacia la espalda, con o sin vómitos.\nFunción Renal y Deshidratación: Los síntomas gastrointestinales comunes de la terapia (náuseas, vómitos, diarreas) pueden desencadenar pérdida de líquidos. Mantenga una hidratación activa con agua pura, ya que una deshidratación extrema puede provocar una lesión renal aguda.\nInteracciones Medicamentosas: Si utiliza de forma paralela insulina o secretagogos (como sulfonilureas), infórmelo a su especialista para evaluar una reducción de dosis en estos últimos y evitar bajas graves de azúcar (hipoglucemia). La Tirzepatida hace más lento el vaciado de su estómago, lo que podría incidir en la absorción de ciertos medicamentos orales.\nEmbarazo y Lactancia: No se aconseja su administración. Se debe coordinar una evaluación detallada junto a su médico para suspender el tratamiento de forma oportuna si planifica un embarazo.\n4. Efectos Adversos en la Etapa de Potenciación\nAl subir a la dosis de 7,5 mg, es factible experimentar algunas molestias digestivas leves a moderadas. Estos efectos suelen ser transitorios y tienden a desaparecer con el paso de las semanas:\nEfectos muy frecuentes: Náuseas, diarrea, episodios de vómitos, reducción notable del apetito, acidez o pesadez estomacal (dispepsia), estreñimiento y dolor abdominal leve.\nReacciones severas (requieren evaluación de urgencia): Reacciones de hipersensibilidad grave (hinchazón repentina de cara, boca o garganta; dificultad severa para respirar o tragar), dolor agudo e insoportable bajo el cuadrante superior derecho del abdomen (relacionado con problemas de la vesícula biliar) o indicios de hipoglucemia extrema.\n5. Resumen Técnico del Tratamiento\nPrincipio Activo: Tirzepatida (7,5 mg por dosis).\nFormato del Medicamento: 1 dispositivo prellenado multidosis KwikPen (contiene un total de 30 mg de Tirzepatida en 2,4 ml de solución inyectable).\nContenido del Envase: 1 pluma multidosis y agujas desechables estériles incluidas en el empaque.\nFrecuencia de Uso: Una única inyección subcutánea cada 7 días.\nPropósito Clínico: Incremento y consolidación de dosis, control glucémico en diabetes tipo 2 y manejo crónico de peso en adultos y adolescentes.\nRequires Refrigeración: Sí (conservar estrictamente entre 2°C y 8°C).\nCondición de Venta: Receta Médica Simple.\n6. Datos de Distribución y Almacenamiento Comercial\nNombre del Producto: MOUNJARO® KwikPen 7,5 mg / 0,6 ml\nPrincipio Activo: Tirzepatida.\nPresentación y Diseño de Fábrica: Caja que incluye 1 pluma inyectora multidosis KwikPen y agujas desechables. El mecanismo del lápiz está calibrado para dispensar exactamente 4 dosis semanales de 0,6 ml (7,5 mg de principio activo cada una).\nLaboratorio: Tecnofarma / Adium Eli Lilly.\nRegistro Sanitario ISP: F-29332.\nInstrucciones de Almacenamiento (Cadena de Frío):\nAntes de abrir (dispositivo nuevo): Conservar obligatoriamente en refrigeración constante entre 2°C y 8°C. No congelar (evite colocarlos cerca de las paredes del congelador) y proteger del impacto de la luz.\nDurante el uso (una vez abierto): Puede mantenerse fuera del refrigerador a temperatura ambiente (que no exceda los 30°C) por un periodo máximo de 21 días. Guarde siempre con el capuchón colocado tras cada uso para resguardar la solución de la luz.\nSeguridad: Mantener bajo resguardo seguro y fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Es requisito indispensable la presentación y validación de una Receta Médica Simple física vigente al momento de realizar la compra en Cofar.",
+      "url": "https://cofar.cl/product/013120003/mounjaro-kwikpen-tirzepatida-75mg06ml-4-dosis-agujas-desechables-incluidas-1-dispositivo-prellenado-multidosis",
+      "image": "https://product-img.cofar.cl/products/BfpnhTPcWdECtMWpc/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Tecnofarma",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "013120003",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 449980,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 17,
+     "item": {
+      "@type": "Product",
+      "name": "Wegovy Semaglutida 0.5mg/dosis 4 Dosis 4 Agujas Desechables 1 Dispositivo Prellenado Multidosis",
+      "description": "WEGOVY® (Semaglutida) 0,5 mg es un tratamiento inyectable de última generación, clínicamente aprobado como complemento de una dieta baja en calorías y un aumento de la actividad física para el control crónico del peso corporal.\nEstá indicado específicamente para:\nAdultos con Obesidad: Índice de Masa Corporal (IMC) inicial de mayor igual a 30 kg/m².\nAdultos con Sobrepeso: IMC inicial de mayor igual a 27 kg/m² a < 30 kg/m², que presenten al menos una comorbilidad relacionada con el peso (como prediabetes, diabetes mellitus tipo 2, hipertensión arterial, dislipidemia, apnea obstructiva del sueño o enfermedad cardiovascular).\nAdolescentes de 12 años o más: Con diagnóstico de obesidad y un peso corporal superior a los 60 kg.\n¿Cómo funciona Wegovy®?\nEl principio activo es la Semaglutida, un análogo de la hormona natural GLP-1 que el cuerpo libera de forma natural después de comer. Su acción prolongada ayuda a:\nIncrementar la saciedad: Regula las áreas del cerebro involucradas en el apetito, disminuyendo los antojos y reduciendo la ingesta calórica diaria.\nControlar la velocidad digestiva: Retrasa el vaciamiento gástrico, lo que prolonga la sensación de estómago lleno.\nReducción del Riesgo Cardiovascular: En adultos con enfermedad cardíaca establecida y obesidad o sobrepeso, ayuda a reducir la probabilidad de eventos cardiovasculares mayores (como ataques cardíacos o accidentes cerebrovasculares).\nNota: Wegovy® contiene Semaglutida y no debe combinarse con otros productos que contengan este principio activo ni con otros agonistas del receptor de GLP-1.\n2. Modo de Uso y Esquema de Escalado\nPara asegurar un tratamiento cómodo y minimizar las molestias estomacales, la dosificación de Wegovy® se incrementa de manera gradual en un plan de 16 semanas.\nLa presentación de 0,5 mg corresponde a la Fase 2 del tratamiento (Semanas 5 a 8).\nCalendario Estándar de Dosificación Semanal:\nSemanas 1 a 4: 0,25 mg una vez a la semana (Etapa de iniciación).\nSemanas 5 a 8 (Este Dispositivo): 0,5 mg una vez a la semana (Etapa de ajuste intermedio).\nSemanas 9 a 12: 1,0 mg una vez a la semana.\nSemanas 13 a 16: 1,7 mg una vez a la semana.\nDosis de Mantenimiento: 2,4 mg una vez a la semana (o la máxima dosis tolerada).\nPautas de Administration:\nInyección Semanal: Aplique el medicamento una vez a la semana, el mismo día, a cualquier hora y con o sin alimentos.\nVía Subcutánea: Inyecte exclusivamente bajo la piel en el abdomen, el muslo o la parte superior del brazo. No inyectar por vía intravenosa o intramuscular.\nUso de Agujas Desechables: Este empaque incluye 4 agujas desechables. Utilice siempre una aguja nueva y estéril para cada una de las 4 aplicaciones semanales de este dispositivo. Retire la aguja de forma segura después de inyectar.\nDosis Olvidada: Si olvida una dosis, aplíquela lo antes posible dentro de los 5 días posteriores al día programado. Si ya pasaron más de 5 días, omita la dosis y aplique la siguiente dosis el día habitual.\n3. Advertencias de Seguridad Importantes\nRiesgo de Tumores Tiroideos (Células C)\nEn estudios preclínicos con roedores, la Semaglutida provocó tumores y cáncer en la glándula tiroides. Aún se desconoce si este efecto ocurre en seres humanos.\nMonitoreo Directo: Consulte a su médico inmediatamente si detecta un bulto o inflamación en el cuello, ronquera persistente, dificultad para tragar o falta de aire.\nContraindicación Absoluta: No use WEGOVY® si tiene antecedentes personales o familiares de Carcinoma Medular de Tiroides (CMT) o si padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 / NEM 2).\nPrecauciones Generales\nPancreatitis Aguda: Suspenda el uso inmediatamente y busque atención médica de urgencia si presenta un dolor abdominal severo, continuo y persistente que se irradia hacia la espalda, acompañado o no de náuseas.\nDeshidratación y Función Renal: Náuseas, vómitos o diarreas intensas pueden causar deshidratación extrema, afectando la salud de los riñones. Asegúrese de beber abundante agua y líquidos durante el tratamiento.\nRetinopatía Diabética (en pacientes con diabetes tipo 2): Avise a su oftalmólogo si inicia este tratamiento, ya que las mejoras rápidas de la glucosa pueden alterar transitoriamente la visión.\nGastroparesia: Utilizar con precaución en personas con vaciamiento gástrico severamente retrasado.\nProcedimientos Quirúrgicos: Informe a todo su equipo médico y anestesiólogos que está utilizando Wegovy® antes de someterse a cualquier cirugía o procedimiento que requiera sedación profunda o anestesia.\nEmbarazo y Lactancia: Contraindicado. Debe suspender el uso de Wegovy® al menos 2 meses antes de planificar un embarazo.\n4. Efectos Secundarios Posibles\nMuy Frecuentes: Náuseas, diarrea, vómitos, estreñimiento, dolor de estómago (abdominal), dolor de cabeza, fatiga (cansancio excesivo), indigestión, mareos, distensión abdominal y gases. Estos síntomas suelen aparecer en las fases de inicio o escalado de dosis y tienden a desaparecer con la adaptación del cuerpo.\nGraves (requieren atención médica inmediata): Reacciones alérgicas severas (hinchazón de cara, lips, lengua o garganta; dificultad para respirar o tragar), hipoglucemia (especialmente si se asocia con insulina o sulfonilureas), alteración del ritmo cardíaco (palpitaciones persistentes) y dolor agudo en la vesícula biliar.\n5. Resumen Técnico del Tratamiento\nPrincipio Activo: Semaglutida (0,5 mg por dosis)\nFormato: 1 dispositivo prellenado multidosis FlexTouch (contiene 2 mg de Semaglutida en 1,5 ml de solución)\nContenido del Empaque: 1 dispositivo y 4 agujas desechables estériles (suficiente para 4 semanas)\nFrecuencia: Una aplicación subcutánea a la semana\nIndicación Principal: Control, pérdida y mantención del peso corporal crónico\nRequiere Refrigeración: Sí (conservar entre 2°C y 8°C)\nCondición de Venta: Receta Médica Simple\n6. Información Comercial y Especificaciones\nNombre del Producto: WEGOVY® 0,5 mg FlexTouch\nPrincipio Activo: Semaglutida (contiene 2 mg de Semaglutida en 1,5 ml de solución).\nFormato y Presentación: Caja con 1 dispositivo prellenado multidosis FlexTouch y 4 agujas desechables. El dispositivo está configurado para entregar exactamente 4 dosis de 0,5 mg cada una.\nLaboratorio: Novo Nordisk.\nCondiciones de Almacenamiento (Cadena de Frío):\nAntes de su uso (sin abrir): Conservar en refrigeración constante entre 2°C y 8°C. No congelar. Proteger el dispositivo de la luz solar directa.\nDurante el uso (una vez abierto): Puede guardarse refrigerado (2°C a 8°C) o a temperatura ambiente (no mayor a 25°C o 30°C según la especificación del fabricante) por un período máximo de 6 semanas. Coloque siempre el capuchón del lápiz después de cada aplicación.\nSeguridad: Mantener estrictamente fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Requiere la presentación física y validación de una Receta Médica Simple al momento de realizar la compra o retiro.",
+      "url": "https://cofar.cl/product/012525202/wegovy-semaglutida-05mgdosis-4-dosis-4-agujas-desechables-1-dispositivo-prellenado-multidosis",
+      "image": "https://product-img.cofar.cl/products/BuXa9f7NtpMjiPk4j/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Novo Nordisk",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012525202",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 147390,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 18,
+     "item": {
+      "@type": "Product",
+      "name": "Enclyna Duo Empagliflozina 12,5mg / Metformina Clorhidrato 1000mg 60 Comprimidos Recubiertos",
+      "description": "Enclyna Duo® es un medicamento hipoglucemiante de administración oral que combina dos principios activos complementarios: la Empagliflozina (inhibidor de SGLT2) y la Metformina Clorhidrato (Biguanida).\nEsta terapia combinada está indicada para adultos con diabetes mellitus tipo 2 que no logran un control adecuado con dosis máximas de metformina sola o que ya utilizan ambos fármacos por separado. Actúa mediante un mecanismo dual: la Empagliflozina favorece la eliminación de glucosa por vía renal, mientras que la Metformina reduce la producción de glucosa en el hígado y mejora la sensibilidad a la insulina. Además, está indicado para reducir el riesgo de muerte cardiovascular u hospitalización por insuficiencia cardíaca en pacientes de alto riesgo.\nPreguntas Frecuentes (FAQ)\n¿Qué es la Acidosis Láctica y qué precauciones debo tomar? \nEs una complicación metabólica muy rara pero grave asociada a la metformina. Se debe suspender el tratamiento temporalmente en caso de deshidratación (vómitos, diarrea o fiebre) o si se realizará una cirugía o examen con contraste yodado (esperar 48 horas para reanudar tras confirmar función renal estable).\n¿Cuáles son los síntomas de la cetoacidosis diabética? \nEs una afección seria que puede ocurrir incluso con niveles de azúcar casi normales. Esté alerta a náuseas, dolor abdominal, sed excesiva, dificultad para respirar, fatiga inusual o confusión. Si presenta estos síntomas, suspenda el uso y busque atención médica de inmediato.\n¿Qué es la Gangrena de Fournier? \nEs una infección rara pero grave de la zona genital informada en usuarios de inhibidores SGLT2. Consulte a su médico de inmediato si presenta dolor, sensibilidad, enrojecimiento o inflamación en la zona genital o del perineo, acompañada de fiebre o malestar general.\n¿Cómo afecta este medicamento a la Vitamina B12? \nEl uso prolongado de metformina puede reducir los niveles de vitamina B12. Se recomienda un monitoreo periódico, especialmente si presenta síntomas de anemia o neuropatía.\nEspecificaciones Técnicas\nPrincipios Activos: Empagliflozina (12,5 mg) y Metformina Clorhidrato (1000 mg).\nRegistro Sanitario: F-27891/23.\nLaboratorio: Bagó.\nContraindicaciones: Insuficiencia renal severa (TFG < 30 mL/min), insuficiencia cardíaca aguda o inestable, acidosis metabólica y lactancia.",
+      "url": "https://cofar.cl/product/012590038/enclyna-duo-empagliflozina-125mg--metformina-clorhidrato-1000mg-60-comprimidos-recubiertos",
+      "image": "https://product-img.cofar.cl/products/CJTX5YApw94PDMLm6/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Bagó",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012590038",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 42590,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 19,
+     "item": {
+      "@type": "Product",
+      "name": "Diamicron MR 60mg 30 Comp.",
+      "description": "X30 Comprimidos Recubiertos de Liberación Prolongada",
+      "url": "https://cofar.cl/product/010750003/diamicron-mr-60mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/CJx5iCxvCPp5sFnzo/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Ferrer",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "010750003",
+      "category": "Descuentos Progresivos",
+      "offers": {
+       "@type": "Offer",
+       "price": 38658,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 20,
+     "item": {
+      "@type": "Product",
+      "name": "Pack 2 Unidades de Ozempic Semaglutida 2mg/1,5ml 2 Dispositivo Prellenado Multidosis",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/0125220171/pack-2-unidades-de-ozempic-semaglutida-2mg15ml-2-dispositivo-prellenado-multidosis",
+      "image": "https://product-img.cofar.cl/products/CSW2fuFMrt8u2vnXz/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Novo Nordisk",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "0125220171",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 296990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "cat_receta-cheque.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "ItemsList",
+   "numberOfItems": 13,
+   "itemListOrder": "https://schema.org/ItemListOrderDescending",
+   "itemsListElement": [
+    {
+     "@type": "ListItem",
+     "position": 0,
+     "item": {
+      "@type": "Product",
+      "name": "Concerta 54mg 30 Comp.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/030360059/concerta-54mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/2EBpzYjDfb7AQEp3v/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Janssen",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030360059",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 94990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Product",
+      "name": "Finapet 37,5mg 30 Cap.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/030170006/finapet-375mg-30-cap",
+      "image": "https://product-img.cofar.cl/products/5Fgg8xvFk4u6RGgNz/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Andrómaco",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030170006",
+      "category": "Enfermedades Específicas",
+      "offers": {
+       "@type": "Offer",
+       "price": 20490,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Product",
+      "name": "Palexis Retard 50mg 10 Comp.Rec.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/030170106/palexis-retard-50mg-10-comprec",
+      "image": "https://product-img.cofar.cl/products/5o5fRTnAJZPFjZNDo/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Grünenthal",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030170106",
+      "category": "Dolor y Analgésicos",
+      "offers": {
+       "@type": "Offer",
+       "price": 17690,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Product",
+      "name": "Salcal 10mg 30 Comp.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/012970900/salcal-10mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/Eu7jLidJvNT375K5H/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Saval",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012970900",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 27990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Product",
+      "name": "Fenobarbital 100mg 30 Comp.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/030430002/fenobarbital-100mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/GMm9LdgqzZAs64R2r/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Laboratorio Chile",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030430002",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 10690,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "Product",
+      "name": "Minfel 27mg 30 Comp.Rec.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/030430014/minfel-27mg-30-comprec",
+      "image": "https://product-img.cofar.cl/products/LbzXQ7TeZyb4TzxNk/images/0.jpeg",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Laboratorio Chile",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030430014",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 53850,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "item": {
+      "@type": "Product",
+      "name": "Samexid 70mg 30 Cap.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/012839334/samexid-70mg-30-cap",
+      "image": "https://product-img.cofar.cl/products/ZNZnsJb3PfrhQoj8Z/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Abbott",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012839334",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 89994,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "item": {
+      "@type": "Product",
+      "name": "Redux 37,5mg 30 Comp.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/033409999/redux-375mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/aKFmXhpZ8GvBuKmS6/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Eurofarma",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "033409999",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 29790,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "item": {
+      "@type": "Product",
+      "name": "Obexol 37,5mg 30 Cap.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/032970006/obexol-375mg-30-cap",
+      "image": "https://product-img.cofar.cl/products/c3SaM4TEerkT6RXGc/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Saval",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "032970006",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 16690,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "item": {
+      "@type": "Product",
+      "name": "Minfel 54mg 30 Comp.Rec.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/030430016/minfel-54mg-30-comprec",
+      "image": "https://product-img.cofar.cl/products/dZyn8o72NgoM3wC9r/images/0.jpeg",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Laboratorio Chile",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030430016",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 60098,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "item": {
+      "@type": "Product",
+      "name": "Samexid 50mg 30 Cap.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/012839335/samexid-50mg-30-cap",
+      "image": "https://product-img.cofar.cl/products/ntaEmpDDuA7zWPanZ/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Abbott",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "012839335",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 84490,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "item": {
+      "@type": "Product",
+      "name": "Minfel 36mg 30 Comp.Rec.",
+      "description": "Bioequivalente",
+      "url": "https://cofar.cl/product/030430015/minfel-36mg-30-comprec",
+      "image": "https://product-img.cofar.cl/products/oyvfe3ks78uXAdAWz/images/0.jpeg",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Laboratorio Chile",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030430015",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 56314,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "item": {
+      "@type": "Product",
+      "name": "Concerta 36mg 30 Comp.",
+      "description": "Descripcion no disponible",
+      "url": "https://cofar.cl/product/030360033/concerta-36mg-30-comp",
+      "image": "https://product-img.cofar.cl/products/w9DcnBu4qNnEvDAMP/images/1.jpg",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Janssen",
+        "__typename": "Laboratory"
+       }
+      },
+      "sku": "030360033",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 100694,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Receta Cheque - Solo Compra Presencial",
+     "item": "https://cofar.cl/category/medicamentos/receta-cheque---solo-compra-presencial"
+    }
+   ]
+  }
+ ],
+ "contigo-beneficios.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Contigo+",
+     "item": "https://cofar.cl/contigo-beneficios"
+    }
+   ]
+  }
+ ],
+ "home.html": [],
+ "preguntas-frecuentes.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Preguntas Frecuentes",
+     "item": "https://cofar.cl/preguntas-frecuentes"
+    }
+   ]
+  }
+ ],
+ "product_010239998.html": [],
+ "product_010290329.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "X28 Comprimidos Recubiertos",
+   "name": "Galvus Met Vildagliptina / Merformina 50/850 mg 28 comprimidos recubiertos",
+   "url": "https://cofar.cl/product/010290329/galvus-met-vildagliptina--merformina-50850-mg-28-comprimidos-recubiertos",
+   "image": "https://product-img.cofar.cl/products/B5iQh4g7nWdAQoT6v/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "010290329",
+   "category": "Descuentos Progresivos",
+   "offers": {
+    "@type": "Offer",
+    "price": 36299,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Descuentos Progresivos",
+     "item": "https://cofar.cl/category/medicamentos/descuentos-progresivos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Galvus Met Vildagliptina / Merformina 50/850 mg 28 comprimidos recubiertos",
+     "item": "https://cofar.cl/product/010290329/galvus-met-vildagliptina--merformina-50850-mg-28-comprimidos-recubiertos"
+    }
+   ]
+  }
+ ],
+ "product_010290330.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "X56 Comprimidos Recubiertos",
+   "name": "Galvus Met 50/1000 56 Comp.Rec.",
+   "url": "https://cofar.cl/product/010290330/galvus-met-501000-56-comprec",
+   "image": "https://product-img.cofar.cl/products/nXXXMgGvgFrN88hc6/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "010290330",
+   "category": "Descuentos Progresivos",
+   "offers": {
+    "@type": "Offer",
+    "price": 61407,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Descuentos Progresivos",
+     "item": "https://cofar.cl/category/medicamentos/descuentos-progresivos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Galvus Met 50/1000 56 Comp.Rec.",
+     "item": "https://cofar.cl/product/010290330/galvus-met-501000-56-comprec"
+    }
+   ]
+  }
+ ],
+ "product_010690003.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "4grs.",
+   "name": "Uriage Xemose Stick Levres 4g",
+   "url": "https://cofar.cl/product/010690003/uriage-xemose-stick-levres-4g",
+   "image": "https://product-img.cofar.cl/products/9aKTGCgTTZqGGjKJZ/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": {
+     "label": "Uriage",
+     "value": "cmVhY3Rpb24vYnJhbmQ6cVg2bjcyWTRqR3ZmYkJQNTU="
+    }
+   },
+   "sku": "010690003",
+   "category": "Rostro",
+   "offers": {
+    "@type": "Offer",
+    "price": 10490,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Dermocosméticos",
+     "item": "https://cofar.cl/category/dermocosmetico"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Rostro",
+     "item": "https://cofar.cl/category/dermocosmetico/rostro"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Uriage Xemose Stick Levres 4g",
+     "item": "https://cofar.cl/product/010690003/uriage-xemose-stick-levres-4g"
+    }
+   ]
+  }
+ ],
+ "product_010871050.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "X120 ml Jarabe",
+   "name": "Nervoton Compuesto de vitaminas B1, B2, B6, B12 y PP  120 ml solución oral ",
+   "url": "https://cofar.cl/product/010871050/nervoton-compuesto-de-vitaminas-b1-b2-b6-b12-y-pp--120-ml-solucin-oral-",
+   "image": "https://product-img.cofar.cl/products/Mor5Han4Jmf9AcRGc/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "010871050",
+   "category": "Vitamina",
+   "offers": {
+    "@type": "Offer",
+    "price": 12290,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Vitaminas y Suplementos",
+     "item": "https://cofar.cl/category/vitaminas-y-suplementos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Vitamina",
+     "item": "https://cofar.cl/category/vitaminas-y-suplementos/vitamina"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Complejo B",
+     "item": "https://cofar.cl/category/vitaminas-y-suplementos/vitamina/complejo-b"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Nervoton Compuesto de vitaminas B1, B2, B6, B12 y PP  120 ml solución oral ",
+     "item": "https://cofar.cl/product/010871050/nervoton-compuesto-de-vitaminas-b1-b2-b6-b12-y-pp--120-ml-solucin-oral-"
+    }
+   ]
+  }
+ ],
+ "product_011000228.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Ziagen 300mg 60 Comp.",
+   "url": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+   "image": "https://product-img.cofar.cl/products/hqBFPdpEx6dBRBv32/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "011000228",
+   "category": "Seguro Complementario",
+   "offers": {
+    "@type": "Offer",
+    "price": 600890,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Seguro Complementario",
+     "item": "https://cofar.cl/category/medicamentos/seguro-complementario"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Ziagen 300mg 60 Comp.",
+     "item": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp"
+    }
+   ]
+  }
+ ],
+ "product_011050004.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Apoya el equilibrio intestinal, favoreciendo una microbiota saludable.\nContribuye all sistema inmune, ayudando a prevenir alergias estacionales y resfriados comunes, gracias a la combinación de probióticos y vitamina D3.\nContribuye a la salud digestiva, mejorando la absorción de nutrientes.Apto para vegetarianos, sin ingredientes de soya, lácteos, trigo, centeno ni cebada.\nCombinación de probióticos y vitamina D3: Refuerza el sistema inmune y ayuda a prevenir alergias estacionales y resfriados comunes.\nFormato práctico: Polvo de disolución rápida en boca, sin necesidad de agua y con un sabor agradable a berries.\nFácil de transportar: No requiere refrigeración, ideal para llevar a cualquier lugar.\nIngredientes de calidad premium: Seleccionados para garantizar biodisponibilidad, seguridad y eficacia.",
+   "name": "Biocare Probióticos y Vitamina D3 Biomelts 28 Sobres",
+   "url": "https://cofar.cl/product/011050004/biocare-probiticos-y-vitamina-d3-biomelts-28-sobres",
+   "image": "https://product-img.cofar.cl/products/b7M38Quj9ztDsvYJo/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "011050004",
+   "category": "Marcas",
+   "offers": {
+    "@type": "Offer",
+    "price": 44790,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Vitaminas y Suplementos",
+     "item": "https://cofar.cl/category/vitaminas-y-suplementos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Marcas",
+     "item": "https://cofar.cl/category/vitaminas-y-suplementos/marcas"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Biocare",
+     "item": "https://cofar.cl/category/vitaminas-y-suplementos/marcas/biocare"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Biocare Probióticos y Vitamina D3 Biomelts 28 Sobres",
+     "item": "https://cofar.cl/product/011050004/biocare-probiticos-y-vitamina-d3-biomelts-28-sobres"
+    }
+   ]
+  }
+ ],
+ "product_011720100.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "X30 Comprimido Recubierto",
+   "name": "Oltan D 40/12,5 30 Comp.",
+   "url": "https://cofar.cl/product/011720100/oltan-d-40125-30-comp",
+   "image": "https://product-img.cofar.cl/products/F73PhGroysbH94hv3/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "011720100",
+   "category": "Cardiovascular",
+   "offers": {
+    "@type": "Offer",
+    "price": 24720,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Cardiovascular",
+     "item": "https://cofar.cl/category/medicamentos/cardiovascular"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Hipertensión Arterial",
+     "item": "https://cofar.cl/category/medicamentos/cardiovascular/hipertension-arterial"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Oltan D 40/12,5 30 Comp.",
+     "item": "https://cofar.cl/product/011720100/oltan-d-40125-30-comp"
+    }
+   ]
+  }
+ ],
+ "product_012510044.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Bioequivalente",
+   "name": "Depurol Retard 75mg 30 Cap.",
+   "url": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap",
+   "image": "https://product-img.cofar.cl/products/GprgyFTRXB58qDH2E/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "012510044",
+   "category": "Salud mental",
+   "offers": {
+    "@type": "Offer",
+    "price": 24990,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Salud mental",
+     "item": "https://cofar.cl/category/medicamentos/salud-mental"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Antidepresivos",
+     "item": "https://cofar.cl/category/medicamentos/salud-mental/antidepresivos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Depurol Retard 75mg 30 Cap.",
+     "item": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap"
+    }
+   ]
+  }
+ ],
+ "product_012522017.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta presentación específica es la indicada para la etapa de inicio, habituación y ajuste de dosis, permitiendo administrar dosis precisas de 0,25 mg (dosis de inicio para adaptación) y de 0,5 mg (dosis de mantenimiento inicial) según la prescripción de su médico.\nEl formato consiste en un dispositivo prellenado multidosis (lápiz, pen o pluma) sumamente sencillo de utilizar, desarrollado para una cómoda administración por vía subcutánea una vez a la semana.\nComo análogo del receptor de GLP-1 (una hormona que el cuerpo libera de manera natural tras las comidas), la Semaglutida de liberación prolongada actúa con un enfoque metabólico integral:\nControl Glucémico Inteligente: Estimula la producción de insulina de forma dependiente de la glucosa (solo cuando los niveles de azúcar en sangre están elevados) y reduce la liberación innecesaria de glucagón.\nDigestión Regulada: Retrasa ligeramente el vaciamiento del estómago, previniendo los peaks de azúcar en la sangre que ocurren inmediatamente después de las comidas.\nControl del Apetito y Saciedad: Modula las señales de apetito en el cerebro, disminuyendo los antojos de alimentos con alto contenido calórico o graso, lo que suele traducirse en una pérdida saludable de peso y grasa corporal como beneficio secundario al control de la diabetes.\nReducción del Riesgo Cardiovascular: Protege la salud del corazón reduciendo la probabilidad de sufrir eventos cardiovasculares graves asociados a la diabetes tipo 2.\nNota: Este medicamento es un complemento y debe acompañarse siempre de un plan de alimentación saludable y actividad física regular, bajo la estricta guía de un profesional de la salud.\n2. Modo de Uso y Pautas de Dosificación\nPara asegurar una correcta absorción y la máxima efectividad de la terapia, siga minuciosamente estas directrices:\nEsquema de Inicio Habitual: El tratamiento suele iniciarse con una dosis de 0,25 mg una vez a la semana durante las primeras 4 semanas para permitir que el organismo se adapte. Posteriormente, por indicación médica, se incrementa a 0,5 mg una vez a la semana.\nAplicación Semanal Constante: Adminístrese el medicamento el mismo día de la semana, en cualquier momento del día, con o sin alimentos.\nVía Subcutánea: Aplique la inyección únicamente bajo la piel (subcutánea) en las zonas recomendadas: abdomen, muslo o la parte superior del brazo. No inyectar por vía intravenosa ni intramuscular.\nUso del Dispositivo: El lápiz inyector es multidosis. Antes de cada aplicación, coloque una aguja desechable nueva y estéril (incluidas en el empaque), seleccione la dosis indicada (0,25 mg o 0,5 mg) girando el selector de dosis, y retire la aguja de forma segura después de inyectar.\n3. Advertencias de Seguridad Importantes\nRiesgo de Tumores en la Glándula Tiroides (Células C)\nEstudios de laboratorio en roedores revelaron que la Semaglutida puede inducir el desarrollo de tumores tiroideos (incluyendo el carcinoma medular de tiroides). Todavía se desconoce si este efecto se replica en seres humanos.\nMonitoreo: Consulte a su médico de inmediato si nota hinchazón o un bulto en el cuello, ronquera persistente, dificultad al tragar o falta de aire.\nContraindicación Absoluta: No utilice OZEMPIC® si usted o algún familiar directo tiene antecedentes de Carcinoma Medular de Tiroides (CMT) o padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 / NEM 2).\nPrecauciones Generales\nPancreatitis Aguda: Suspenda el uso de inmediato y acuda a un servicio de urgencias si experimenta un dolor abdominal severo, persistente y punzante que se propague hacia la espalda, acompañado o no de vómitos.\nFunción Renal: Náuseas, vómitos o diarreas intensas pueden causar deshidratación severa, lo que podría afectar el funcionamiento de los riñones. Mantenga una ingesta adecuada de agua pura para prevenirlo.\nRetinopatía Diabética: La disminución rápida de los niveles de glucosa en sangre puede empeorar temporalmente las complicaciones visuales ligadas a la diabetes. Notifique a su especialista si experimenta alteraciones visuales.\nEmbarazo y Lactancia: No se recomienda su administración. Las mujeres que planifiquen un embarazo deben suspender el uso de Semaglutida al menos 2 meses antes de comenzar la búsqueda.\nProcedimientos Médicos: Si va a someterse a una cirugía o procedimiento que requiera anestesia, informe con anticipación a su médico o cirujano que está utilizando este medicamento.\n4. Efectos Secundarios Posibles\nMuy Frecuentes (especialmente durante las primeras semanas de tratamiento o al aumentar la dosis): Náuseas, vómitos, diarrea, estreñimiento, dolor o malestar abdominal y pérdida del apetito. Por lo general, estos efectos son leves a moderados, temporales y disminuyen a medida que el cuerpo se adapta al medicamento.\nGraves (requieren atención médica inmediata): Reacciones de hipersensibilidad (hinchazón de cara, labios o garganta, dificultad para respirar, erupciones cutáneas severas), hipoglucemia (riesgo elevado si se usa en combinación con insulina o sulfonilureas) y problemas en la vesícula biliar (como dolor agudo debajo de las costillas derechas).\n5. Información Comercial y Especificaciones\nNombre del Producto: OZEMPIC® 2 mg / 1,5 ml\nPrincipio Activo: Semaglutida (contiene 2 mg de Semaglutida en 1,5 ml de solución inyectable).\nPresentación: Caja con 1 dispositivo prellenado multidosis (lápiz inyector) y 6 agujas desechables.\nLaboratorio: Novo Nordisk.\nRegistro Sanitario ISP: B-2774/19.\nCondiciones de Almacenamiento:\nAntes del primer uso (sin abrir): Conservar en refrigeración constante entre 2°C y 8°C. No congelar. Proteger de la luz directa.\nDurante el uso (una vez abierto): Puede conservarse refrigerado (2°C a 8°C) o a temperatura ambiente (no mayor a 25°C) por un período máximo de 6 semanas. Coloque siempre el capuchón del lápiz después de cada inyección para protegerlo de la luz.\nSeguridad: Mantener estrictamente fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Requiere la presentación física y validación de una Receta Médica Simple (RMS) al momento de la compra o retiro",
+   "name": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+   "url": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+   "image": "https://product-img.cofar.cl/products/MBEGjRFHGEv3fWQhn/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "012522017",
+   "category": "Diabetes y obesidad",
+   "offers": {
+    "@type": "Offer",
+    "price": 151890,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Diabetes y obesidad",
+     "item": "https://cofar.cl/category/medicamentos/diabetes-y-obesidad"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Inyectables",
+     "item": "https://cofar.cl/category/medicamentos/diabetes-y-obesidad/inyectables"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+     "item": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis"
+    }
+   ]
+  }
+ ],
+ "product_012835986.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Bioequivalente",
+   "name": "Corodin 100mg 30 Comp.",
+   "url": "https://cofar.cl/product/012835986/corodin-100mg-30-comp",
+   "image": "https://product-img.cofar.cl/products/ghFCaGYukwJ2ScxL8/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "012835986",
+   "category": "Seguro Complementario",
+   "offers": {
+    "@type": "Offer",
+    "price": 24690,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Seguro Complementario",
+     "item": "https://cofar.cl/category/medicamentos/seguro-complementario"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Hipertensión Arterial",
+     "item": "https://cofar.cl/category/medicamentos/seguro-complementario/hipertension-arterial"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Corodin 100mg 30 Comp.",
+     "item": "https://cofar.cl/product/012835986/corodin-100mg-30-comp"
+    }
+   ]
+  }
+ ],
+ "product_012972701.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Bioequivalente",
+   "name": "Nirvan 3mg 40 Comp.Rec.",
+   "url": "https://cofar.cl/product/012972701/nirvan-3mg-40-comprec",
+   "image": "https://product-img.cofar.cl/products/sSwAHioanvYLg2hsf/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "012972701",
+   "category": "Salud mental",
+   "offers": {
+    "@type": "Offer",
+    "price": 11720,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Salud mental",
+     "item": "https://cofar.cl/category/medicamentos/salud-mental"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Inductores de Sueño",
+     "item": "https://cofar.cl/category/medicamentos/salud-mental/inductores-de-sueno"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Nirvan 3mg 40 Comp.Rec.",
+     "item": "https://cofar.cl/product/012972701/nirvan-3mg-40-comprec"
+    }
+   ]
+  }
+ ],
+ "product_015970047.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de la vitamina C con un complejo antioxidante que incluye polifenoles y vitamina E, logrando potenciar la luminosidad y uniformidad de la piel.\nSu fórmula hipoalergénica, sin perfume y con solo 11 ingredientes está diseñada para reducir la aparición de signos de fatiga y promover una piel más radiante y fresca.\nBeneficios del uso de vitamina C en la piel\nEsta vitamina se conoce por sus múltiples beneficios para la piel, entre ellos:\nActúa como antioxidante, protegiendo la piel contra los radicales libres.\nPromueve la producción de colágeno, mejorando la firmeza.\nAyuda a disminuir la apariencia de manchas y uniforma el tono.\nMejora la luminosidad, dando un aspecto más saludable y radiante.\nEs por ello que el uso regular del sérum Vichy con vitamina C contribuye a la mejora visible de la piel, aportando un tono más uniforme y un aspecto rejuvenecido.\nResultados probados clínicamente\nEl Liftactiv sérum vitamina C ha sido probado clínicamente, demostrando resultados visibles tras 10 días de uso:\nPiel más radiante y tez más fresca.\nLa piel parece más suave y con una textura mejorada.\nModo de uso\n1.Aplicar unas gotas sobre el rostro limpio y seco.\n2.Usar de preferencia por la mañana, antes del protector solar.\n3.Evitar la zona del contorno de ojos.\nAdquiera este producto de alta calidad y aproveche los beneficios que ofrece la vitamina C para su piel.\nEn Cofar somos su farmacia de especialidades centrada en el paciente. Tenemos disponible este sérum con despacho a domicilio en Chile continental. Llame para comprar o retire su producto en nuestras instalaciones.",
+   "name": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+   "url": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml",
+   "image": "https://product-img.cofar.cl/products/bR7N32C3aXKignMnW/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": {
+     "label": "Vichy",
+     "value": "cmVhY3Rpb24vYnJhbmQ6TUVNYUJ2cW9qQUxyUEFQY2I="
+    }
+   },
+   "sku": "015970047",
+   "category": "Rostro",
+   "offers": {
+    "@type": "Offer",
+    "price": 42190,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Dermocosméticos",
+     "item": "https://cofar.cl/category/dermocosmetico"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Rostro",
+     "item": "https://cofar.cl/category/dermocosmetico/rostro"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Serum",
+     "item": "https://cofar.cl/category/dermocosmetico/rostro/serum"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+     "item": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml"
+    }
+   ]
+  }
+ ],
+ "product_030170006.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Bioequivalente",
+   "name": "Finapet 37,5mg 30 Cap.",
+   "url": "https://cofar.cl/product/030170006/finapet-375mg-30-cap",
+   "image": "https://product-img.cofar.cl/products/5Fgg8xvFk4u6RGgNz/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "030170006",
+   "category": "Enfermedades Específicas",
+   "offers": {
+    "@type": "Offer",
+    "price": 20490,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Enfermedades Específicas",
+     "item": "https://cofar.cl/category/medicamentos/enfermedades-especificas"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Finapet 37,5mg 30 Cap.",
+     "item": "https://cofar.cl/product/030170006/finapet-375mg-30-cap"
+    }
+   ]
+  }
+ ],
+ "product_032830002.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Aradix Retard 10mg 30 Comp.",
+   "url": "https://cofar.cl/product/032830002/aradix-retard-10mg-30-comp",
+   "image": "https://product-img.cofar.cl/products/dbWuGdvDs8qLyusG9/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "032830002",
+   "category": "Salud mental",
+   "offers": {
+    "@type": "Offer",
+    "price": 45890,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Salud mental",
+     "item": "https://cofar.cl/category/medicamentos/salud-mental"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Psicoestimulantes",
+     "item": "https://cofar.cl/category/medicamentos/salud-mental/psicoestimulantes"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Aradix Retard 10mg 30 Comp.",
+     "item": "https://cofar.cl/product/032830002/aradix-retard-10mg-30-comp"
+    }
+   ]
+  }
+ ],
+ "product_052010003.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Gonal F 300ui/0.5ml 1 Jp.",
+   "url": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp",
+   "image": "https://product-img.cofar.cl/products/a8fquCRJTxZ4dftrQ/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "052010003",
+   "category": "Fertilidad",
+   "offers": {
+    "@type": "Offer",
+    "price": 201990,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Fertilidad",
+     "item": "https://cofar.cl/category/medicamentos/fertilidad"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Gonal F 300ui/0.5ml 1 Jp.",
+     "item": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp"
+    }
+   ]
+  }
+ ],
+ "product_080320004.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Bioequivalente",
+   "name": "Tenofem 200mg/300mg 30 Comp.",
+   "url": "https://cofar.cl/product/080320004/tenofem-200mg300mg-30-comp",
+   "image": "https://product-img.cofar.cl/products/cz7Jps3qHFPsehfib/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "080320004",
+   "category": "Seguro Complementario",
+   "offers": {
+    "@type": "Offer",
+    "price": 11790,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Seguro Complementario",
+     "item": "https://cofar.cl/category/medicamentos/seguro-complementario"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Tenofem 200mg/300mg 30 Comp.",
+     "item": "https://cofar.cl/product/080320004/tenofem-200mg300mg-30-comp"
+    }
+   ]
+  }
+ ],
+ "product_082050643.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Zoladex 10,8mg 1 Impl.",
+   "url": "https://cofar.cl/product/082050643/zoladex-108mg-1-impl",
+   "image": "https://product-img.cofar.cl/products/YWzdWtRTYnzL3wJsp/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "082050643",
+   "category": "Enfermedades Específicas",
+   "offers": {
+    "@type": "Offer",
+    "price": 309490,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Enfermedades Específicas",
+     "item": "https://cofar.cl/category/medicamentos/enfermedades-especificas"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Oncológicos",
+     "item": "https://cofar.cl/category/medicamentos/enfermedades-especificas/oncologicos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Zoladex 10,8mg 1 Impl.",
+     "item": "https://cofar.cl/product/082050643/zoladex-108mg-1-impl"
+    }
+   ]
+  }
+ ],
+ "product_082560020.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Sutent 50mg 28 Cap.",
+   "url": "https://cofar.cl/product/082560020/sutent-50mg-28-cap",
+   "image": "https://product-img.cofar.cl/products/WsHuBz4hy5yMJankd/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "082560020",
+   "category": "Seguro Complementario",
+   "offers": {
+    "@type": "Offer",
+    "price": 4289990,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Seguro Complementario",
+     "item": "https://cofar.cl/category/medicamentos/seguro-complementario"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Oncológicos",
+     "item": "https://cofar.cl/category/medicamentos/seguro-complementario/oncologicos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Sutent 50mg 28 Cap.",
+     "item": "https://cofar.cl/product/082560020/sutent-50mg-28-cap"
+    }
+   ]
+  }
+ ],
+ "product_100290001.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Rixathon 500mg/50ml 1 Amp.",
+   "url": "https://cofar.cl/product/100290001/rixathon-500mg50ml-1-amp",
+   "image": "https://product-img.cofar.cl/products/WgaQ34aDSdcuzWN3n/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "100290001",
+   "category": "Refrigerados",
+   "offers": {
+    "@type": "Offer",
+    "price": 978990,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Refrigerados",
+     "item": "https://cofar.cl/category/medicamentos/refrigerados"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Rixathon 500mg/50ml 1 Amp.",
+     "item": "https://cofar.cl/product/100290001/rixathon-500mg50ml-1-amp"
+    }
+   ]
+  }
+ ],
+ "product_102010012.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Condición de Almacenamiento: Entre 2°C y 8°C",
+   "name": "Pergoveris (900Ui + 450Ui)/0.72Ml 1 Jp.",
+   "url": "https://cofar.cl/product/102010012/pergoveris-900ui--450ui072ml-1-jp",
+   "image": "https://product-img.cofar.cl/products/YgEvKb5m2hPFhoXXm/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "102010012",
+   "category": "Fertilidad",
+   "offers": {
+    "@type": "Offer",
+    "price": 699890,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Fertilidad",
+     "item": "https://cofar.cl/category/medicamentos/fertilidad"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Pergoveris (900Ui + 450Ui)/0.72Ml 1 Jp.",
+     "item": "https://cofar.cl/product/102010012/pergoveris-900ui--450ui072ml-1-jp"
+    }
+   ]
+  }
+ ],
+ "product_108277576.html": [
+  {
+   "@context": "https://schema.org/",
+   "@type": "Product",
+   "description": "Descripcion no disponible",
+   "name": "Cimzia 200mg/ml 2 Jp.",
+   "url": "https://cofar.cl/product/108277576/cimzia-200mgml-2-jp",
+   "image": "https://product-img.cofar.cl/products/sqm5vXan3hX5WHcse/images/1.webp",
+   "brand": {
+    "@type": "Brand",
+    "name": "Marca no disponible"
+   },
+   "sku": "108277576",
+   "category": "Enfermedades Específicas",
+   "offers": {
+    "@type": "Offer",
+    "price": 1199900,
+    "priceCurrency": "CLP",
+    "availability": "InStock"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://cofar.cl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Medicamentos",
+     "item": "https://cofar.cl/category/medicamentos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Enfermedades Específicas",
+     "item": "https://cofar.cl/category/medicamentos/enfermedades-especificas"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Biológicos",
+     "item": "https://cofar.cl/category/medicamentos/enfermedades-especificas/biologicos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Cimzia 200mg/ml 2 Jp.",
+     "item": "https://cofar.cl/product/108277576/cimzia-200mgml-2-jp"
+    }
+   ]
+  }
+ ],
+ "product_32973.html": [],
+ "product_999999999_no-existe.html": []
+}

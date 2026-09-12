@@ -1,0 +1,92 @@
+== claves endpoint por SKU vs listado
+solo en por-SKU: ['staggeredDiscount']
+solo en listado: []
+    staggeredDiscount = []
+
+== _id decodificado (base64):
+   MjN4eGlIaVJjQzRDTk1wWGU= -> 23xxiHiRcC4CNMpXe
+   TUJFR2pSRkhHRXYzZldRaG4= -> MBEGjRFHGEv3fWQhn
+   cmVhY3Rpb24vYnJhbmQ6dGFDdllSREFtdlI5THlwdGs= -> reaction/brand:taCvYRDAmvR9Lyptk
+   XFJw7iGwRBE3E3e9R -> no base64 Invalid base64-encoded string: number of data characters (17) cannot be 1 more than a multiple of 4
+
+== promoAvailable: nombres internos de promoción (distintos):
+  productos con promo: 1159  nombres distintos: 449
+    413  'Re: Ajuste de precios (posicionamiento vs SB)'
+    126  'Carga Ofertas productos Lab Chile'
+     55  'Re: MONITOREO MG NEGATIVO/BAJOS'
+     36  'Re: Vencimientos en <100 días'
+     16  'Posicionamiento Fertilidad 25-04-2025 hasta 31-07-2025'
+     14  'posicionamiento abril 17-04-2026 hasta 31-07-2026'
+     12  'Re: POSICIONAR EN WEB//LCH'
+      9  'Ajustar Posicionamiento Insulinas 13-01-2026 hasta 05-10-2026'
+      5  'Posicionamiento Wegovy 15-05-2025 hasta 05-10-2025'
+      5  'Promocion simple 5%'
+      5  'Promocion simple 10%'
+      4  'Promocion simple 30%'
+      4  'Precio oferta Mounjaro '
+      4  'Formulario de Creación Atectura y Enerzair'
+      3  'POSICIONAMIENTO ITF'
+      3  'Actualización sku 11040288 - EXELON 10'
+      3  'Re: Cambio de Precios Whey Protein'
+      2  'Posicionamiento Rybelsus 02-05-2025'
+      2  '011720171 - 010430241'
+      2  'Precio Oferta Permanente'
+      2  '40-55-55*3 012520003 - 012520002'
+      2  'Oferta Ozempic 01-06-2026 hasta 05-10-2026'
+      2  'Nuevo precio Taldus Posicionamiento '
+      2  'Cambio precio web ORALNE'
+      2  'pasurta permanente'
+      2  ' Promocion simple 35%'
+      2  'Promocion  simple 15%'
+      1  '20-30-40 012560001'
+      1  '20-30-40 012501226'
+      1  '20-30-40 010192916'
+      1  'Carga Ofertas productos Lab Chile 010437790 - por el momento'
+      1  '20-30-40 010437569'
+      1  '20-30-40 013538098'
+      1  '20-30-40 013110271'
+      1  '20-30-40 012389989'
+      1  '20-30-40 010439752'
+      1  'Promocion simple 25%'
+      1  '20-30-40 010032414'
+      1  '20-30-40 032970002'
+      1  '20-30-40 012568088'
+
+== promo campos ejemplo: [{"promoId": 1653, "discount": 1680, "condbenef": "C", "option": 0, "promType": "DISC", "promoName": "Re: Ajuste de precios (posicionamiento vs SB)", "qtyItems": 1}, {"promoId": 1399, "discount": 2377, "condbenef": "C", "option": 0, "promType": "DISC", "promoName": "Carga Ofertas productos Lab Chile", "qtyItems": 1}, {"promoId": 1653, "discount": 4080, "condbenef": "C", "option": 0, "promType": "DISC", "promoName": "Re: Ajuste de precios (posicionamiento vs SB)", "qtyItems": 1}]
+
+== stock: distribución de valores
+  distintos: 2  top: [(100, 2770), (0, 254)]
+  stock<=0: 254  isOutOfStock True: 254
+
+== enable False: 0  badge True: 6  subscription: 8  freeDispatch: 14
+== maxQuantity valores: [(None, 2724), (5, 143), (2, 99), (0, 33), (3, 10), (6, 6)]
+== saleCondition valores: Counter({'simpleRecipe': 1944, 'noPrescription': 719, 'recipeRetention': 233, 'MandatorySimpleRecipe': 105, 'recipeCheck': 23})
+== productType valores: Counter({'Medicament': 2731, 'Vitamins-supplements': 203, 'Dermocosmetic': 75, 'Accesories': 15})
+== equivalence valores: [('N/A', 2008), ('bioequivalent', 651), ('referrer', 364), ('generic', 1)]
+== fractionalUnitPrice ejemplo: [('080150001', 4297090, 84, '51156'), ('010103110', 22490, 30, '750'), ('010851559', 18815, 200, '9408')]
+== flags de campaña true: BF 0 CM 0 CD 0 isNew 5
+== imageURLs host ejemplo: ['/products/23xxiHiRcC4CNMpXe/images/1.webp']
+== metaTitle vs productName distintos: 2646
+
+== campo API visible en el texto del DOM (fichas con dato):
+  productName                        21/21
+  sku                                21/21
+  normalPrice                        21/21
+  offerPrice                          8/8
+  laboratory.label                   19/19
+  activePrinciples.name              17/17
+  pharmaceuticalForm.label           21/21
+  unitContent                        21/21
+  storageCondition                   21/21
+  description                         4/4
+  stock (número)                      0/21
+  fractionalUnitPrice                19/19
+  promoAvailable.promoName            0/8
+  createdAt                           0/21
+  equivalence.value                   0/8
+  tags.label                         21/21
+  metaDescription                     1/20
+  deliveryLabel                       0/21
+  storeLabel                         21/21
+  Refrigerado (isRefrigerated)        5/5
+  Bioequivalente (isBioequivalent)    6/6
