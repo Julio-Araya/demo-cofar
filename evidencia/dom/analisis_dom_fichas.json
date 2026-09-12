@@ -1,0 +1,645 @@
+[
+ {
+  "sku": "010239998",
+  "en_api": false,
+  "dom_chars": 1420,
+  "precios_dom": [],
+  "cola_texto": " Farmacia Cofar"
+ },
+ {
+  "sku": "010290329",
+  "en_api": true,
+  "dom_chars": 2414,
+  "precios_dom": [
+   "$36.299",
+   "$31.762",
+   "$27.224",
+   "$28.358"
+  ],
+  "api_normal": 45374,
+  "api_oferta": 36299,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "28 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "010290330",
+  "en_api": true,
+  "dom_chars": 2248,
+  "precios_dom": [
+   "$61.407",
+   "$53.731",
+   "$46.055",
+   "$47.974"
+  ],
+  "api_normal": 76759,
+  "api_oferta": 61407,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "56 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "010690003",
+  "en_api": true,
+  "dom_chars": 3119,
+  "precios_dom": [
+   "$10.490",
+   "$18.990",
+   "$13.190",
+   "$35.890"
+  ],
+  "api_normal": 10490,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": false,
+  "pa_en_dom": false,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Venta directa"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "4 g de crema precio: $10.490 1 Comprar "
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "010871050",
+  "en_api": true,
+  "dom_chars": 3626,
+  "precios_dom": [
+   "$12.290",
+   "$10.242",
+   "$19.799",
+   "$55.663"
+  ],
+  "api_normal": 12290,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": false,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple",
+   "Venta directa"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "120 ml Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "011000228",
+  "en_api": true,
+  "dom_chars": 2019,
+  "precios_dom": [
+   "$600.890",
+   "$10.015"
+  ],
+  "api_normal": 600890,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "60 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "011050004",
+  "en_api": true,
+  "dom_chars": 4476,
+  "precios_dom": [
+   "$44.790",
+   "$1.600",
+   "$19.799",
+   "$55.663"
+  ],
+  "api_normal": 44790,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": false,
+  "sku_en_dom": true,
+  "desc_en_dom": true,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 0,
+  "receta_dom": [
+   "Venta directa"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "28 Sobres precio"
+  ],
+  "sin_stock_dom": true
+ },
+ {
+  "sku": "011720100",
+  "en_api": true,
+  "dom_chars": 2145,
+  "precios_dom": [
+   "$28.090",
+   "$24.720"
+  ],
+  "api_normal": 28090,
+  "api_oferta": 24720,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "30 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "012510044",
+  "en_api": true,
+  "dom_chars": 2807,
+  "precios_dom": [
+   "$26.690",
+   "$24.990",
+   "$36.790",
+   "$80.129"
+  ],
+  "api_normal": 26690,
+  "api_oferta": 24990,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "30 C"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "012522017",
+  "en_api": true,
+  "dom_chars": 8471,
+  "precios_dom": [
+   "$237.390",
+   "$151.890",
+   "$237.390"
+  ],
+  "api_normal": 237390,
+  "api_oferta": 151890,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": true,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": true,
+  "api_refrigerado": true,
+  "contenido_dom": [
+   "1 Dispositivo Prellenado Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "012835986",
+  "en_api": true,
+  "dom_chars": 2063,
+  "precios_dom": [
+   "$24.690"
+  ],
+  "api_normal": 24690,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "30 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "012972701",
+  "en_api": true,
+  "dom_chars": 2948,
+  "precios_dom": [
+   "$16.990",
+   "$11.720",
+   "$16.890",
+   "$15.790"
+  ],
+  "api_normal": 16990,
+  "api_oferta": 11720,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Retenida"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "40 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": true
+ },
+ {
+  "sku": "015970047",
+  "en_api": true,
+  "dom_chars": 4888,
+  "precios_dom": [
+   "$42.190",
+   "$18.990",
+   "$13.190",
+   "$35.890"
+  ],
+  "api_normal": 42190,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": false,
+  "pa_en_dom": false,
+  "sku_en_dom": true,
+  "desc_en_dom": true,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Venta directa"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "20 ml Serum precio"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "030170006",
+  "en_api": true,
+  "dom_chars": 2795,
+  "precios_dom": [
+   "$20.490",
+   "$16.690",
+   "$29.995",
+   "$23.996"
+  ],
+  "api_normal": 20490,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": false,
+  "is_check": true,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Cheque"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "30 C"
+  ],
+  "sin_stock_dom": true
+ },
+ {
+  "sku": "032830002",
+  "en_api": true,
+  "dom_chars": 2134,
+  "precios_dom": [
+   "$45.890",
+   "$1.530"
+  ],
+  "api_normal": 45890,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": false,
+  "is_check": true,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Cheque"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "30 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "052010003",
+  "en_api": true,
+  "dom_chars": 2197,
+  "precios_dom": [
+   "$253.790",
+   "$201.990",
+   "$253.790"
+  ],
+  "api_normal": 253790,
+  "api_oferta": 201990,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": true,
+  "api_refrigerado": true,
+  "contenido_dom": [
+   "1 Dispositivo Prellenado Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "080320004",
+  "en_api": true,
+  "dom_chars": 2138,
+  "precios_dom": [
+   "$11.790"
+  ],
+  "api_normal": 11790,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "30 Comprimidos Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "082050643",
+  "en_api": true,
+  "dom_chars": 2055,
+  "precios_dom": [
+   "$309.490",
+   "$309.490"
+  ],
+  "api_normal": 309490,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "1 Implante Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "082560020",
+  "en_api": true,
+  "dom_chars": 2011,
+  "precios_dom": [
+   "$4.289.990",
+   "$153.214"
+  ],
+  "api_normal": 4289990,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": false,
+  "api_refrigerado": false,
+  "contenido_dom": [
+   "28 C"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "100290001",
+  "en_api": true,
+  "dom_chars": 2045,
+  "precios_dom": [
+   "$978.990",
+   "$978.990"
+  ],
+  "api_normal": 978990,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": true,
+  "api_refrigerado": true,
+  "contenido_dom": [
+   "1 Viales Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "102010012",
+  "en_api": true,
+  "dom_chars": 2318,
+  "precios_dom": [
+   "$717.490",
+   "$699.890",
+   "$717.490"
+  ],
+  "api_normal": 717490,
+  "api_oferta": 699890,
+  "normal_en_dom": true,
+  "oferta_en_dom": true,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": true,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": true,
+  "api_refrigerado": true,
+  "contenido_dom": [
+   "1 PLUMA PRELLENADA Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "108277576",
+  "en_api": true,
+  "dom_chars": 2058,
+  "precios_dom": [
+   "$1.199.900",
+   "$599.950"
+  ],
+  "api_normal": 1199900,
+  "api_oferta": null,
+  "normal_en_dom": true,
+  "oferta_en_dom": null,
+  "lab_en_dom": true,
+  "pa_en_dom": true,
+  "sku_en_dom": true,
+  "desc_en_dom": null,
+  "comprar_en_dom": true,
+  "is_check": false,
+  "stock": 100,
+  "receta_dom": [
+   "Rec. Med. Simple"
+  ],
+  "refrigerado_dom": true,
+  "api_refrigerado": true,
+  "contenido_dom": [
+   "2 Jeringa Prellenada Atributos"
+  ],
+  "sin_stock_dom": false
+ },
+ {
+  "sku": "32973",
+  "en_api": false,
+  "dom_chars": 1420,
+  "precios_dom": [],
+  "cola_texto": " Farmacia Cofar"
+ }
+]

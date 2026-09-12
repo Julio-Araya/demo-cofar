@@ -1,0 +1,13 @@
+Content-Type: application/json
+Content-Length: 0
+Connection: keep-alive
+Date: Sat, 12 Sep 2026 13:09:27 GMT
+x-amzn-trace-id: Root=1-6aa54f05-235139e10884c7aa700f883d;Parent=42d32b0baa43f4af;Sampled=0;Lineage=1:c6feac8e:0
+x-amzn-requestid: 80c0b804-820e-4596-8983-d2adaa6368f7
+Cache-Control: public, max-age=3600, s-maxage=86400
+Location: /category/medicamentos/diabetes-y-obesidad/ozempic
+X-Cache: Miss from cloudfront
+Via: 1.1 06dc9004cd7e55186ce5399843d6cc28.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: cEksv8pYjhat2Fy7wqvEBoC-GIbFwfzq4RfIkVGc0ePeh_y1LnKugQ==

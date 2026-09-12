@@ -1,0 +1,5 @@
+=== 4 URLs con SKU malformado
+https://cofar.cl/product/01.2359020/fesanil-30mg-5ml -> 200 <title>Farmacia Cofar
+https://cofar.cl/product/010070009%20/cetaphil-dermopediatrics-espuma-bano-250-ml -> 200 <title>Cetaphil Dermopediatrics Espuma Baño 250ml
+https://cofar.cl/product/010077168-1/cetaphil-cr-hidratante-p-s-x453g -> 200 <title>Farmacia Cofar
+https://cofar.cl/product/010195151-1/ventavis-10-mcg-ml-x42amp -> 200 <title>Farmacia Cofar

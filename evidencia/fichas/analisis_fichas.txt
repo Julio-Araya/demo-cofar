@@ -1,0 +1,25 @@
+muestra total 60 | en API 50 | solo en sitemap 10
+status en API: Counter({'200': 50}) | status solo sitemap: Counter({'200': 10})
+títulos de las solo-sitemap: Counter({'Farmacia Cofar': 10})
+canonical de las solo-sitemap: Counter({False: 10})
+--- fichas en API (n=50)
+título único: 50 | títulos repetidos: [('Farmacia Cofar', 10)]
+meta description presente: 46 | metas repetidas: [('Compra tus medicamentos online y recíbel', 10), ('', 4)]
+canonical presente: 50 | canonical == URL del sitemap: 19
+JSON-LD: 0 | og tags: 0
+imgs de producto en HTML raw: Counter({0: 50}) | imgs sin alt: 0
+precio visible HTML: 0/50  | en payload script: 0/50
+lab    visible HTML: 0/50  | en payload script: 1/50
+pa     visible HTML: 0/50  | en payload script: 0/50
+desc   visible HTML: 0/50  | en payload script: 0/50
+fichas con descripción >=40 en API: 10
+texto visible chars (min/med/max): 1335 1345 1391
+ejemplos canonical vs sitemap:
+  sitemap: https://cofar.cl/product/010290330/galvus-met-50-1000-56-comp-rec
+  canon.:  https://cofar.cl/product/010290330/galvus-met-501000-56-comprec
+  sitemap: https://cofar.cl/product/010290329/galvus-met-vildagliptina-merformina-50-850-mg-28-comprimidos-recubiertos
+  canon.:  https://cofar.cl/product/010290329/galvus-met-vildagliptina--merformina-50850-mg-28-comprimidos-recubiertos
+  sitemap: https://cofar.cl/product/012520006/rybelsus-semaglutida-14mg-90-comprimidos-pack-3x2
+  canon.:  https://cofar.cl/product/012520006/rybelsus-semaglutida-14mg-90-comprimidos-pack-3x2
+  sitemap: https://cofar.cl/product/050350002/humulin-n-100ui-ml-5-cadtridge
+  canon.:  https://cofar.cl/product/050350002/humulin-n-100uiml-5-cadtridge

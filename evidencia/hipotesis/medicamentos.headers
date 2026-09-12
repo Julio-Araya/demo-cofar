@@ -1,0 +1,13 @@
+Content-Type: application/json
+Content-Length: 0
+Connection: keep-alive
+Date: Sat, 12 Sep 2026 13:09:32 GMT
+x-amzn-trace-id: Root=1-6aa54f0c-34270d407508aed6387756e9;Parent=7e326a48ba5c77f6;Sampled=0;Lineage=1:c6feac8e:0
+x-amzn-requestid: 395b3043-fd6e-4032-bfd3-0b8f994b1f19
+Cache-Control: public, max-age=3600, s-maxage=86400
+Location: /category/medicamentos
+X-Cache: Miss from cloudfront
+Via: 1.1 e729b6f49afc6cf244ed2ba04b83a926.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: Iqj9EE7-yeShMrCE0uDG1jX4Q3jfPRzQeGd-WPKfyacG_xsoey-PkA==

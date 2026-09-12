@@ -1,0 +1,17 @@
+HTTP/2 404 
+content-type: text/html; charset=utf-8
+content-length: 187245
+date: Sat, 12 Sep 2026 13:07:02 GMT
+etag: "15ug2wpvuhj406t"
+cache-control: no-store
+x-nextjs-cache: STALE
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js
+vary: Accept-Encoding
+x-cache: Error from cloudfront
+via: 1.1 e39143fc84c9fe81dc86709ef5060742.cloudfront.net (CloudFront)
+x-amz-cf-pop: SCL51-P2
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: OVdnwIq5P9Bn_7ZbLt5SVsfX3JYcvEeeqqS24Xg6ohSiX5kYFVZi1g==
+

@@ -1,0 +1,16 @@
+HTTP/2 200 
+content-type: application/xml
+content-length: 59884
+date: Sat, 12 Sep 2026 13:07:26 GMT
+last-modified: Thu, 10 Sep 2026 03:55:06 GMT
+x-amz-server-side-encryption: AES256
+accept-ranges: bytes
+server: AmazonS3
+etag: "ee095e4022046f41c57b7ad0467b6081"
+vary: Accept-Encoding
+x-cache: Miss from cloudfront
+via: 1.1 d26452a59af67430d76abeae62c26e32.cloudfront.net (CloudFront)
+x-amz-cf-pop: SCL51-P2
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: 7mlXf6KF3qCOx4WzcQRKQt8S1agjGmzyO50uc5fGnFboa_DJVmj2xw==
+

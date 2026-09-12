@@ -1,0 +1,17 @@
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 12 Sep 2026 13:09:10 GMT
+ETag: "12g4ejtf2jt4081"
+Content-Encoding: gzip
+Cache-Control: no-store
+x-nextjs-cache: STALE
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js
+Vary: Accept-Encoding
+X-Cache: Error from cloudfront
+Via: 1.1 f6a3942870db8a718e040e0b7feb06dc.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: -_OAoGRRu9BK8aSeoC09DmI5BvTR1B--RLZdCkM9xZpYlY_FW3aMyQ==

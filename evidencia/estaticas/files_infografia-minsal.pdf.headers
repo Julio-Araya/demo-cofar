@@ -1,0 +1,14 @@
+Content-Type: application/pdf
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 12 Sep 2026 13:09:07 GMT
+Content-Encoding: gzip
+ETag: W/"91eef9cc21e2b97e5537b6eb9b71411a"
+Cache-Control: max-age=5, stale-while-revalidate
+Last-Modified: Tue, 08 Sep 2026 01:34:58 GMT
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 2ac78d0bdcfde63dad99100e18cd3f62.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: KpQKEvqCP-eHNn2Vg7uFNaBl7j-HhOOaCykWAQk1RhkzMDzABsWEvQ==

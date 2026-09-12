@@ -1,0 +1,102 @@
+total 3024
+productType Counter({'Medicament': 2731, 'Vitamins-supplements': 203, 'Dermocosmetic': 75, 'Accesories': 15})
+stock==0 254
+offerPrice presente 1159 | miCofarPrice presente 0
+isCheck 23 | isRefrigerated 186 | isInsurance 2820 | isProgresiveDisc 398
+saleCondition Counter({'simpleRecipe': 1944, 'noPrescription': 719, 'recipeRetention': 233, 'MandatorySimpleRecipe': 105, 'recipeCheck': 23})
+slug vacío 3024
+nº imágenes Counter({1: 1862, 2: 1134, 3: 20, 4: 7, 0: 1})
+description vacía (0) 806 | <40 chars 2401 | >=200 chars 509
+metaTitle vacío 233 | metaDescription vacío 184
+laboratory null 74 | brand null 2949
+activePrinciples vacío 409
+pharmaceuticalForm null 0 | pharmaceuticalFormText 75
+amountContent presente 0 | unitContent presente 3024
+storageCondition presente 3020
+storageCondition valores [('Lugar seco, no más de 25ºC', 2584), ('Lugar seco, no más de 30ºC', 250), ('Refrigerado, entre 2º y 8ºC', 186), ('', 4)]
+equivalence [('N/A', 2008), ('bioequivalent', 651), ('referrer', 364), ('generic', 1)]
+tags vacío 0
+claves y frecuencia: {'_id': 3024, 'createdAt': 3024, 'productName': 3024, 'slug': 3024, 'url': 3024, 'sku': 3024, 'equivalence': 3024, 'productType': 3024, 'brand': 3024, 'pharmaceuticalFormText': 3024, 'tags': 3024, 'subTags': 3024, 'laboratory': 3024, 'amountContent': 2876, 'unitContent': 3024, 'pharmaceuticalForm': 3024, 'saleCondition': 3024, 'shippingMethod': 3024, 'description': 3024, 'stock': 3024, 'normalPrice': 3024, 'offerPrice': 3024, 'miCofarPrice': 3024, 'activePrinciples': 3024, 'enable': 3024, 'imageURLs': 3024, 'maxQuantity': 3024, 'freeDispatch': 3024, 'subscription': 3024, 'fractionalUnitPrice': 3024, 'storageCondition': 3024, 'badge': 3024, 'metaTitle': 3024, 'metaDescription': 3024, 'saleOnRequest': 3024, 'attributes': 3024, 'deliveryLabel': 3024, 'storeLabel': 3024, 'promoAvailable': 3024}
+campos con regist/isp/gtin/ean: ['freeDispatch']
+
+=== productos por tag (subcategoría nivel 1)
+   2205  ('Medicament', 'Seguro Complementario', 'seguro-complementario')
+    462  ('Medicament', 'Salud mental', 'salud-mental')
+    389  ('Medicament', 'Descuentos Progresivos', 'descuentos-progresivos')
+    351  ('Medicament', 'Enfermedades Específicas', 'enfermedades-especificas')
+    341  ('Medicament', 'Cardiovascular', 'cardiovascular')
+    247  ('Medicament', 'Dolor y Analgésicos', 'dolor-y-analgesicos')
+    191  ('Medicament', 'Antiinfecciosos', 'antiinfecciosos')
+    168  ('Medicament', 'Respiratorio', 'respiratorio')
+    165  ('Medicament', 'Gastrointestinal', 'gastrointestinal')
+    148  ('Medicament', 'Refrigerados', 'refrigerados')
+    139  ('Medicament', 'Salud Femenina', 'salud-femenina')
+    138  ('Medicament', 'Dermatológico', 'dermatologico')
+    116  ('Medicament', 'Diabetes y obesidad', 'diabetes-y-obesidad')
+    104  ('Medicament', 'Oftalmológico', 'oftalmologico')
+     95  ('Medicament', 'Alergias', 'alergias')
+     89  ('Vitamins-supplements', 'Suplementos', 'suplementos')
+     85  ('Vitamins-supplements', 'Marcas', 'marcas')
+     72  ('Vitamins-supplements', 'Vitamina', 'vitamina')
+     59  ('Medicament', 'Huesos y Articulaciones', 'huesos-y-articulaciones')
+     42  ('Dermocosmetic', 'Rostro', 'rostro')
+     40  ('Medicament', 'Salud Masculina', 'salud-masculina')
+     38  ('Medicament', 'Destacados Gador', 'destacados-gador')
+     35  ('Medicament', 'Sistema Sanguíneo', 'sistema-sanguineo')
+     35  ('Vitamins-supplements', 'Vitaminas y Alimentos', 'vitaminas-y-alimentos')
+     28  ('Medicament', 'Vitaminas', 'vitaminas')
+     28  ('Medicament', 'VIH', 'vih')
+     25  ('Medicament', 'Descuento Mi Cofar', 'descuento-mi-cofar')
+     22  ('Medicament', 'Tiroides', 'tiroides')
+     21  ('Vitamins-supplements', 'Minerales', 'minerales')
+     19  ('Medicament', 'Fertilidad', 'fertilidad')
+     18  ('Medicament', 'Especial Fertilidad', 'especial-fertilidad')
+     17  ('Dermocosmetic', 'Cuerpo', 'cuerpo')
+     15  ('Accesories', 'Acc. Diabetes', 'acc.-diabetes')
+     14  ('Dermocosmetic', 'Protección Solar', 'proteccion-solar')
+     13  ('Medicament', 'Receta Cheque - Solo Compra Presencial', 'receta-cheque---solo-compra-presencial')
+      9  ('Vitamins-supplements', 'Suplementos Deportivos', 'suplementos-deportivos')
+      9  ('Vitamins-supplements', 'Colágenos', 'colagenos')
+      8  ('Medicament', 'Especial Control de Peso', 'especial-control-de-peso')
+      7  ('Accesories', 'Descuentos Progresivos Accesorios', 'descuentos-progresivos-accesorios')
+      5  ('Medicament', 'Hormona del Crecimiento', 'hormona-del-crecimiento')
+      5  ('Vitamins-supplements', 'Descuentos Progresivos Vitaminas y Suplementos', 'descuentos-progresivos-vitaminas-y-suplementos')
+      4  ('Medicament', 'Destacados Heel', 'destacados-heel')
+      4  ('Dermocosmetic', 'Capilar', 'capilar')
+      4  ('Vitamins-supplements', 'Seguro Complementario', 'seguro-complementario')
+      2  ('Vitamins-supplements', 'Vitaminas', 'vitaminas')
+      1  ('Dermocosmetic', 'Seguro Complementario', 'seguro-complementario')
+      1  ('Medicament', 'Capilar', 'capilar')
+      1  ('Accesories', 'Acc. Vih', 'acc.-vih')
+=== subTags top
+[('Hipertensión Arterial', 207), ('Antibióticos', 156), ('Oncológicos', 142), ('Antidepresivos', 106), ('Analgésicos', 103), ('Antiepilépticos', 97), ('Anticonceptivos', 94), ('Antiinflamatorios', 87), ('Antipsicóticos', 83), ('Biológicos', 72), ('Asma', 71), ('Otros Dermatología', 66), ('Digestivos', 61), ('Dislipidemias / Colesterol', 55), ('Descongestionantes', 50), ('Hormonoterapia', 41), ('Antitusivo', 40), ('Antibiótico Ocular', 38), ('Acné', 36), ('Anticoagulantes', 34), ('Ansiolíticos', 34), ('Glaucoma', 33), ('Antivirales', 32), ('Inductores de Sueño', 28), ('Lubricante Ocular', 28), ('Otros Cardiovascular', 27), ('Salud Capilar', 27), ('Dolor Crónico', 27), ('Disfunción', 26), ('Newscience', 25), ('Inmunosupresores', 24), ('Multivitamínicos', 24), ('Probióticos', 23), ('Calcios', 23), ('Psicoestimulantes', 22), ('Antirreumáticos', 22), ('Otros', 22), ('Laxantes', 22), ('Alzheimer', 21), ('Antiulcerosos', 21)]
+
+=== sitemap vs API
+skus sitemap 3114 skus api 3024 en ambos 3021 solo sitemap 93 solo api 3
+ejemplos solo sitemap ['010029991', '010029992', '010030074', '010030078', '010030306', '010033084', '010035129', '010035130', '010036064', '010150002', '010239998', '010250001', '010390001', '010439961', '010723483', '010889998', '011000269', '011320004', '011320005', '011720020']
+ejemplos solo api [('012970043', 'DASAVAL 50mg X60COM.REC.', 'Medicament', 100), ('012970045', 'DASAVAL 20mg X60COM.REC.', 'Medicament', 100), ('012970046', 'DASAVAL 70mg X60C0M.REC.', 'Medicament', 100)]
+
+=== isCheck productos (Receta Cheque)
+   030360059 Concerta 54mg 30 Comp. normal 94990 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   030170006 Finapet 37,5mg 30 Cap. normal 20490 stock 100 tags ['enfermedades-especificas', 'receta-cheque---solo-compra-presencial']
+   030170106 Palexis Retard 50mg 10 Comp.Rec. normal 17690 stock 100 tags ['dolor-y-analgesicos', 'receta-cheque---solo-compra-presencial']
+   032830003 Aradix Retard 20mg 30 Comp. normal 60090 stock 100 tags ['salud-mental']
+   012970900 Salcal 10mg 30 Comp. normal 27990 stock 100 tags ['diabetes-y-obesidad', 'receta-cheque---solo-compra-presencial']
+   030430002 Fenobarbital 100mg 30 Comp. normal 10690 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   030430014 Minfel 27mg 30 Comp.Rec. normal 61190 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   012839336 Samexid 30mg 30 Cap. normal 76994 stock 100 tags ['salud-mental']
+   030360066 Concerta 27mg 30 Comp. normal 65815 stock 100 tags ['enfermedades-especificas']
+   012839334 Samexid 70mg 30 Cap. normal 89994 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   033409999 Redux 37,5mg 30 Comp. normal 29790 stock 100 tags ['diabetes-y-obesidad', 'receta-cheque---solo-compra-presencial']
+   030430009 Sentis 18,75mg 30 Cap. normal 20495 stock 100 tags ['diabetes-y-obesidad', 'descuentos-progresivos']
+   032970006 Obexol 37,5mg 30 Cap. normal 16690 stock 100 tags ['diabetes-y-obesidad', 'receta-cheque---solo-compra-presencial', 'enfermedades-especificas']
+   030430016 Minfel 54mg 30 Comp.Rec. normal 68290 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   032830002 Aradix Retard 10mg 30 Comp. normal 45890 stock 100 tags ['salud-mental']
+   012839335 Samexid 50mg 30 Cap. normal 84490 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   030430013 Minfel 18mg 30 Comp.Rec. normal 55490 stock 100 tags ['salud-mental']
+   030430015 Minfel 36mg 30 Comp.Rec. normal 63990 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   030360033 Concerta 36mg 30 Comp. normal 100694 stock 100 tags ['salud-mental', 'receta-cheque---solo-compra-presencial']
+   032835479 Elvenir Fentermina 37,5 mg 30 comprimidos normal 23990 stock 100 tags ['enfermedades-especificas', 'diabetes-y-obesidad']
+   030430010 Sentis 37,5mg 30 Cap. normal 29995 stock 100 tags ['descuentos-progresivos', 'diabetes-y-obesidad']
+   032500001 Duromine Lp 30mg 30 Comp. normal 24990 stock 0 tags ['diabetes-y-obesidad']
+   032590001 COMPULXINE (B) 37.5mg X30COM. normal 13064 stock 0 tags ['diabetes-y-obesidad']

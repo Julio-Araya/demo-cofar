@@ -1,0 +1,594 @@
+{
+  "empresa": "Cofar Salud",
+  "dominio": "cofar.cl",
+  "fecha": "2026-09-12",
+  "plataforma": {
+    "nombre": "Next.js (App Router, Turbopack), desarrollo propio; backend de catálogo en services.cofar.cl (Railway); CDN CloudFront; CMS Strapi",
+    "version": null,
+    "evidencia": "header x-powered-by: Next.js y x-nextjs-prerender en evidencia/raw/home.headers; chunks /_next/static/chunks/turbopack-*.js y payload self.__next_f.push en evidencia/raw/home.html; NEXT_PUBLIC_API_URL=https://services.cofar.cl y rutas /mscontent/strapi/* en evidencia/js/_all.js; CNAME services.cofar.cl -> up.railway.app en evidencia/contacto/dns.txt"
+  },
+  "resumen": {
+    "productos_publicos_aprox": 3024,
+    "muestra_fichas": 60,
+    "cobertura_jsonld_product_pct": 0.0,
+    "cobertura_precio_jsonld_pct": 0.0,
+    "gtin_validos_pct": null,
+    "asimetria_atributos_max_pct": 69.3,
+    "skus_datos_solo_en_nombre": 118,
+    "catalogo_oculto_pct": 0.1,
+    "fichas_una_sola_imagen_pct": 61.6,
+    "contradicciones_contacto": 2,
+    "enlaces_footer_404": 0,
+    "robots_ok": true,
+    "llms_txt_ok": false,
+    "sitemap_ok": true,
+    "catalogo_publico_con_precios": true,
+    "api_catalogo_publica": "https://services.cofar.cl/products/2.0/?first=100&offset=0",
+    "dom_verificado": true
+  },
+  "cobertura_atributos": [
+    {
+      "subcategoria": "Diabetes y obesidad",
+      "n": 115,
+      "atributos": {
+        "principio_activo": 96.5,
+        "concentracion_estructurada": 96.5,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 27.0,
+        "meta_description": 86.1,
+        "2+_imagenes": 21.7
+      }
+    },
+    {
+      "subcategoria": "Oncológicos (subTag)",
+      "n": 142,
+      "atributos": {
+        "principio_activo": 99.3,
+        "concentracion_estructurada": 99.3,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 4.2,
+        "meta_description": 88.7,
+        "2+_imagenes": 40.8
+      }
+    },
+    {
+      "subcategoria": "VIH",
+      "n": 28,
+      "atributos": {
+        "principio_activo": 96.4,
+        "concentracion_estructurada": 96.4,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 0.0,
+        "meta_description": 82.1,
+        "2+_imagenes": 21.4
+      }
+    },
+    {
+      "subcategoria": "Fertilidad",
+      "n": 19,
+      "atributos": {
+        "principio_activo": 94.7,
+        "concentracion_estructurada": 94.7,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 94.7,
+        "descripcion_40+": 36.8,
+        "meta_description": 63.2,
+        "2+_imagenes": 5.3
+      }
+    },
+    {
+      "subcategoria": "Salud mental",
+      "n": 462,
+      "atributos": {
+        "principio_activo": 97.4,
+        "concentracion_estructurada": 97.4,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 12.1,
+        "meta_description": 99.6,
+        "2+_imagenes": 53.7
+      }
+    },
+    {
+      "subcategoria": "Refrigerados",
+      "n": 148,
+      "atributos": {
+        "principio_activo": 97.3,
+        "concentracion_estructurada": 97.3,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 6.8,
+        "meta_description": 99.3,
+        "2+_imagenes": 2.0
+      }
+    },
+    {
+      "subcategoria": "Hormona del crecimiento",
+      "n": 5,
+      "atributos": {
+        "principio_activo": 100.0,
+        "concentracion_estructurada": 100.0,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 0.0,
+        "meta_description": 100.0,
+        "2+_imagenes": 0.0
+      }
+    },
+    {
+      "subcategoria": "Cardiovascular",
+      "n": 341,
+      "atributos": {
+        "principio_activo": 98.2,
+        "concentracion_estructurada": 98.2,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 4.1,
+        "meta_description": 96.5,
+        "2+_imagenes": 30.5
+      }
+    },
+    {
+      "subcategoria": "Antiinfecciosos",
+      "n": 191,
+      "atributos": {
+        "principio_activo": 96.9,
+        "concentracion_estructurada": 96.9,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 5.8,
+        "meta_description": 99.5,
+        "2+_imagenes": 36.1
+      }
+    },
+    {
+      "subcategoria": "Dolor y analgésicos",
+      "n": 247,
+      "atributos": {
+        "principio_activo": 94.3,
+        "concentracion_estructurada": 94.3,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 99.6,
+        "descripcion_40+": 33.6,
+        "meta_description": 96.0,
+        "2+_imagenes": 30.0
+      }
+    },
+    {
+      "subcategoria": "Vitaminas y suplementos (tipo)",
+      "n": 203,
+      "atributos": {
+        "principio_activo": 21.2,
+        "concentracion_estructurada": 21.2,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 99.5,
+        "descripcion_40+": 67.0,
+        "meta_description": 69.5,
+        "2+_imagenes": 68.5
+      }
+    },
+    {
+      "subcategoria": "Dermocosméticos (tipo)",
+      "n": 75,
+      "atributos": {
+        "principio_activo": 0.0,
+        "concentracion_estructurada": 0.0,
+        "laboratorio": 1.3,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 69.3,
+        "meta_description": 86.7,
+        "2+_imagenes": 56.0
+      }
+    },
+    {
+      "subcategoria": "Accesorios (tipo)",
+      "n": 15,
+      "atributos": {
+        "principio_activo": 0.0,
+        "concentracion_estructurada": 0.0,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 100.0,
+        "descripcion_40+": 26.7,
+        "meta_description": 93.3,
+        "2+_imagenes": 13.3
+      }
+    },
+    {
+      "subcategoria": "TODO el catálogo",
+      "n": 3024,
+      "atributos": {
+        "principio_activo": 86.5,
+        "concentracion_estructurada": 86.5,
+        "laboratorio": 97.6,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 99.9,
+        "descripcion_40+": 20.6,
+        "meta_description": 93.9,
+        "2+_imagenes": 38.4
+      }
+    },
+    {
+      "subcategoria": "Solo medicamentos",
+      "n": 2731,
+      "atributos": {
+        "principio_activo": 94.2,
+        "concentracion_estructurada": 94.2,
+        "laboratorio": 100.0,
+        "forma_farmaceutica": 100.0,
+        "cantidad_por_envase_estructurada": 100.0,
+        "condicion_venta": 100.0,
+        "condicion_almacenamiento": 99.9,
+        "descripcion_40+": 15.8,
+        "meta_description": 95.9,
+        "2+_imagenes": 35.8
+      }
+    }
+  ],
+  "hallazgos": [
+    {
+      "id": "H01",
+      "paso": 8,
+      "titulo": "Las fichas no entregan ningún dato de producto a quien no ejecuta JavaScript",
+      "gravedad": 5,
+      "capa": "mixto",
+      "descripcion": "En 50 de 50 fichas vivas muestreadas (10 estratos: diabetes, oncológicos, VIH, fertilidad, salud mental, refrigerados, cardiovascular, vitaminas, dermocosmética, receta cheque) el raw HTML contiene título, meta description (46/50) y canonical, pero cero precio, cero principio activo, cero laboratorio, cero descripción y cero imágenes de producto. Se revisó también el payload de Next.js (self.__next_f.push): tampoco están ahí (precio 0/50, principio activo 0/50, descripción 0/50). Estado de cada dato: AUSENTE en raw, no 'solo en script'. El navegador los obtiene después con una llamada a services.cofar.cl/products/2.0/{sku}. En el DOM renderizado con Chrome headless (21 fichas vivas) sí aparecen precio normal (21/21), precio oferta (8/8), SKU (21/21), laboratorio (19/21), principio activo (17/21) y condición de venta. Impacto: GPTBot, ClaudeBot, PerplexityBot, vistas previas de WhatsApp/Instagram/Facebook y cualquier lector sin JS solo pueden aprender el nombre del producto. La ironía es que el backend sí tiene todos esos datos estructurados (ver H03 y cobertura_atributos).",
+      "cifra": "50 de 50 fichas sin precio, principio activo, laboratorio ni descripción en el HTML; 0 de 50 en el payload; 21 de 21 con todo en el DOM",
+      "ejemplo_sku": "012522017 (Ozempic 2 mg/1,5 ml): raw = solo el título; DOM = $237.390 / $151.890, Semaglutida 2 mg/1,5 ml, Novo Nordisk, Rec. Med. Simple, Refrigerado",
+      "evidencia": [
+        "evidencia/fichas/analisis_fichas.txt",
+        "evidencia/fichas/analisis_fichas.json",
+        "evidencia/dom/analisis_dom_fichas.txt",
+        "evidencia/hipotesis/product_012522017_ozempic-2mg-1-5ml-1-disp-prell.html",
+        "evidencia/dom/product_012522017.html",
+        "evidencia/api_sku_012522017.json",
+        "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+        "https://services.cofar.cl/products/2.0/012522017"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H02",
+      "paso": 7,
+      "titulo": "Las 137 categorías llegan sin un solo producto al HTML ni al payload",
+      "gravedad": 4,
+      "capa": "raw",
+      "descripcion": "Se descargaron las 137 URLs del sitemap de categorías. Ninguna contiene enlaces a /product/ en el HTML ni cadenas productName/normalPrice/sku en el payload de Next.js. Sí traen título único (137 distintos), canonical y h1. El listado se arma en el navegador con GET services.cofar.cl/products/2.0/?productType=...&slugs=...&first=21&offset=0. En el DOM con Chrome headless la categoría Diabetes y obesidad sí renderiza tarjetas con precio y botón Comprar. Consecuencia: para un crawler sin JS el sitio es un árbol de 137 páginas de categoría vacías y 3.118 fichas con solo un nombre.",
+      "cifra": "137 de 137 categorías sin productos en raw HTML ni payload",
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/categorias/_log.csv",
+        "evidencia/categorias/category_medicamentos_diabetes-y-obesidad.html",
+        "evidencia/dom/cat_diabetes-y-obesidad.html",
+        "evidencia/dom/analisis_dom_paginas.txt",
+        "https://cofar.cl/category/medicamentos/diabetes-y-obesidad"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H03",
+      "paso": 5,
+      "titulo": "El 79% del catálogo no tiene descripción; en VIH es el 100% y en oncológicos el 96%",
+      "gravedad": 4,
+      "capa": "externo",
+      "descripcion": "Sobre el catálogo completo (3.024 productos vía la API pública, misma que usa el navegador): 2.401 productos (79,4%) tienen descripción menor a 40 caracteres y 806 la tienen vacía. La asimetría por subcategoría es la mayor de toda la auditoría: descripción útil en 0% de VIH (n=28), 4,2% de Oncológicos (n=142), 6,8% de Refrigerados (n=148), 12,1% de Salud mental (n=462), 27% de Diabetes y obesidad (n=115), frente a 69,3% en Dermocosméticos (n=75) y 67% en Vitaminas (n=203). Las categorías de especialidad que definen a Cofar son las que menos texto tienen. En cambio los atributos estructurados de medicamentos están muy bien: principio activo 94-99%, laboratorio 100%, forma farmacéutica 100%, condición de venta 100%, condición de almacenamiento 100%, cantidad por envase (unitContent) 100%. Nada de eso llega al HTML (H01). Observado en la API y confirmado en DOM; no es una inferencia.",
+      "cifra": "2.401 de 3.024 productos sin descripción; 0% en VIH, 4% en oncológicos, 7% en refrigerados, 69% en dermocosmética",
+      "ejemplo_sku": "Cualquier producto de /category/medicamentos/vih (28 fichas, ninguna con descripción)",
+      "evidencia": [
+        "evidencia/api/analisis_catalogo.txt",
+        "evidencia/api/cobertura_atributos.txt",
+        "evidencia/api/cobertura_atributos.json",
+        "evidencia/api/catalogo_completo.json",
+        "https://services.cofar.cl/products/2.0/?productType=Medicament&slugs=vih&first=100&offset=0"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H04",
+      "paso": 4,
+      "titulo": "Cero datos estructurados: sin JSON-LD, sin Open Graph, sin GTIN en todo el sitio",
+      "gravedad": 4,
+      "capa": "jsonld",
+      "descripcion": "0 bloques application/ld+json en la home, en las 60 fichas, en las 137 categorías y en las 13 estáticas. 0 etiquetas og:* o twitter:* (ninguna vista previa en WhatsApp o redes tendrá imagen ni precio). La API de catálogo no expone ningún campo de código de barras/GTIN ni registro sanitario, así que no hay nada que validar ni que publicar en un feed sin trabajo previo. Dato relacionado: el bundle JS incluye un GOOGLE_MERCHANT_ID, es decir, existe una cuenta de Merchant Center, pero la web no ofrece Product schema que Google pueda cruzar con ese feed.",
+      "cifra": "0 de 60 fichas con JSON-LD Product; 0 og tags en 212 páginas",
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/fichas/analisis_fichas.txt",
+        "evidencia/identidad.md",
+        "evidencia/api/analisis_catalogo.txt",
+        "evidencia/js/_all.js"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H05",
+      "paso": 2,
+      "titulo": "93 URLs del sitemap (3%) apuntan a productos que ya no existen y responden 200",
+      "gravedad": 3,
+      "capa": "raw",
+      "descripcion": "El sitemap declara 3.118 URLs de producto (3.114 SKUs; 4 SKUs aparecen con dos URLs). La API pública devuelve 3.024 productos. 93 SKUs están en el sitemap pero la API responde 404 {product:null} (verificado en 3) y la ficha web responde 200 con título 'Farmacia Cofar', sin canonical y sin producto (soft 404, verificado en 10 de 10). Lo mismo ocurre con un SKU inventado (/product/999999999/no-existe: 200). Además, 3 productos de la API (Dasaval) no están en el sitemap. En sentido inverso no hay catálogo oculto: las 137 categorías del sitemap son exactamente las 137 del árbol de navegación y todo producto tiene al menos una categoría. Las 4 URLs fuera de patrón tienen SKU malformado (punto, espacio o sufijo -1: /product/01.2359020/..., /product/010070009 /..., /product/010077168-1/...) 3 de ellas responden 200 con título Farmacia Cofar (soft 404) y la del espacio final sí resuelve al producto.",
+      "cifra": "93 URLs muertas en el sitemap respondiendo 200, más 3 con SKU malformado y 1 de prueba (/product/32973/p1)",
+      "ejemplo_sku": "010029991",
+      "evidencia": [
+        "evidencia/api/diff_sitemap_api.json",
+        "evidencia/api/dead_010029991.json",
+        "evidencia/fichas/analisis_fichas.txt",
+        "evidencia/hipotesis/product_999999999_no-existe.html",
+        "evidencia/hipotesis/_log.csv",
+        "https://cofar.cl/product/999999999/no-existe",
+        "evidencia/sitemaps/urls_malformadas.txt"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H06",
+      "paso": 3,
+      "titulo": "Canonical y sitemap generan slugs distintos; cualquier slug responde 200",
+      "gravedad": 2,
+      "capa": "raw",
+      "descripcion": "En 31 de 50 fichas vivas el canonical del HTML no coincide con la URL declarada en el sitemap (el sitemap conserva guiones y separadores que el canonical elimina: 'galvus-met-50-1000-56-comp-rec' vs 'galvus-met-501000-56-comprec'). La API devuelve slug vacío para los 3.024 productos, así que la ruta acepta cualquier texto: /product/012522017/prueba responde 200 con el mismo contenido. Las 4 variantes indexadas del SKU 012522017 responden 200 sin redirigir y todas declaran el mismo canonical, que a su vez no es la URL del sitemap. /product/012522017 sin slug responde 404. Riesgo moderado porque el canonical existe y es consistente; el costo es que Google recibe dos señales distintas (sitemap vs canonical) para 3.118 URLs.",
+      "cifra": "31 de 50 fichas con canonical distinto a la URL del sitemap",
+      "ejemplo_sku": "010290330",
+      "evidencia": [
+        "evidencia/fichas/analisis_fichas.txt",
+        "evidencia/hipotesis/_log.csv",
+        "evidencia/hipotesis/product_012522017_prueba.html",
+        "https://cofar.cl/product/012522017/prueba"
+      ],
+      "resoluble_con_canonical": true
+    },
+    {
+      "id": "H07",
+      "paso": 1,
+      "titulo": "Metadatos placeholder: 52 categorías con meta 'NOT_ASSIGNED', 13 estáticas con el título de la home",
+      "gravedad": 3,
+      "capa": "raw",
+      "descripcion": "52 de 137 páginas de categoría tienen como meta description el literal NOT_ASSIGNED, incluida /category/medicamentos (la categoría raíz). Las 13 páginas estáticas del sitemap (/como-comprar, /preguntas-frecuentes, /terminos-y-condiciones, etc.) comparten título 'Farmacia Cofar' y la meta description de la home, sin canonical. La home no tiene canonical y https://www.cofar.cl/ responde 200 con el mismo contenido sin redirigir a cofar.cl, por lo que hay dos hosts indexables. En las fichas, el metaTitle que sí existe en la API ('Ozempic Semaglutida 2 mg/1.5 ml dispositivo prellenado') no se usa: el title del HTML es el nombre comercial largo.",
+      "cifra": "52 de 137 categorías con meta description 'NOT_ASSIGNED'",
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/categorias/analisis_categorias.json",
+        "evidencia/categorias/category_medicamentos.html",
+        "evidencia/identidad.md",
+        "evidencia/textos/como-comprar.txt",
+        "evidencia/raw/home_www.html",
+        "https://cofar.cl/category/medicamentos",
+        "https://www.cofar.cl/"
+      ],
+      "resoluble_con_canonical": true
+    },
+    {
+      "id": "H08",
+      "paso": 9,
+      "titulo": "Contacto contradictorio: '24 horas, 7 días' junto a 'L-V 10:00-18:00' y un teléfono distinto en privacidad",
+      "gravedad": 3,
+      "capa": "raw",
+      "descripcion": "El footer dice 'Línea directa de servicio al cliente las 24 horas del día, 7 días a la semana' y, en el mismo footer, 'Horarios: Lunes a Viernes 10:00 a 18:00, Sábado y Domingo 10:00 a 17:00'. Se repite en 211 de las 212 páginas descargadas (la excepción es el 404). Ningún texto aclara si son servicios distintos. La política de privacidad publica '+562 23992950' para asistencia al paciente, dígitos distintos al +56 2 23929950 del footer y de los términos y condiciones, y un correo ventas@cofar.cl que no aparece en ningún otro lugar. El WhatsApp +56 9 23929950 (wa.me/56923929950) solo se publica en la página de error 404 ('Necesitas ayuda? Escríbenos al Whatsapp'); no está en header, footer, contacto ni fichas. Los correos resuelven MX de Google (info@ y ventas@ mismo dominio) y los 10 enlaces externos del footer responden 200.",
+      "cifra": "2 contradicciones (horario y teléfono) repetidas en 211 páginas; WhatsApp publicado solo en el 404",
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/home_text.txt",
+        "evidencia/textos/politica-de-privacidad.txt",
+        "evidencia/textos/terminos-y-condiciones.txt",
+        "evidencia/textos/pagina-que-no-existe-relevo-test.txt",
+        "evidencia/contacto/mx_cofar.txt",
+        "evidencia/contacto/enlaces_externos.txt",
+        "https://cofar.cl/politica-de-privacidad",
+        "https://cofar.cl/pagina-que-no-existe-relevo-test"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H09",
+      "paso": 9,
+      "titulo": "Las preguntas frecuentes no tienen respuesta publicada y la coordinación descansa en personas",
+      "gravedad": 3,
+      "capa": "mixto",
+      "descripcion": "El sitio publica 15 preguntas frecuentes (5 en la home, 4 en /preguntas-frecuentes, 6 en /contigo-beneficios), incluidas '¿Quiénes pueden acceder a los precios MiCofar?' y '¿En qué consiste la entrega de medicamentos refrigerados?'. Ninguna respuesta aparece en el raw HTML, en el payload ni en el DOM renderizado (acordeones que solo cargan al hacer clic, no verificable sin interacción). Lo que sí está escrito: /conoce-cofar dice que el equipo de farmacéuticos 'atiende tus consultas y coordina tu pedido'; Contigo+ dice del reembolso 'nosotros gestionamos tu cobertura'; el descuento progresivo es 'solo con tu RUT' y en la ficha el JS consulta la cobertura del seguro con el RUT del paciente; /como-comprar explica que la receta se adjunta en el checkout y que la receta cheque solo sirve con retiro presencial. En la API hay 23 productos con condición 'receta cheque' que en el DOM no muestran botón Comprar; solo 13 están en la categoría 'Receta Cheque - Solo Compra Presencial', los otros 10 se listan en Salud mental, Diabetes y obesidad o Enfermedades específicas. No hay widget de chat en el HTML ni en los bundles; el único WhatsApp está en el 404 (H08). El campo miCofarPrice viene null en los 3.024 productos: un visitante sin cuenta nunca ve un precio MiCofar, y el sitio tampoco explica qué es.",
+      "cifra": "15 preguntas frecuentes sin respuesta observable; 23 productos solo compra presencial, 10 fuera de su categoría",
+      "ejemplo_sku": "030360059 (Concerta 54 mg): receta cheque, sin botón Comprar, listado en Salud mental",
+      "evidencia": [
+        "evidencia/dom/analisis_dom_paginas.txt",
+        "evidencia/textos/conoce-cofar.txt",
+        "evidencia/textos/contigo-beneficios.txt",
+        "evidencia/textos/como-comprar.txt",
+        "evidencia/api/analisis_catalogo.txt",
+        "evidencia/dom/cat_receta-cheque.html",
+        "evidencia/js/_all.js",
+        "https://cofar.cl/preguntas-frecuentes",
+        "https://cofar.cl/category/medicamentos/receta-cheque---solo-compra-presencial"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H10",
+      "paso": 6,
+      "titulo": "62% del catálogo tiene una sola imagen y el HTML no expone ninguna",
+      "gravedad": 2,
+      "capa": "mixto",
+      "descripcion": "Según la API, 1.862 de 3.024 productos (61,6%) tienen una sola imagen, 1.134 dos, 27 tres o más y 1 ninguna. En las 50 fichas vivas del raw HTML hay 0 etiquetas <img> de product-img.cofar.cl (las imágenes se montan en el navegador), así que ni Google Imágenes sin render ni las vistas previas sociales reciben imagen. El alt de las imágenes solo se pudo observar en el DOM y no se midió sistemáticamente.",
+      "cifra": "1.862 de 3.024 productos con una sola imagen; 0 imágenes de producto en el HTML de 50 fichas",
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/api/analisis_catalogo.txt",
+        "evidencia/fichas/analisis_fichas.txt"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H11",
+      "paso": 5,
+      "titulo": "118 medicamentos con dosis solo en el nombre; combinaciones con un solo principio activo",
+      "gravedad": 2,
+      "capa": "externo",
+      "descripcion": "409 productos (13,5%) no tienen activePrinciples en la API; de ellos 118 son medicamentos cuyo nombre sí trae una concentración (mg, ml, %), es decir, el dato existe solo en el string del nombre. Ejemplos: 'Rybelsus Semaglutida 14mg 90 Comprimidos Pack 3x2' (012520006), 'Supradyn 1,8mg/1,4mg/60mg 30 Comp.'. Además, en el ejemplo 010290330 (Galvus Met 50/1000, vildagliptina + metformina) la API solo registra METFORMINA 1000 'mgr'; la asimetría entre 'mg' y 'mgr' y la falta del segundo principio se observaron en un caso y no se midieron a nivel de catálogo. 74 productos vienen sin laboratorio y brand es null en 2.949 (el laboratorio hace de marca).",
+      "cifra": "118 medicamentos con concentración solo en el nombre; 409 productos sin principio activo",
+      "ejemplo_sku": "012520006",
+      "evidencia": [
+        "evidencia/api/skus_datos_solo_en_nombre.json",
+        "evidencia/api/cobertura_atributos.txt",
+        "evidencia/api/analisis_catalogo.txt"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H12",
+      "paso": 2,
+      "titulo": "robots.txt permite todo (también a GPTBot, ClaudeBot y PerplexityBot); no hay llms.txt",
+      "gravedad": 1,
+      "capa": "raw",
+      "descripcion": "robots.txt existe, permite '/', bloquea /profile/* y /checkout/* y declara el sitemap. No hay reglas específicas para GPTBot, ClaudeBot, PerplexityBot ni Google-Extended, por lo que todos pueden rastrear; el problema no es de permiso sino de que lo que rastrean está vacío (H01, H02). /llms.txt responde 404 real (no un 404 disfrazado). /.well-known/security.txt 404.",
+      "cifra": null,
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/raw/robots.html",
+        "evidencia/raw/llms.headers",
+        "https://cofar.cl/robots.txt",
+        "https://cofar.cl/llms.txt"
+      ],
+      "resoluble_con_canonical": false
+    },
+    {
+      "id": "H13",
+      "paso": 12,
+      "titulo": "Claves de terceros embebidas en el bundle público y lógica de beneficios en el cliente",
+      "gravedad": 2,
+      "capa": "externo",
+      "descripcion": "Los chunks de Next.js incluyen en claro, como variables NEXT_PUBLIC_*, una clave de Google Maps, un client id de Google, la site key de reCAPTCHA (esas son públicas por diseño) y una variable llamada NEXT_PUBLIC_HEALTH_INSTITUTE_API_KEY cuyo uso no se pudo determinar desde fuera (no se probó ni se publica su valor aquí). También queda visible la lógica de beneficios: la ficha consulta la cobertura del seguro con el RUT del paciente contra /products/1.0/coverage/{sku}?rut=..., y el programa Contigo+ valida al usuario contra /mscustomer/yapp/benefits. Solo lectura; no se ejecutó ninguna de esas llamadas. Se anota para que el equipo técnico del cliente decida si esa clave debía ser pública.",
+      "cifra": null,
+      "ejemplo_sku": null,
+      "evidencia": [
+        "evidencia/js/_all.js",
+        "evidencia/listas_js.txt"
+      ],
+      "resoluble_con_canonical": false
+    }
+  ],
+  "hipotesis_brief": [
+    {
+      "hipotesis": "1. Las fichas llegan vacías a quien no ejecuta JavaScript",
+      "estado": "confirmada",
+      "hallazgo_id": "H01",
+      "detalle": "Confirmada con un matiz: el raw HTML SÍ trae title, meta description (46/50) y canonical (50/50); lo que falta es todo el dato de producto. Clasificación en 50 fichas: precio, principio activo, laboratorio, descripción e imagen = AUSENTE (ni HTML visible ni script). El navegador los pide a services.cofar.cl. DOM verificado con Chrome headless en 21 fichas: todo presente y el precio coincide 21/21 con la API."
+    },
+    {
+      "hipotesis": "2. Un mismo producto responde en varias URLs",
+      "estado": "parcial",
+      "hallazgo_id": "H06",
+      "detalle": "Las 4 variantes del SKU 012522017 responden 200 sin redirigir y /product/012522017/prueba también. Pero todas declaran el mismo canonical, así que el duplicado está mitigado. Lo nuevo: ese canonical no coincide con la URL del sitemap en 31 de 50 fichas, y /product/012522017 sin slug es 404. El SKU inexistente 999999999 responde 200 (soft 404)."
+    },
+    {
+      "hipotesis": "3. Siguen indexadas rutas de un sitio anterior",
+      "estado": "desinflada",
+      "hallazgo_id": null,
+      "detalle": "/programas/ozempic.html responde 404 real. /medicamentos/diabetes/ozempic y /medicamentos/diabetes-y-obesidad/ozempic responden 301 a /category/medicamentos/diabetes-y-obesidad/ozempic, que existe en el sitemap. /medicamentos 301 a /category/medicamentos. El sitio maneja bien las rutas antiguas; si Google aún las muestra es rezago del índice, no un problema del servidor."
+    },
+    {
+      "hipotesis": "4. Las categorías no listan productos sin JavaScript",
+      "estado": "confirmada",
+      "hallazgo_id": "H02",
+      "detalle": "137 de 137 categorías sin enlaces a producto ni datos en el payload. En DOM sí renderizan (Diabetes y obesidad muestra tarjetas con precio y Comprar; Receta cheque muestra '13 productos encontrados' sin botón Comprar)."
+    },
+    {
+      "hipotesis": "5. Contradicción en el horario de atención",
+      "estado": "confirmada",
+      "hallazgo_id": "H08",
+      "detalle": "Ambos textos conviven en el footer de 211 de 212 páginas descargadas. Ningún texto del sitio aclara que sean servicios distintos. Se suma un teléfono con dígitos distintos en la política de privacidad."
+    },
+    {
+      "hipotesis": "6. La coordinación del pedido depende de personas",
+      "estado": "parcial",
+      "hallazgo_id": "H09",
+      "detalle": "Explícito en texto público: farmacéuticos 'coordinan tu pedido' (/conoce-cofar), reembolso 'nosotros gestionamos' (Contigo+), descuento progresivo 'solo con tu RUT', receta cheque solo presencial. La receta simple/retenida se sube en el checkout (no requiere humano). Las 15 preguntas frecuentes no tienen respuesta observable en ninguna capa. WhatsApp existe (wa.me/56923929950) pero solo en la página 404; no hay widget de chat en HTML ni bundles. No se pudo observar el checkout más allá del texto de /como-comprar."
+    }
+  ],
+  "no_verificado": [
+    {
+      "que": "Respuestas de las 15 preguntas frecuentes (home, /preguntas-frecuentes, /contigo-beneficios)",
+      "por_que": "No están en raw, payload ni DOM inicial; requieren clic en el acordeón y no se hicieron interacciones en el navegador."
+    },
+    {
+      "que": "Paso 11: qué responden los LLMs sobre Cofar",
+      "por_que": "No había ANTHROPIC_API_KEY en el entorno. Pendiente para chat; ver evidencia/llm.md."
+    },
+    {
+      "que": "Precio MiCofar y flujo de checkout (receta adjunta, cupones, despacho refrigerado)",
+      "por_que": "Requieren cuenta o iniciar una compra; fuera de alcance por regla de solo URLs públicas."
+    },
+    {
+      "que": "Alt de imágenes y dimensiones",
+      "por_que": "El raw no trae imágenes de producto; solo se miraron en DOM sin medición sistemática."
+    },
+    {
+      "que": "Presencia de catálogo o Tienda en Facebook/Instagram y Meta Pixel activo",
+      "por_que": "Instagram (14K seguidores, 721 posts) y Facebook (7.445 me gusta) responden 200 pero el HTML sin login no expone la pestaña Tienda. En el DOM de la home carga connect.facebook.net vía GTM, pero no se observó fbq() directo; el DNS tiene facebook-domain-verification. No se afirma nada sobre el catálogo en Meta."
+    },
+    {
+      "que": "Listado completo de la categoría en DOM",
+      "por_que": "Chrome headless con presupuesto de 15 s solo alcanzó a renderizar 2 tarjetas por categoría; el conteo real se tomó de la API (115 en Diabetes y obesidad, 13 en Receta cheque)."
+    },
+    {
+      "que": "Uso de NEXT_PUBLIC_HEALTH_INSTITUTE_API_KEY",
+      "por_que": "Solo lectura del bundle; no se probó contra ningún endpoint."
+    },
+    {
+      "que": "Discrepancia de hash de assets brand-logo entre páginas",
+      "por_que": "Con curl la home y las categorías sirven el mismo brand-logo-2.2syn7p_3v7ixz.png; no se reprodujo, no es hallazgo."
+    },
+    {
+      "que": "Validación de hallazgos.json contra .claude/skills/auditoria/hallazgos.schema.json tal como está en el repo",
+      "por_que": "El archivo del esquema no es JSON válido (línea 3 falta la clave 'title', línea 25 falta una comilla en cobertura_precio_jsonld_pct, falta una llave de cierre del bloque resumen, y el enum de estado dice 'sinflada'). No se modificó por regla; se validó contra una copia reparada con esos cuatro arreglos, guardada fuera del repo, y se documenta en Sugerencias para el playbook."
+    }
+  ],
+  "candidato_hallazgo_principal": "Cofar tiene el catálogo de medicamentos mejor estructurado que hemos auditado (principio activo, laboratorio, forma, condición de venta, refrigeración y precio en el 94-100% de 3.024 productos) y no lo publica: el HTML de cada ficha y de cada categoría sale vacío, así que Google sin render, ChatGPT, Perplexity y la vista previa de WhatsApp solo ven un nombre. Y donde sí falta dato, falta justo en la especialidad: 0% de las fichas de VIH y 4% de las oncológicas tienen descripción.",
+  "opciones_demo": [
+    "Buscador/chat de catálogo alimentado por la API pública (services.cofar.cl/products/2.0) que responda '¿tienen Ozempic 2 mg, cuánto cuesta, requiere receta, es refrigerado?' con datos reales; demuestra lo que hoy ningún LLM puede responder desde el sitio.",
+    "Página comparativa 'lo que ve tu paciente vs lo que ve la máquina' para 5 fichas de especialidad: DOM con precio y atributos frente al raw HTML con solo el título, más la vista previa de WhatsApp sin imagen.",
+    "Generador de JSON-LD Product + og tags a partir de la API para las mismas fichas, mostrando el rich result que hoy no existe.",
+    "Borrador automático de descripciones para las 28 fichas de VIH o las 142 oncológicas a partir de los atributos estructurados, marcado como borrador para revisión del químico farmacéutico (sin afirmar contenido clínico).",
+    "Asistente de preguntas frecuentes con las 15 preguntas publicadas y respuestas que el cliente valide, más el WhatsApp que hoy solo aparece en el 404."
+  ]
+}

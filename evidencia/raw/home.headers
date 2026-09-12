@@ -1,0 +1,17 @@
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 241578
+date: Sat, 12 Sep 2026 13:06:56 GMT
+etag: "nlk5x7eolk5612"
+x-nextjs-cache: HIT
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js
+cache-control: s-maxage=30, stale-while-revalidate=31535970
+vary: Accept-Encoding
+x-cache: Miss from cloudfront
+via: 1.1 bdb098d998828367ec4f98e76251e0f2.cloudfront.net (CloudFront)
+x-amz-cf-pop: SCL51-P2
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: 8Gg7FE2Rc1Ao7NJ_HrZy9wbWp5mXQVVq9jvyNhouu7tKQud1IYz1Fg==
+

@@ -1,0 +1,20 @@
+### VISIBLE (main)
+FORMULARIO
+Reclamos y Sugerencias
+Nota
+En caso de presentar o sospechar alguna reacción adversa a un medicamento, rellenar el formulario RAM y adjuntarlo. Descarga este formulario haciendo
+clic aquí (Formulario RAM)
+Seleccione una opción
+Sugerencia
+Reclamo
++56
+Elegir archivo
+Tamaño máximo: 10MB. Tipos permitidos: JPG, PNG, PDF, DOC, DOCX.
+ENVIAR
+Ver libro de Sugerencias y/o Reclamos
+
+### STRINGS LARGOS EN PAYLOAD
+La pÃ¡gina que buscas no existe o ya no estÃ¡ disponible. ContinÃºa navegando para encontrar los productos y servicios que necesitas, o vuelve al inicio para retomar tu compra con seguridad.
+Autorizado por el ISP. Res. Ex. NÂ°3972 del 22.09.2020z
+Aprovecha nuestros despachos RM 24 horas
+Despachos RM 24hrs â¢ Despachos RM 24hrs â¢ Despachos RM 24hrs â¢

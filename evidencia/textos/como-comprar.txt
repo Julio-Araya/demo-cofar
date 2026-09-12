@@ -1,0 +1,33 @@
+### VISIBLE (main)
+Institucionales
+¿Cómo Comprar?
+PASO 1
+Búsqueda de tus productos
+Compra en Cofar+ Para realizar tu compra, busca el producto que necesitas utilizando la barra de búsqueda en la parte superior o navegando a través del menú de categorías según la especialidad médica. Una vez localizado el artículo, puedes añadirlo directamente desde el listado general haciendo clic en la imagen o entrar en la ficha del producto para revisar sus detalles; en ambos casos, selecciona la cantidad necesaria y presiona el botón 'Comprar'. Al finalizar tu selección, dirígete al icono del carro en la esquina superior derecha y presiona 'Ir al Pago' para visualizar el resumen de tu pedido. En esta etapa, deberás ingresar tus datos de despacho y, en caso de que el medicamento lo requiera, adjuntar tu receta médica mediante el botón 'Elegir archivo'. Finalmente, elige tu método de envío (despacho a domicilio o retiro en local), selecciona tu medio de pago y, tras completar la transacción, recibirás un mail de confirmación con los detalles de tu orden finalizada.
+PASO 2
+Productos Seleccionados
+Una vez que ya tengas todo lo que deseas, haz clic en el ícono del carro y presiona el botón “Ir al pago”. Serás dirigido a una nueva ventana donde podrás confirmar los artículos en tu carro de compra, la cantidad de cada uno y el subtotal a pagar. Si quieres proceder con la compra haz clic en continuar, e ingresa tus datos para el despacho. Al presionar siguiente, deberás subir la receta médica de tu medicamento si correspondiera.
+PASO 3
+Resumen y Pago producto
+Antes de proceder con el pago, verás un resumen de tu compra y podrás elegir si deseas que tus medicamentos sean despachados a tu domicilio, con lo que se te indicará el costo del despacho, o si prefieres retirarlos en el local. Presionando “Siguiente”, podrás elegir tu medio de pago y serás redirigido a una ventana donde podrás realizarlo vía web. Una vez el pedido haya sido pagado, te llegará un correo de confirmación con los datos de tu compra.
+Recetas Médicas Para Poder Comprar
+Venta directa
+Producto no requiere receta médica
+Receta Médica Simple
+Para prescripción de medicamentos sin control de venta. Tiene una duracion de 6 meses.
+Receta Médica Retenida
+Para prescripción de productos sujetos a control de venta. Tiene una duración de 30 días desde su emisión y puede ser usada una vez. Al hacerlo debe quedar archivada en la farmacia.
+Receta Médica Cheque
+Talonario que los servicios de salud proporcionan a los médicos. Válido solo para compras con retiro en nuestra sede física. Se puede usar una sola vez.
+
+### STRINGS LARGOS EN PAYLOAD
+La pÃ¡gina que buscas no existe o ya no estÃ¡ disponible. ContinÃºa navegando para encontrar los productos y servicios que necesitas, o vuelve al inicio para retomar tu compra con seguridad.
+Autorizado por el ISP. Res. Ex. NÂ°3972 del 22.09.2020z
+Compra en Cofar+ Para realizar tu compra, busca el producto que necesitas utilizando la barra de bÃºsqueda en la parte superior o navegando a travÃ©s del menÃº de categorÃ­as segÃºn la especialidad mÃ©dica. Una vez localizado el artÃ­culo, puedes aÃ±adirlo directamente desde el listado general haciendo clic en la imagen o entrar en la ficha del producto para revisar sus detalles; en ambos casos, selecciona la cantidad necesaria y presiona el botÃ³n 'Comprar'. Al finalizar tu selecciÃ³n, dirÃ­gete al icono del carro en la esquina superior derecha y presiona 'Ir al Pago' para visualizar el resumen de tu pedido. En esta etapa, deberÃ¡s ingresar tus datos de despacho y, en caso de que el medicamento lo requiera, adjuntar tu receta mÃ©dica mediante el botÃ³n 'Elegir archivo'. Finalmente, elige tu mÃ©todo de envÃ­o (despacho a domicilio o retiro en local), selecciona tu medio de pago y, tras completar la transacciÃ³n, recibirÃ¡s un mail de confirmaciÃ³n con los detalles de tu orden finalizada.
+Una vez que ya tengas todo lo que deseas, haz clic en el Ã­cono del carro y presiona el botÃ³n âIr al pagoâ. SerÃ¡s dirigido a una nueva ventana donde podrÃ¡s confirmar los artÃ­culos en tu carro de compra, la cantidad de cada uno y el subtotal a pagar. Si quieres proceder con la compra haz clic en continuar, e ingresa tus datos para el despacho. Al presionar siguiente, deberÃ¡s subir la receta mÃ©dica de tu medicamento si correspondiera.
+Antes de proceder con el pago, verÃ¡s un resumen de tu compra y podrÃ¡s elegir si deseas que tus medicamentos sean despachados a tu domicilio, con lo que se te indicarÃ¡ el costo del despacho, o si prefieres retirarlos en el local. Presionando âSiguienteâ, podrÃ¡s elegir tu medio de pago y serÃ¡s redirigido a una ventana donde podrÃ¡s realizarlo vÃ­a web. Una vez el pedido haya sido pagado, te llegarÃ¡ un correo de confirmaciÃ³n con los datos de tu compra.
+Para prescripciÃ³n de medicamentos sin control de venta. Tiene una duracion de 6 meses.
+Para prescripciÃ³n de productos sujetos a control de venta. Tiene una duraciÃ³n de 30 dÃ­as desde su emisiÃ³n y puede ser usada una vez. Al hacerlo debe quedar archivada en la farmacia.
+Talonario que los servicios de salud proporcionan a los mÃ©dicos. VÃ¡lido solo para compras con retiro en nuestra sede fÃ­sica. Se puede usar una sola vez.
+Aprovecha nuestros despachos RM 24 horas
+Despachos RM 24hrs â¢ Despachos RM 24hrs â¢ Despachos RM 24hrs â¢
