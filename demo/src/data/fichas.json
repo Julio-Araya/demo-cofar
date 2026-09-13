@@ -1,0 +1,2821 @@
+{
+ "generado": "2026-09-13T20:27:23.493Z",
+ "fecha_captura": "2026-09-12",
+ "nota": "Datos congelados desde evidencia/ de la auditoría del 2026-09-12. Ningún request en vivo. Los campos de promociones de la API quedan fuera por regla del BRIEF-DEMO.",
+ "contexto": {
+  "cifras": [
+   {
+    "valor": "3.024",
+    "titulo": "productos en la API con atributos de medicamento entre el 94% y el 100%",
+    "detalle": "Principio activo 94.2%, laboratorio 100%, forma 100%, condición de venta 100%, almacenamiento 99.9% en los 2.731 medicamentos.",
+    "fuente": "hallazgos.json · cobertura_atributos · evidencia/api/cobertura_atributos.txt"
+   },
+   {
+    "valor": "0 de 60",
+    "titulo": "fichas con algún dato de producto en el HTML del servidor",
+    "detalle": "50 de 50 fichas sin precio, principio activo, laboratorio ni descripción en el HTML; 0 de 50 en el payload; 21 de 21 con todo en el DOM",
+    "fuente": "hallazgos.json · H01 · evidencia/fichas/analisis_fichas.txt"
+   },
+   {
+    "valor": "0% vs 69.3%",
+    "titulo": "fichas con descripción en VIH frente a dermocosmética",
+    "detalle": "2.401 de 3.024 productos sin descripción; 0% en VIH, 4% en oncológicos, 7% en refrigerados, 69% en dermocosmética",
+    "fuente": "hallazgos.json · H03 · evidencia/api/cobertura_atributos.txt"
+   }
+  ],
+  "campanas": {
+   "herramientas": [
+    {
+     "nombre": "Google Tag Manager",
+     "donde": "DOM, cargado vía GTM; 0 en raw",
+     "fuente": "evidencia/p2/senales_meta_google.md"
+    },
+    {
+     "nombre": "Google Analytics 4",
+     "donde": "DOM, cargado vía GTM; 0 en raw",
+     "fuente": "evidencia/p2/senales_meta_google.md"
+    },
+    {
+     "nombre": "Google Ads (tag de conversión)",
+     "donde": "DOM, cargado vía GTM; 0 en raw",
+     "fuente": "evidencia/p2/senales_meta_google.md"
+    },
+    {
+     "nombre": "Meta Pixel",
+     "donde": "DOM, cargado vía GTM; 0 en raw",
+     "fuente": "evidencia/p2/senales_meta_google.md"
+    },
+    {
+     "nombre": "Hotjar",
+     "donde": "DOM, cargado vía GTM; 0 en raw",
+     "fuente": "evidencia/p2/senales_meta_google.md"
+    },
+    {
+     "nombre": "Merchant ID (constante en el bundle)",
+     "donde": "bundle propio de Next.js",
+     "fuente": "evidencia/p2/senales_meta_google.md"
+    }
+   ],
+   "faltantes": [
+    {
+     "pieza": "Open Graph / Twitter Card",
+     "estado": "0 en raw · 0 en DOM",
+     "detalle": "No llegan tarde por JavaScript: no llegan.",
+     "fuente": "hallazgos-p2.json · H15",
+     "cifra": "0 og:* y 0 twitter:* en raw y DOM en home, categoría y 2 fichas; 0 imágenes de producto en el HTML de 50 fichas"
+    },
+    {
+     "pieza": "Feed público de productos",
+     "estado": "no existe",
+     "detalle": "12 rutas habituales en 404 real; nada en robots ni sitemap.",
+     "fuente": "hallazgos-p2.json · H16 · evidencia/p2/feeds_log.txt",
+     "cifra": "6 herramientas de medición/campaña cargadas en DOM; 0 en raw; 12 rutas de feed en 404; 0 feed declarado"
+    },
+    {
+     "pieza": "JSON-LD Product en el servidor",
+     "estado": "0% en raw · 100% en DOM",
+     "detalle": "Solo lo crea el JavaScript, con marca y stock degradados.",
+     "fuente": "hallazgos-p2.json · H14",
+     "cifra": "21/21 fichas con Product en DOM y 0/60 en raw; 19/21 con marca 'Marca no disponible'; 7/21 con descripción 'Descripcion no disponible'; 21/21 InStock (1 con stock 0 en la API)"
+    },
+    {
+     "pieza": "JSON-LD Organization",
+     "estado": "ausente en todas las capas",
+     "detalle": "La home no declara Organization, WebSite ni LocalBusiness.",
+     "fuente": "evidencia/p2/senales_meta_google.md §6"
+    },
+    {
+     "pieza": "GTIN / código de barras",
+     "estado": "no existe",
+     "detalle": "No está en la API ni en el JSON-LD.",
+     "fuente": "hallazgos.json · resumen.gtin_validos_pct = null"
+    }
+   ]
+  },
+  "asistente": {
+   "fecha": "2026-09-12",
+   "producto": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+   "sku": "012522017",
+   "api_precio_normal": "$237.390",
+   "api_precio_oferta": "$151.890",
+   "oferta_activa_en_volcado": true,
+   "transcripcion_literal": null,
+   "resumen_brief": [
+    "Encontró el sitio de Cofar.",
+    "Citó bien la presentación (2 mg/1,5 ml, dispositivo prellenado) y la conservación (refrigerado).",
+    "Dio $237.390 como precio, cuando la API declaraba una oferta de $151.890."
+   ],
+   "fuente_resumen": "BRIEF-DEMO.md §4 (observación del 2026-09-12 desde el chat)",
+   "busquedas_web": {
+    "fuente": "evidencia/p2/busquedas_web.md",
+    "consultas": [
+     {
+      "consulta": "comprar Ozempic 2 mg Chile precio farmacia",
+      "resultado": "no aparece"
+     },
+     {
+      "consulta": "Rybelsus 14 mg precio Chile farmacia online",
+      "resultado": "aparece en la posición 5"
+     },
+     {
+      "consulta": "Gonal F 900 UI precio Chile farmacia",
+      "resultado": "aparece en la posición 9"
+     }
+    ]
+   }
+  }
+ },
+ "fichas": [
+  {
+   "sku": "012522017",
+   "nombre": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+   "grupo": "Diabetes · oferta activa",
+   "por_que": "Tiene oferta activa en la API. Es el caso del precio que un asistente citó mal.",
+   "url_publica": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+   "miradas": {
+    "paciente": {
+     "fuente": "evidencia/dom/product_012522017.html",
+     "capa": "DOM · Chrome 153 headless · --dump-dom",
+     "campos": {
+      "nombre": {
+       "valor": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "precio_normal": {
+       "valor": "$237.390",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "precio_oferta": {
+       "valor": "$151.890",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "laboratorio": {
+       "valor": "Novo Nordisk",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "principio_activo": {
+       "valor": "Semaglutida",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "concentracion": {
+       "valor": "2 mg/1,5ml",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "forma_contenido": {
+       "valor": "1 Dispositivo Prellenado",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      },
+      "condicion_venta": {
+       "valor": "Rec. Med. Simple",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html",
+       "nota": "Producto requiere presentación de receta médica simple"
+      },
+      "refrigeracion": {
+       "valor": "Refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html",
+       "nota": "Refrigerado, entre 2º y 8ºC"
+      },
+      "descripcion": {
+       "valor": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta presentación específica es la indicada para la etapa de inicio, habituación y ajuste de dosis, permitiendo administrar dosi…",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html",
+       "nota": "6.237 caracteres."
+      },
+      "imagen": {
+       "valor": "1 imagen de producto",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html",
+       "nota": "/products/MBEGjRFHGEv3fWQhn/images/1.webp"
+      },
+      "compra": {
+       "valor": "Envío disponible · Retiro en tienda · Botón Comprar",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012522017.html"
+      }
+     }
+    },
+    "bot": {
+     "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+     "capa": "raw · curl sin JavaScript · UA RelevoStudio-Audit/1.0",
+     "bytes": 194919,
+     "campos": {
+      "titulo": {
+       "valor": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html"
+      },
+      "meta_description": {
+       "valor": "Ozempic 2mg/1,5ml (Multidosis): Pluma Multidosis de Semaglutida para etapas de inicio de tratamiento y adaptación en diabetes tipo 2. Requiere receta médica simple.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html"
+      },
+      "canonical": {
+       "valor": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html"
+      },
+      "precio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "Ningún precio en el HTML del servidor."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "No está en el HTML ni en el payload de Next.js."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "Solo si la meta description lo menciona de pasada."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "La ficha llega vacía; el texto se carga después con JavaScript."
+      },
+      "imagen": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "18 <img> en el HTML y todas son logo o íconos."
+      },
+      "open_graph": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "Sin og:* ni twitter:*. Una vista previa de WhatsApp o LinkedIn no tiene imagen ni precio."
+      },
+      "json_ld": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "Cero bloques ld+json en el HTML del servidor."
+      },
+      "payload_next": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012522017_ozempic-semaglutida-2mg-1-5ml-1-dispositivo-prellenado-multidosis.html",
+       "nota": "El payload self.__next_f tampoco trae precio ni atributos."
+      }
+     }
+    },
+    "jsonld": {
+     "fuente": "evidencia/p2/jsonld_dom.json",
+     "fuente_dom": "evidencia/dom/product_012522017.html",
+     "capa": "DOM · script ld+json inyectado por JavaScript · no existe en raw",
+     "bloque": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "description": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta presentación específica es la indicada para la etapa de inicio, habituación y ajuste de dosis, permitiendo administrar dosis precisas de 0,25 mg (dosis de inicio para adaptación) y de 0,5 mg (dosis de mantenimiento inicial) según la prescripción de su médico.\nEl formato consiste en un dispositivo prellenado multidosis (lápiz, pen o pluma) sumamente sencillo de utilizar, desarrollado para una cómoda administración por vía subcutánea una vez a la semana.\nComo análogo del receptor de GLP-1 (una hormona que el cuerpo libera de manera natural tras las comidas), la Semaglutida de liberación prolongada actúa con un enfoque metabólico integral:\nControl Glucémico Inteligente: Estimula la producción de insulina de forma dependiente de la glucosa (solo cuando los niveles de azúcar en sangre están elevados) y reduce la liberación innecesaria de glucagón.\nDigestión Regulada: Retrasa ligeramente el vaciamiento del estómago, previniendo los peaks de azúcar en la sangre que ocurren inmediatamente después de las comidas.\nControl del Apetito y Saciedad: Modula las señales de apetito en el cerebro, disminuyendo los antojos de alimentos con alto contenido calórico o graso, lo que suele traducirse en una pérdida saludable de peso y grasa corporal como beneficio secundario al control de la diabetes.\nReducción del Riesgo Cardiovascular: Protege la salud del corazón reduciendo la probabilidad de sufrir eventos cardiovasculares graves asociados a la diabetes tipo 2.\nNota: Este medicamento es un complemento y debe acompañarse siempre de un plan de alimentación saludable y actividad física regular, bajo la estricta guía de un profesional de la salud.\n2. Modo de Uso y Pautas de Dosificación\nPara asegurar una correcta absorción y la máxima efectividad de la terapia, siga minuciosamente estas directrices:\nEsquema de Inicio Habitual: El tratamiento suele iniciarse con una dosis de 0,25 mg una vez a la semana durante las primeras 4 semanas para permitir que el organismo se adapte. Posteriormente, por indicación médica, se incrementa a 0,5 mg una vez a la semana.\nAplicación Semanal Constante: Adminístrese el medicamento el mismo día de la semana, en cualquier momento del día, con o sin alimentos.\nVía Subcutánea: Aplique la inyección únicamente bajo la piel (subcutánea) en las zonas recomendadas: abdomen, muslo o la parte superior del brazo. No inyectar por vía intravenosa ni intramuscular.\nUso del Dispositivo: El lápiz inyector es multidosis. Antes de cada aplicación, coloque una aguja desechable nueva y estéril (incluidas en el empaque), seleccione la dosis indicada (0,25 mg o 0,5 mg) girando el selector de dosis, y retire la aguja de forma segura después de inyectar.\n3. Advertencias de Seguridad Importantes\nRiesgo de Tumores en la Glándula Tiroides (Células C)\nEstudios de laboratorio en roedores revelaron que la Semaglutida puede inducir el desarrollo de tumores tiroideos (incluyendo el carcinoma medular de tiroides). Todavía se desconoce si este efecto se replica en seres humanos.\nMonitoreo: Consulte a su médico de inmediato si nota hinchazón o un bulto en el cuello, ronquera persistente, dificultad al tragar o falta de aire.\nContraindicación Absoluta: No utilice OZEMPIC® si usted o algún familiar directo tiene antecedentes de Carcinoma Medular de Tiroides (CMT) o padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 / NEM 2).\nPrecauciones Generales\nPancreatitis Aguda: Suspenda el uso de inmediato y acuda a un servicio de urgencias si experimenta un dolor abdominal severo, persistente y punzante que se propague hacia la espalda, acompañado o no de vómitos.\nFunción Renal: Náuseas, vómitos o diarreas intensas pueden causar deshidratación severa, lo que podría afectar el funcionamiento de los riñones. Mantenga una ingesta adecuada de agua pura para prevenirlo.\nRetinopatía Diabética: La disminución rápida de los niveles de glucosa en sangre puede empeorar temporalmente las complicaciones visuales ligadas a la diabetes. Notifique a su especialista si experimenta alteraciones visuales.\nEmbarazo y Lactancia: No se recomienda su administración. Las mujeres que planifiquen un embarazo deben suspender el uso de Semaglutida al menos 2 meses antes de comenzar la búsqueda.\nProcedimientos Médicos: Si va a someterse a una cirugía o procedimiento que requiera anestesia, informe con anticipación a su médico o cirujano que está utilizando este medicamento.\n4. Efectos Secundarios Posibles\nMuy Frecuentes (especialmente durante las primeras semanas de tratamiento o al aumentar la dosis): Náuseas, vómitos, diarrea, estreñimiento, dolor o malestar abdominal y pérdida del apetito. Por lo general, estos efectos son leves a moderados, temporales y disminuyen a medida que el cuerpo se adapta al medicamento.\nGraves (requieren atención médica inmediata): Reacciones de hipersensibilidad (hinchazón de cara, labios o garganta, dificultad para respirar, erupciones cutáneas severas), hipoglucemia (riesgo elevado si se usa en combinación con insulina o sulfonilureas) y problemas en la vesícula biliar (como dolor agudo debajo de las costillas derechas).\n5. Información Comercial y Especificaciones\nNombre del Producto: OZEMPIC® 2 mg / 1,5 ml\nPrincipio Activo: Semaglutida (contiene 2 mg de Semaglutida en 1,5 ml de solución inyectable).\nPresentación: Caja con 1 dispositivo prellenado multidosis (lápiz inyector) y 6 agujas desechables.\nLaboratorio: Novo Nordisk.\nRegistro Sanitario ISP: B-2774/19.\nCondiciones de Almacenamiento:\nAntes del primer uso (sin abrir): Conservar en refrigeración constante entre 2°C y 8°C. No congelar. Proteger de la luz directa.\nDurante el uso (una vez abierto): Puede conservarse refrigerado (2°C a 8°C) o a temperatura ambiente (no mayor a 25°C) por un período máximo de 6 semanas. Coloque siempre el capuchón del lápiz después de cada inyección para protegerlo de la luz.\nSeguridad: Mantener estrictamente fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Requiere la presentación física y validación de una Receta Médica Simple (RMS) al momento de la compra o retiro",
+      "name": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+      "url": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+      "image": "https://product-img.cofar.cl/products/MBEGjRFHGEv3fWQhn/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": "Marca no disponible"
+      },
+      "sku": "012522017",
+      "category": "Diabetes y obesidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 151890,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     },
+     "campos": {
+      "name": {
+       "valor": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "sku": {
+       "valor": "012522017",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "brand": {
+       "valor": "\"Marca no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código. La API trae laboratory.label = \"Novo Nordisk\"."
+      },
+      "description": {
+       "valor": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta pre…",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "6.237 caracteres."
+      },
+      "image": {
+       "valor": "https://product-img.cofar.cl/products/MBEGjRFHGEv3fWQhn/images/1.webp",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "category": {
+       "valor": "Diabetes y obesidad",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Primer tag del producto, no la categoría clínica."
+      },
+      "price": {
+       "valor": "151890 CLP",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Es el precio de oferta. El precio normal no se declara."
+      },
+      "availability": {
+       "valor": "\"InStock\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Fijo en el código para las 21 fichas; sin prefijo https://schema.org/. Aquí coincide con el stock real, pero no lo lee de la API."
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera. El campo no existe en la API."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "condicion_venta": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "refrigeracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      }
+     }
+    },
+    "api": {
+     "fuente": "evidencia/api/catalogo_completo.json",
+     "capa": "API · GET services.cofar.cl/products/2.0 · volcado del 2026-09-12 · generado en build, sin llamadas en vivo",
+     "bloque": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+      "sku": "012522017",
+      "url": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+      "image": [
+       "https://product-img.cofar.cl/products/MBEGjRFHGEv3fWQhn/images/1.webp"
+      ],
+      "brand": {
+       "@type": "Brand",
+       "name": "Novo Nordisk"
+      },
+      "category": "Diabetes y obesidad > Especial Control de Peso > Inyectables > Ozempic",
+      "description": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta presentación específica es la indicada para la etapa de inicio, habituación y ajuste de dosis, permitiendo administrar dosis precisas de 0,25 mg (dosis de inicio para adaptación) y de 0,5 mg (dosis de mantenimiento inicial) según la prescripción de su médico.\nEl formato consiste en un dispositivo prellenado multidosis (lápiz, pen o pluma) sumamente sencillo de utilizar, desarrollado para una cómoda administración por vía subcutánea una vez a la semana.\nComo análogo del receptor de GLP-1 (una hormona que el cuerpo libera de manera natural tras las comidas), la Semaglutida de liberación prolongada actúa con un enfoque metabólico integral:\nControl Glucémico Inteligente: Estimula la producción de insulina de forma dependiente de la glucosa (solo cuando los niveles de azúcar en sangre están elevados) y reduce la liberación innecesaria de glucagón.\nDigestión Regulada: Retrasa ligeramente el vaciamiento del estómago, previniendo los peaks de azúcar en la sangre que ocurren inmediatamente después de las comidas.\nControl del Apetito y Saciedad: Modula las señales de apetito en el cerebro, disminuyendo los antojos de alimentos con alto contenido calórico o graso, lo que suele traducirse en una pérdida saludable de peso y grasa corporal como beneficio secundario al control de la diabetes.\nReducción del Riesgo Cardiovascular: Protege la salud del corazón reduciendo la probabilidad de sufrir eventos cardiovasculares graves asociados a la diabetes tipo 2.\nNota: Este medicamento es un complemento y debe acompañarse siempre de un plan de alimentación saludable y actividad física regular, bajo la estricta guía de un profesional de la salud.\n2. Modo de Uso y Pautas de Dosificación\nPara asegurar una correcta absorción y la máxima efectividad de la terapia, siga minuciosamente estas directrices:\nEsquema de Inicio Habitual: El tratamiento suele iniciarse con una dosis de 0,25 mg una vez a la semana durante las primeras 4 semanas para permitir que el organismo se adapte. Posteriormente, por indicación médica, se incrementa a 0,5 mg una vez a la semana.\nAplicación Semanal Constante: Adminístrese el medicamento el mismo día de la semana, en cualquier momento del día, con o sin alimentos.\nVía Subcutánea: Aplique la inyección únicamente bajo la piel (subcutánea) en las zonas recomendadas: abdomen, muslo o la parte superior del brazo. No inyectar por vía intravenosa ni intramuscular.\nUso del Dispositivo: El lápiz inyector es multidosis. Antes de cada aplicación, coloque una aguja desechable nueva y estéril (incluidas en el empaque), seleccione la dosis indicada (0,25 mg o 0,5 mg) girando el selector de dosis, y retire la aguja de forma segura después de inyectar.\n3. Advertencias de Seguridad Importantes\nRiesgo de Tumores en la Glándula Tiroides (Células C)\nEstudios de laboratorio en roedores revelaron que la Semaglutida puede inducir el desarrollo de tumores tiroideos (incluyendo el carcinoma medular de tiroides). Todavía se desconoce si este efecto se replica en seres humanos.\nMonitoreo: Consulte a su médico de inmediato si nota hinchazón o un bulto en el cuello, ronquera persistente, dificultad al tragar o falta de aire.\nContraindicación Absoluta: No utilice OZEMPIC® si usted o algún familiar directo tiene antecedentes de Carcinoma Medular de Tiroides (CMT) o padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 / NEM 2).\nPrecauciones Generales\nPancreatitis Aguda: Suspenda el uso de inmediato y acuda a un servicio de urgencias si experimenta un dolor abdominal severo, persistente y punzante que se propague hacia la espalda, acompañado o no de vómitos.\nFunción Renal: Náuseas, vómitos o diarreas intensas pueden causar deshidratación severa, lo que podría afectar el funcionamiento de los riñones. Mantenga una ingesta adecuada de agua pura para prevenirlo.\nRetinopatía Diabética: La disminución rápida de los niveles de glucosa en sangre puede empeorar temporalmente las complicaciones visuales ligadas a la diabetes. Notifique a su especialista si experimenta alteraciones visuales.\nEmbarazo y Lactancia: No se recomienda su administración. Las mujeres que planifiquen un embarazo deben suspender el uso de Semaglutida al menos 2 meses antes de comenzar la búsqueda.\nProcedimientos Médicos: Si va a someterse a una cirugía o procedimiento que requiera anestesia, informe con anticipación a su médico o cirujano que está utilizando este medicamento.\n4. Efectos Secundarios Posibles\nMuy Frecuentes (especialmente durante las primeras semanas de tratamiento o al aumentar la dosis): Náuseas, vómitos, diarrea, estreñimiento, dolor o malestar abdominal y pérdida del apetito. Por lo general, estos efectos son leves a moderados, temporales y disminuyen a medida que el cuerpo se adapta al medicamento.\nGraves (requieren atención médica inmediata): Reacciones de hipersensibilidad (hinchazón de cara, labios o garganta, dificultad para respirar, erupciones cutáneas severas), hipoglucemia (riesgo elevado si se usa en combinación con insulina o sulfonilureas) y problemas en la vesícula biliar (como dolor agudo debajo de las costillas derechas).\n5. Información Comercial y Especificaciones\nNombre del Producto: OZEMPIC® 2 mg / 1,5 ml\nPrincipio Activo: Semaglutida (contiene 2 mg de Semaglutida en 1,5 ml de solución inyectable).\nPresentación: Caja con 1 dispositivo prellenado multidosis (lápiz inyector) y 6 agujas desechables.\nLaboratorio: Novo Nordisk.\nRegistro Sanitario ISP: B-2774/19.\nCondiciones de Almacenamiento:\nAntes del primer uso (sin abrir): Conservar en refrigeración constante entre 2°C y 8°C. No congelar. Proteger de la luz directa.\nDurante el uso (una vez abierto): Puede conservarse refrigerado (2°C a 8°C) o a temperatura ambiente (no mayor a 25°C) por un período máximo de 6 semanas. Coloque siempre el capuchón del lápiz después de cada inyección para protegerlo de la luz.\nSeguridad: Mantener estrictamente fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Requiere la presentación física y validación de una Receta Médica Simple (RMS) al momento de la compra o retiro",
+      "additionalProperty": [
+       {
+        "@type": "PropertyValue",
+        "name": "Principio activo",
+        "value": "Semaglutida"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Concentración",
+        "value": "2 mg/1,5ml"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Forma farmacéutica",
+        "value": "Dispositivo Prellenado"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Cantidad por envase",
+        "value": "1"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Condición de venta",
+        "value": "Receta médica simple"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Almacenamiento",
+        "value": "Refrigerado, entre 2º y 8ºC"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Refrigerado",
+        "value": "Sí"
+       }
+      ],
+      "offers": {
+       "@type": "Offer",
+       "url": "https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispositivo-prellenado-multidosis",
+       "price": 151890,
+       "priceCurrency": "CLP",
+       "availability": "https://schema.org/InStock",
+       "availableDeliveryMethod": [
+        "https://schema.org/ParcelService",
+        "https://schema.org/OnSitePickup"
+       ],
+       "priceSpecification": [
+        {
+         "@type": "UnitPriceSpecification",
+         "priceType": "https://schema.org/ListPrice",
+         "price": 237390,
+         "priceCurrency": "CLP"
+        },
+        {
+         "@type": "UnitPriceSpecification",
+         "priceType": "https://schema.org/SalePrice",
+         "price": 151890,
+         "priceCurrency": "CLP"
+        }
+       ]
+      }
+     },
+     "campos": {
+      "nombre": {
+       "valor": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_normal": {
+       "valor": "$237.390",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_oferta": {
+       "valor": "$151.890",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Se declara como SalePrice junto al ListPrice."
+      },
+      "laboratorio": {
+       "valor": "Novo Nordisk",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "laboratory.label"
+      },
+      "principio_activo": {
+       "valor": "Semaglutida",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "activePrinciples[0].name"
+      },
+      "concentracion": {
+       "valor": "2 mg/1,5ml",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "forma_contenido": {
+       "valor": "1 Dispositivo Prellenado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "unitContent + pharmaceuticalForm.label"
+      },
+      "condicion_venta": {
+       "valor": "Receta médica simple",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "saleCondition.value = simpleRecipe"
+      },
+      "refrigeracion": {
+       "valor": "Refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Refrigerado, entre 2º y 8ºC"
+      },
+      "disponibilidad": {
+       "valor": "InStock (stock real)",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "stock = 100 · isOutOfStock = false"
+      },
+      "descripcion": {
+       "valor": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta pre…",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "6.237 caracteres."
+      },
+      "imagen": {
+       "valor": "1 imagen",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "/products/MBEGjRFHGEv3fWQhn/images/1.webp"
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "No existe en la API. No se inventa."
+      }
+     },
+     "api": {
+      "sku": "012522017",
+      "productName": "Ozempic Semaglutida 2mg/1,5ml 1 Dispositivo Prellenado Multidosis",
+      "productType": "Medicament",
+      "laboratory": {
+       "label": "Novo Nordisk"
+      },
+      "brand": null,
+      "activePrinciples": [
+       {
+        "name": "Semaglutida",
+        "amountContent": 2,
+        "unitMeasure": "mg/1,5ml"
+       }
+      ],
+      "pharmaceuticalForm": {
+       "label": "Dispositivo Prellenado"
+      },
+      "unitContent": 1,
+      "saleCondition": {
+       "value": "simpleRecipe"
+      },
+      "storageCondition": "Refrigerado, entre 2º y 8ºC",
+      "attributes": {
+       "isRefrigerated": true,
+       "isOutOfStock": false,
+       "isBioequivalent": false,
+       "hasDelivery": true,
+       "hasStore": true
+      },
+      "stock": 100,
+      "normalPrice": 237390,
+      "offerPrice": 151890,
+      "imageURLs": [
+       "/products/MBEGjRFHGEv3fWQhn/images/1.webp"
+      ],
+      "tags": [
+       "Diabetes y obesidad",
+       "Especial Control de Peso"
+      ],
+      "subTags": [
+       "Inyectables",
+       "Ozempic"
+      ],
+      "description_len": 6237,
+      "description": "OZEMPIC® (Semaglutida) 2 mg / 1,5 ml es un tratamiento inyectable de alta tecnología diseñado para adultos diagnosticados con diabetes mellitus tipo 2. Esta presentación específica es la indicada para la etapa de inicio, habituación y ajuste de dosis, permitiendo administrar dosis precisas de 0,25 mg (dosis de inicio para adaptación) y de 0,5 mg (dosis de mantenimiento inicial) según la prescripción de su médico.\nEl formato consiste en un dispositivo prellenado multidosis (lápiz, pen o pluma) sumamente sencillo de utilizar, desarrollado para una cómoda administración por vía subcutánea una vez a la semana.\nComo análogo del receptor de GLP-1 (una hormona que el cuerpo libera de manera natural tras las comidas), la Semaglutida de liberación prolongada actúa con un enfoque metabólico integral:\nControl Glucémico Inteligente: Estimula la producción de insulina de forma dependiente de la glucosa (solo cuando los niveles de azúcar en sangre están elevados) y reduce la liberación innecesaria de glucagón.\nDigestión Regulada: Retrasa ligeramente el vaciamiento del estómago, previniendo los peaks de azúcar en la sangre que ocurren inmediatamente después de las comidas.\nControl del Apetito y Saciedad: Modula las señales de apetito en el cerebro, disminuyendo los antojos de alimentos con alto contenido calórico o graso, lo que suele traducirse en una pérdida saludable de peso y grasa corporal como beneficio secundario al control de la diabetes.\nReducción del Riesgo Cardiovascular: Protege la salud del corazón reduciendo la probabilidad de sufrir eventos cardiovasculares graves asociados a la diabetes tipo 2.\nNota: Este medicamento es un complemento y debe acompañarse siempre de un plan de alimentación saludable y actividad física regular, bajo la estricta guía de un profesional de la salud.\n2. Modo de Uso y Pautas de Dosificación\nPara asegurar una correcta absorción y la máxima efectividad de la terapia, siga minuciosamente estas directrices:\nEsquema de Inicio Habitual: El tratamiento suele iniciarse con una dosis de 0,25 mg una vez a la semana durante las primeras 4 semanas para permitir que el organismo se adapte. Posteriormente, por indicación médica, se incrementa a 0,5 mg una vez a la semana.\nAplicación Semanal Constante: Adminístrese el medicamento el mismo día de la semana, en cualquier momento del día, con o sin alimentos.\nVía Subcutánea: Aplique la inyección únicamente bajo la piel (subcutánea) en las zonas recomendadas: abdomen, muslo o la parte superior del brazo. No inyectar por vía intravenosa ni intramuscular.\nUso del Dispositivo: El lápiz inyector es multidosis. Antes de cada aplicación, coloque una aguja desechable nueva y estéril (incluidas en el empaque), seleccione la dosis indicada (0,25 mg o 0,5 mg) girando el selector de dosis, y retire la aguja de forma segura después de inyectar.\n3. Advertencias de Seguridad Importantes\nRiesgo de Tumores en la Glándula Tiroides (Células C)\nEstudios de laboratorio en roedores revelaron que la Semaglutida puede inducir el desarrollo de tumores tiroideos (incluyendo el carcinoma medular de tiroides). Todavía se desconoce si este efecto se replica en seres humanos.\nMonitoreo: Consulte a su médico de inmediato si nota hinchazón o un bulto en el cuello, ronquera persistente, dificultad al tragar o falta de aire.\nContraindicación Absoluta: No utilice OZEMPIC® si usted o algún familiar directo tiene antecedentes de Carcinoma Medular de Tiroides (CMT) o padece el Síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2 / NEM 2).\nPrecauciones Generales\nPancreatitis Aguda: Suspenda el uso de inmediato y acuda a un servicio de urgencias si experimenta un dolor abdominal severo, persistente y punzante que se propague hacia la espalda, acompañado o no de vómitos.\nFunción Renal: Náuseas, vómitos o diarreas intensas pueden causar deshidratación severa, lo que podría afectar el funcionamiento de los riñones. Mantenga una ingesta adecuada de agua pura para prevenirlo.\nRetinopatía Diabética: La disminución rápida de los niveles de glucosa en sangre puede empeorar temporalmente las complicaciones visuales ligadas a la diabetes. Notifique a su especialista si experimenta alteraciones visuales.\nEmbarazo y Lactancia: No se recomienda su administración. Las mujeres que planifiquen un embarazo deben suspender el uso de Semaglutida al menos 2 meses antes de comenzar la búsqueda.\nProcedimientos Médicos: Si va a someterse a una cirugía o procedimiento que requiera anestesia, informe con anticipación a su médico o cirujano que está utilizando este medicamento.\n4. Efectos Secundarios Posibles\nMuy Frecuentes (especialmente durante las primeras semanas de tratamiento o al aumentar la dosis): Náuseas, vómitos, diarrea, estreñimiento, dolor o malestar abdominal y pérdida del apetito. Por lo general, estos efectos son leves a moderados, temporales y disminuyen a medida que el cuerpo se adapta al medicamento.\nGraves (requieren atención médica inmediata): Reacciones de hipersensibilidad (hinchazón de cara, labios o garganta, dificultad para respirar, erupciones cutáneas severas), hipoglucemia (riesgo elevado si se usa en combinación con insulina o sulfonilureas) y problemas en la vesícula biliar (como dolor agudo debajo de las costillas derechas).\n5. Información Comercial y Especificaciones\nNombre del Producto: OZEMPIC® 2 mg / 1,5 ml\nPrincipio Activo: Semaglutida (contiene 2 mg de Semaglutida en 1,5 ml de solución inyectable).\nPresentación: Caja con 1 dispositivo prellenado multidosis (lápiz inyector) y 6 agujas desechables.\nLaboratorio: Novo Nordisk.\nRegistro Sanitario ISP: B-2774/19.\nCondiciones de Almacenamiento:\nAntes del primer uso (sin abrir): Conservar en refrigeración constante entre 2°C y 8°C. No congelar. Proteger de la luz directa.\nDurante el uso (una vez abierto): Puede conservarse refrigerado (2°C a 8°C) o a temperatura ambiente (no mayor a 25°C) por un período máximo de 6 semanas. Coloque siempre el capuchón del lápiz después de cada inyección para protegerlo de la luz.\nSeguridad: Mantener estrictamente fuera del alcance de los niños.\nCondición de Venta: Medicamento sujeto a control médico. Requiere la presentación física y validación de una Receta Médica Simple (RMS) al momento de la compra o retiro",
+      "metaTitle": "Ozempic Semaglutida 2 mg/1.5 ml dispositivo prellenado",
+      "metaDescription": "Ozempic 2mg/1,5ml (Multidosis): Pluma Multidosis de Semaglutida para etapas de inicio de tratamiento y adaptación en diabetes tipo 2. Requiere receta médica simple."
+     }
+    }
+   }
+  },
+  {
+   "sku": "011000228",
+   "nombre": "Ziagen 300mg 60 Comp.",
+   "grupo": "VIH",
+   "por_que": "La categoría con 0% de descripción.",
+   "url_publica": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+   "miradas": {
+    "paciente": {
+     "fuente": "evidencia/dom/product_011000228.html",
+     "capa": "DOM · Chrome 153 headless · --dump-dom",
+     "campos": {
+      "nombre": {
+       "valor": "Ziagen 300mg 60 Comp.",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      },
+      "precio_normal": {
+       "valor": "$600.890",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      },
+      "precio_oferta": {
+       "valor": null,
+       "estado": "no_aplica",
+       "fuente": "evidencia/dom/product_011000228.html",
+       "nota": "La ficha muestra un solo precio; no hay oferta visible."
+      },
+      "laboratorio": {
+       "valor": "GlaxoSmithKline",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      },
+      "principio_activo": {
+       "valor": "ABACAVIR",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      },
+      "concentracion": {
+       "valor": "300 mgr",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      },
+      "forma_contenido": {
+       "valor": "60 Comprimidos",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      },
+      "condicion_venta": {
+       "valor": "Rec. Med. Simple",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html",
+       "nota": "Producto requiere presentación de receta médica simple"
+      },
+      "refrigeracion": {
+       "valor": "Lugar seco, no más de 25ºC",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html",
+       "nota": "Sin etiqueta \"Refrigerado\"."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/dom/product_011000228.html",
+       "nota": "La sección \"Descripción\" está vacía."
+      },
+      "imagen": {
+       "valor": "1 imagen de producto",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html",
+       "nota": "/products/hqBFPdpEx6dBRBv32/images/1.webp"
+      },
+      "compra": {
+       "valor": "Envío disponible · Retiro en tienda · Botón Comprar",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_011000228.html"
+      }
+     }
+    },
+    "bot": {
+     "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+     "capa": "raw · curl sin JavaScript · UA RelevoStudio-Audit/1.0",
+     "bytes": 194659,
+     "campos": {
+      "titulo": {
+       "valor": "Ziagen 300mg 60 Comp.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html"
+      },
+      "meta_description": {
+       "valor": "Ziagen 300mg con Abacavir. Cofar Asegura Confidencialidad. Somos expertos en medicamentos de especialidad crónicos. Entregas en menos de 24H en RM o retiro presencial.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html"
+      },
+      "canonical": {
+       "valor": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html"
+      },
+      "precio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "Ningún precio en el HTML del servidor."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "No está en el HTML ni en el payload de Next.js."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "Solo si la meta description lo menciona de pasada."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "La ficha llega vacía; el texto se carga después con JavaScript."
+      },
+      "imagen": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "18 <img> en el HTML y todas son logo o íconos."
+      },
+      "open_graph": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "Sin og:* ni twitter:*. Una vista previa de WhatsApp o LinkedIn no tiene imagen ni precio."
+      },
+      "json_ld": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "Cero bloques ld+json en el HTML del servidor."
+      },
+      "payload_next": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_011000228_ziagen-300mg-60-comp.html",
+       "nota": "El payload self.__next_f tampoco trae precio ni atributos."
+      }
+     }
+    },
+    "jsonld": {
+     "fuente": "evidencia/p2/jsonld_dom.json",
+     "fuente_dom": "evidencia/dom/product_011000228.html",
+     "capa": "DOM · script ld+json inyectado por JavaScript · no existe en raw",
+     "bloque": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "description": "Descripcion no disponible",
+      "name": "Ziagen 300mg 60 Comp.",
+      "url": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+      "image": "https://product-img.cofar.cl/products/hqBFPdpEx6dBRBv32/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": "Marca no disponible"
+      },
+      "sku": "011000228",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 600890,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     },
+     "campos": {
+      "name": {
+       "valor": "Ziagen 300mg 60 Comp.",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "sku": {
+       "valor": "011000228",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "brand": {
+       "valor": "\"Marca no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código. La API trae laboratory.label = \"GlaxoSmithKline\"."
+      },
+      "description": {
+       "valor": "\"Descripcion no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código."
+      },
+      "image": {
+       "valor": "https://product-img.cofar.cl/products/hqBFPdpEx6dBRBv32/images/1.webp",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "category": {
+       "valor": "Seguro Complementario",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Primer tag del producto, no la categoría clínica."
+      },
+      "price": {
+       "valor": "600890 CLP",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "availability": {
+       "valor": "\"InStock\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Fijo en el código para las 21 fichas; sin prefijo https://schema.org/. Aquí coincide con el stock real, pero no lo lee de la API."
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera. El campo no existe en la API."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "condicion_venta": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "refrigeracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      }
+     }
+    },
+    "api": {
+     "fuente": "evidencia/api/catalogo_completo.json",
+     "capa": "API · GET services.cofar.cl/products/2.0 · volcado del 2026-09-12 · generado en build, sin llamadas en vivo",
+     "bloque": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Ziagen 300mg 60 Comp.",
+      "sku": "011000228",
+      "url": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+      "image": [
+       "https://product-img.cofar.cl/products/hqBFPdpEx6dBRBv32/images/1.webp"
+      ],
+      "brand": {
+       "@type": "Brand",
+       "name": "GlaxoSmithKline"
+      },
+      "category": "Seguro Complementario > VIH",
+      "additionalProperty": [
+       {
+        "@type": "PropertyValue",
+        "name": "Principio activo",
+        "value": "ABACAVIR"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Concentración",
+        "value": "300 mgr"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Forma farmacéutica",
+        "value": "Comprimidos"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Cantidad por envase",
+        "value": "60"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Condición de venta",
+        "value": "Receta médica simple"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Almacenamiento",
+        "value": "Lugar seco, no más de 25ºC"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Refrigerado",
+        "value": "No"
+       }
+      ],
+      "offers": {
+       "@type": "Offer",
+       "url": "https://cofar.cl/product/011000228/ziagen-300mg-60-comp",
+       "price": 600890,
+       "priceCurrency": "CLP",
+       "availability": "https://schema.org/InStock",
+       "availableDeliveryMethod": [
+        "https://schema.org/ParcelService",
+        "https://schema.org/OnSitePickup"
+       ]
+      }
+     },
+     "campos": {
+      "nombre": {
+       "valor": "Ziagen 300mg 60 Comp.",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_normal": {
+       "valor": "$600.890",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_oferta": {
+       "valor": null,
+       "estado": "no_aplica",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "offerPrice es null en el volcado."
+      },
+      "laboratorio": {
+       "valor": "GlaxoSmithKline",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "laboratory.label"
+      },
+      "principio_activo": {
+       "valor": "ABACAVIR",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "activePrinciples[0].name"
+      },
+      "concentracion": {
+       "valor": "300 mgr",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "forma_contenido": {
+       "valor": "60 Comprimidos",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "unitContent + pharmaceuticalForm.label"
+      },
+      "condicion_venta": {
+       "valor": "Receta médica simple",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "saleCondition.value = simpleRecipe"
+      },
+      "refrigeracion": {
+       "valor": "No refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Lugar seco, no más de 25ºC"
+      },
+      "disponibilidad": {
+       "valor": "InStock (stock real)",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "stock = 100 · isOutOfStock = false"
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "La API no tiene descripción para este producto. El campo se omite; no se rellena."
+      },
+      "imagen": {
+       "valor": "1 imagen",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "/products/hqBFPdpEx6dBRBv32/images/1.webp"
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "No existe en la API. No se inventa."
+      }
+     },
+     "api": {
+      "sku": "011000228",
+      "productName": "Ziagen 300mg 60 Comp.",
+      "productType": "Medicament",
+      "laboratory": {
+       "label": "GlaxoSmithKline"
+      },
+      "brand": null,
+      "activePrinciples": [
+       {
+        "name": "ABACAVIR",
+        "amountContent": 300,
+        "unitMeasure": "mgr"
+       }
+      ],
+      "pharmaceuticalForm": {
+       "label": "Comprimidos"
+      },
+      "unitContent": 60,
+      "saleCondition": {
+       "value": "simpleRecipe"
+      },
+      "storageCondition": "Lugar seco, no más de 25ºC",
+      "attributes": {
+       "isRefrigerated": false,
+       "isOutOfStock": false,
+       "isBioequivalent": false,
+       "hasDelivery": true,
+       "hasStore": true
+      },
+      "stock": 100,
+      "normalPrice": 600890,
+      "offerPrice": null,
+      "imageURLs": [
+       "/products/hqBFPdpEx6dBRBv32/images/1.webp"
+      ],
+      "tags": [
+       "Seguro Complementario",
+       "VIH"
+      ],
+      "subTags": [],
+      "description_len": 0,
+      "description": null,
+      "metaTitle": "Ziagen Abacavir 300 mg",
+      "metaDescription": "Ziagen 300mg con Abacavir. Cofar Asegura Confidencialidad. Somos expertos en medicamentos de especialidad crónicos. Entregas en menos de 24H en RM o retiro presencial."
+     }
+    }
+   }
+  },
+  {
+   "sku": "082560020",
+   "nombre": "Sutent 50mg 28 Cap.",
+   "grupo": "Oncológico",
+   "por_que": "Categoría con 4% de descripción. Producto de $4.289.990.",
+   "url_publica": "https://cofar.cl/product/082560020/sutent-50mg-28-cap",
+   "miradas": {
+    "paciente": {
+     "fuente": "evidencia/dom/product_082560020.html",
+     "capa": "DOM · Chrome 153 headless · --dump-dom",
+     "campos": {
+      "nombre": {
+       "valor": "Sutent 50mg 28 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      },
+      "precio_normal": {
+       "valor": "$4.289.990",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      },
+      "precio_oferta": {
+       "valor": null,
+       "estado": "no_aplica",
+       "fuente": "evidencia/dom/product_082560020.html",
+       "nota": "La ficha muestra un solo precio; no hay oferta visible."
+      },
+      "laboratorio": {
+       "valor": "Pfizer",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      },
+      "principio_activo": {
+       "valor": "SUNITINIB",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      },
+      "concentracion": {
+       "valor": "50 mgr",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      },
+      "forma_contenido": {
+       "valor": "28 Cápsulas",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      },
+      "condicion_venta": {
+       "valor": "Rec. Med. Simple",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html",
+       "nota": "Producto requiere presentación de receta médica simple"
+      },
+      "refrigeracion": {
+       "valor": "Lugar seco, no más de 30ºC",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html",
+       "nota": "Sin etiqueta \"Refrigerado\"."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/dom/product_082560020.html",
+       "nota": "La sección \"Descripción\" está vacía."
+      },
+      "imagen": {
+       "valor": "1 imagen de producto",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html",
+       "nota": "/products/WsHuBz4hy5yMJankd/images/1.webp"
+      },
+      "compra": {
+       "valor": "Envío disponible · Retiro en tienda · Botón Comprar",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_082560020.html"
+      }
+     }
+    },
+    "bot": {
+     "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+     "capa": "raw · curl sin JavaScript · UA RelevoStudio-Audit/1.0",
+     "bytes": 194641,
+     "campos": {
+      "titulo": {
+       "valor": "Sutent 50mg 28 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html"
+      },
+      "meta_description": {
+       "valor": "Sutent 50mg con Sunitinib, Cápsulas. Confía en Cofar, somos expertos en medicamentos de especialidad crónicos. Entregas en menos de 24H en RM o retiro presencial.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html"
+      },
+      "canonical": {
+       "valor": "https://cofar.cl/product/082560020/sutent-50mg-28-cap",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html"
+      },
+      "precio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "Ningún precio en el HTML del servidor."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "No está en el HTML ni en el payload de Next.js."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "Solo si la meta description lo menciona de pasada."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "La ficha llega vacía; el texto se carga después con JavaScript."
+      },
+      "imagen": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "18 <img> en el HTML y todas son logo o íconos."
+      },
+      "open_graph": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "Sin og:* ni twitter:*. Una vista previa de WhatsApp o LinkedIn no tiene imagen ni precio."
+      },
+      "json_ld": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "Cero bloques ld+json en el HTML del servidor."
+      },
+      "payload_next": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_082560020_sutent-50mg-28-cap.html",
+       "nota": "El payload self.__next_f tampoco trae precio ni atributos."
+      }
+     }
+    },
+    "jsonld": {
+     "fuente": "evidencia/p2/jsonld_dom.json",
+     "fuente_dom": "evidencia/dom/product_082560020.html",
+     "capa": "DOM · script ld+json inyectado por JavaScript · no existe en raw",
+     "bloque": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "description": "Descripcion no disponible",
+      "name": "Sutent 50mg 28 Cap.",
+      "url": "https://cofar.cl/product/082560020/sutent-50mg-28-cap",
+      "image": "https://product-img.cofar.cl/products/WsHuBz4hy5yMJankd/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": "Marca no disponible"
+      },
+      "sku": "082560020",
+      "category": "Seguro Complementario",
+      "offers": {
+       "@type": "Offer",
+       "price": 4289990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     },
+     "campos": {
+      "name": {
+       "valor": "Sutent 50mg 28 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "sku": {
+       "valor": "082560020",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "brand": {
+       "valor": "\"Marca no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código. La API trae laboratory.label = \"Pfizer\"."
+      },
+      "description": {
+       "valor": "\"Descripcion no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código."
+      },
+      "image": {
+       "valor": "https://product-img.cofar.cl/products/WsHuBz4hy5yMJankd/images/1.webp",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "category": {
+       "valor": "Seguro Complementario",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Primer tag del producto, no la categoría clínica."
+      },
+      "price": {
+       "valor": "4289990 CLP",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "availability": {
+       "valor": "\"InStock\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Fijo en el código para las 21 fichas; sin prefijo https://schema.org/. Aquí coincide con el stock real, pero no lo lee de la API."
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera. El campo no existe en la API."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "condicion_venta": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "refrigeracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      }
+     }
+    },
+    "api": {
+     "fuente": "evidencia/api/catalogo_completo.json",
+     "capa": "API · GET services.cofar.cl/products/2.0 · volcado del 2026-09-12 · generado en build, sin llamadas en vivo",
+     "bloque": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Sutent 50mg 28 Cap.",
+      "sku": "082560020",
+      "url": "https://cofar.cl/product/082560020/sutent-50mg-28-cap",
+      "image": [
+       "https://product-img.cofar.cl/products/WsHuBz4hy5yMJankd/images/1.webp"
+      ],
+      "brand": {
+       "@type": "Brand",
+       "name": "Pfizer"
+      },
+      "category": "Seguro Complementario > Enfermedades Específicas > Oncológicos",
+      "additionalProperty": [
+       {
+        "@type": "PropertyValue",
+        "name": "Principio activo",
+        "value": "SUNITINIB"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Concentración",
+        "value": "50 mgr"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Forma farmacéutica",
+        "value": "Cápsulas"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Cantidad por envase",
+        "value": "28"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Condición de venta",
+        "value": "Receta médica simple"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Almacenamiento",
+        "value": "Lugar seco, no más de 30ºC"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Refrigerado",
+        "value": "No"
+       }
+      ],
+      "offers": {
+       "@type": "Offer",
+       "url": "https://cofar.cl/product/082560020/sutent-50mg-28-cap",
+       "price": 4289990,
+       "priceCurrency": "CLP",
+       "availability": "https://schema.org/InStock",
+       "availableDeliveryMethod": [
+        "https://schema.org/ParcelService",
+        "https://schema.org/OnSitePickup"
+       ]
+      }
+     },
+     "campos": {
+      "nombre": {
+       "valor": "Sutent 50mg 28 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_normal": {
+       "valor": "$4.289.990",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_oferta": {
+       "valor": null,
+       "estado": "no_aplica",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "offerPrice es null en el volcado."
+      },
+      "laboratorio": {
+       "valor": "Pfizer",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "laboratory.label"
+      },
+      "principio_activo": {
+       "valor": "SUNITINIB",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "activePrinciples[0].name"
+      },
+      "concentracion": {
+       "valor": "50 mgr",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "forma_contenido": {
+       "valor": "28 Cápsulas",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "unitContent + pharmaceuticalForm.label"
+      },
+      "condicion_venta": {
+       "valor": "Receta médica simple",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "saleCondition.value = simpleRecipe"
+      },
+      "refrigeracion": {
+       "valor": "No refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Lugar seco, no más de 30ºC"
+      },
+      "disponibilidad": {
+       "valor": "InStock (stock real)",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "stock = 100 · isOutOfStock = false"
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "La API no tiene descripción para este producto. El campo se omite; no se rellena."
+      },
+      "imagen": {
+       "valor": "1 imagen",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "/products/WsHuBz4hy5yMJankd/images/1.webp"
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "No existe en la API. No se inventa."
+      }
+     },
+     "api": {
+      "sku": "082560020",
+      "productName": "Sutent 50mg 28 Cap.",
+      "productType": "Medicament",
+      "laboratory": {
+       "label": "Pfizer"
+      },
+      "brand": null,
+      "activePrinciples": [
+       {
+        "name": "SUNITINIB",
+        "amountContent": 50,
+        "unitMeasure": "mgr"
+       }
+      ],
+      "pharmaceuticalForm": {
+       "label": "Cápsulas"
+      },
+      "unitContent": 28,
+      "saleCondition": {
+       "value": "simpleRecipe"
+      },
+      "storageCondition": "Lugar seco, no más de 30ºC",
+      "attributes": {
+       "isRefrigerated": false,
+       "isOutOfStock": false,
+       "isBioequivalent": false,
+       "hasDelivery": true,
+       "hasStore": true
+      },
+      "stock": 100,
+      "normalPrice": 4289990,
+      "offerPrice": null,
+      "imageURLs": [
+       "/products/WsHuBz4hy5yMJankd/images/1.webp"
+      ],
+      "tags": [
+       "Seguro Complementario",
+       "Enfermedades Específicas"
+      ],
+      "subTags": [
+       "Oncológicos"
+      ],
+      "description_len": 0,
+      "description": null,
+      "metaTitle": "Sutent 50mg SUNITINIB",
+      "metaDescription": "Sutent 50mg con Sunitinib, Cápsulas. Confía en Cofar, somos expertos en medicamentos de especialidad crónicos. Entregas en menos de 24H en RM o retiro presencial."
+     }
+    }
+   }
+  },
+  {
+   "sku": "052010003",
+   "nombre": "Gonal F 300ui/0.5ml 1 Jp.",
+   "grupo": "Fertilidad",
+   "por_que": "Alta especialidad, refrigerado. Gonal F apareció 9.º en una búsqueda del 2026-09-12.",
+   "url_publica": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp",
+   "miradas": {
+    "paciente": {
+     "fuente": "evidencia/dom/product_052010003.html",
+     "capa": "DOM · Chrome 153 headless · --dump-dom",
+     "campos": {
+      "nombre": {
+       "valor": "Gonal F 300ui/0.5ml 1 Jp.",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "precio_normal": {
+       "valor": "$253.790",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "precio_oferta": {
+       "valor": "$201.990",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "laboratorio": {
+       "valor": "Merck",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "principio_activo": {
+       "valor": "FOLITROPINA ALFA RECOMBINANTE HUMANA",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "concentracion": {
+       "valor": "22.23 mcg/0,5ml",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "forma_contenido": {
+       "valor": "1 Dispositivo Prellenado",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      },
+      "condicion_venta": {
+       "valor": "Rec. Med. Simple",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html",
+       "nota": "Producto requiere presentación de receta médica simple"
+      },
+      "refrigeracion": {
+       "valor": "Refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html",
+       "nota": "Refrigerado, entre 2º y 8ºC"
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/dom/product_052010003.html",
+       "nota": "La sección \"Descripción\" está vacía."
+      },
+      "imagen": {
+       "valor": "1 imagen de producto",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html",
+       "nota": "/products/a8fquCRJTxZ4dftrQ/images/1.webp"
+      },
+      "compra": {
+       "valor": "Envío disponible · Retiro en tienda · Botón Comprar",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_052010003.html"
+      }
+     }
+    },
+    "bot": {
+     "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+     "capa": "raw · curl sin JavaScript · UA RelevoStudio-Audit/1.0",
+     "bytes": 194661,
+     "campos": {
+      "titulo": {
+       "valor": "Gonal F 300ui/0.5ml 1 Jp.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html"
+      },
+      "meta_description": {
+       "valor": "Encuentra Gonal 300Ui/0.5ml. Confía en Cofar, especialistas en medicamentos crónicos y expertos en cadena de frío. Entregas en 24h en RM o retiro presencial",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html"
+      },
+      "canonical": {
+       "valor": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html"
+      },
+      "precio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "Ningún precio en el HTML del servidor."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "No está en el HTML ni en el payload de Next.js."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "Solo si la meta description lo menciona de pasada."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "La ficha llega vacía; el texto se carga después con JavaScript."
+      },
+      "imagen": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "18 <img> en el HTML y todas son logo o íconos."
+      },
+      "open_graph": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "Sin og:* ni twitter:*. Una vista previa de WhatsApp o LinkedIn no tiene imagen ni precio."
+      },
+      "json_ld": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "Cero bloques ld+json en el HTML del servidor."
+      },
+      "payload_next": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_052010003_gonal-f-300ui-0-5ml-1-jp.html",
+       "nota": "El payload self.__next_f tampoco trae precio ni atributos."
+      }
+     }
+    },
+    "jsonld": {
+     "fuente": "evidencia/p2/jsonld_dom.json",
+     "fuente_dom": "evidencia/dom/product_052010003.html",
+     "capa": "DOM · script ld+json inyectado por JavaScript · no existe en raw",
+     "bloque": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "description": "Descripcion no disponible",
+      "name": "Gonal F 300ui/0.5ml 1 Jp.",
+      "url": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp",
+      "image": "https://product-img.cofar.cl/products/a8fquCRJTxZ4dftrQ/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": "Marca no disponible"
+      },
+      "sku": "052010003",
+      "category": "Fertilidad",
+      "offers": {
+       "@type": "Offer",
+       "price": 201990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     },
+     "campos": {
+      "name": {
+       "valor": "Gonal F 300ui/0.5ml 1 Jp.",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "sku": {
+       "valor": "052010003",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "brand": {
+       "valor": "\"Marca no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código. La API trae laboratory.label = \"Merck\"."
+      },
+      "description": {
+       "valor": "\"Descripcion no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código."
+      },
+      "image": {
+       "valor": "https://product-img.cofar.cl/products/a8fquCRJTxZ4dftrQ/images/1.webp",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "category": {
+       "valor": "Fertilidad",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Primer tag del producto, no la categoría clínica."
+      },
+      "price": {
+       "valor": "201990 CLP",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Es el precio de oferta. El precio normal no se declara."
+      },
+      "availability": {
+       "valor": "\"InStock\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Fijo en el código para las 21 fichas; sin prefijo https://schema.org/. Aquí coincide con el stock real, pero no lo lee de la API."
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera. El campo no existe en la API."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "condicion_venta": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "refrigeracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      }
+     }
+    },
+    "api": {
+     "fuente": "evidencia/api/catalogo_completo.json",
+     "capa": "API · GET services.cofar.cl/products/2.0 · volcado del 2026-09-12 · generado en build, sin llamadas en vivo",
+     "bloque": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Gonal F 300ui/0.5ml 1 Jp.",
+      "sku": "052010003",
+      "url": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp",
+      "image": [
+       "https://product-img.cofar.cl/products/a8fquCRJTxZ4dftrQ/images/1.webp"
+      ],
+      "brand": {
+       "@type": "Brand",
+       "name": "Merck"
+      },
+      "category": "Fertilidad > Refrigerados > Especial Fertilidad",
+      "additionalProperty": [
+       {
+        "@type": "PropertyValue",
+        "name": "Principio activo",
+        "value": "FOLITROPINA ALFA RECOMBINANTE HUMANA"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Concentración",
+        "value": "22.23 mcg/0,5ml"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Forma farmacéutica",
+        "value": "Dispositivo Prellenado"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Cantidad por envase",
+        "value": "1"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Condición de venta",
+        "value": "Receta médica simple"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Almacenamiento",
+        "value": "Refrigerado, entre 2º y 8ºC"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Refrigerado",
+        "value": "Sí"
+       }
+      ],
+      "offers": {
+       "@type": "Offer",
+       "url": "https://cofar.cl/product/052010003/gonal-f-300ui05ml-1-jp",
+       "price": 201990,
+       "priceCurrency": "CLP",
+       "availability": "https://schema.org/InStock",
+       "availableDeliveryMethod": [
+        "https://schema.org/ParcelService",
+        "https://schema.org/OnSitePickup"
+       ],
+       "priceSpecification": [
+        {
+         "@type": "UnitPriceSpecification",
+         "priceType": "https://schema.org/ListPrice",
+         "price": 253790,
+         "priceCurrency": "CLP"
+        },
+        {
+         "@type": "UnitPriceSpecification",
+         "priceType": "https://schema.org/SalePrice",
+         "price": 201990,
+         "priceCurrency": "CLP"
+        }
+       ]
+      }
+     },
+     "campos": {
+      "nombre": {
+       "valor": "Gonal F 300ui/0.5ml 1 Jp.",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_normal": {
+       "valor": "$253.790",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_oferta": {
+       "valor": "$201.990",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Se declara como SalePrice junto al ListPrice."
+      },
+      "laboratorio": {
+       "valor": "Merck",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "laboratory.label"
+      },
+      "principio_activo": {
+       "valor": "FOLITROPINA ALFA RECOMBINANTE HUMANA",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "activePrinciples[0].name"
+      },
+      "concentracion": {
+       "valor": "22.23 mcg/0,5ml",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "forma_contenido": {
+       "valor": "1 Dispositivo Prellenado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "unitContent + pharmaceuticalForm.label"
+      },
+      "condicion_venta": {
+       "valor": "Receta médica simple",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "saleCondition.value = simpleRecipe"
+      },
+      "refrigeracion": {
+       "valor": "Refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Refrigerado, entre 2º y 8ºC"
+      },
+      "disponibilidad": {
+       "valor": "InStock (stock real)",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "stock = 100 · isOutOfStock = false"
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "La API no tiene descripción para este producto. El campo se omite; no se rellena."
+      },
+      "imagen": {
+       "valor": "1 imagen",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "/products/a8fquCRJTxZ4dftrQ/images/1.webp"
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "No existe en la API. No se inventa."
+      }
+     },
+     "api": {
+      "sku": "052010003",
+      "productName": "Gonal F 300ui/0.5ml 1 Jp.",
+      "productType": "Medicament",
+      "laboratory": {
+       "label": "Merck"
+      },
+      "brand": null,
+      "activePrinciples": [
+       {
+        "name": "FOLITROPINA ALFA RECOMBINANTE HUMANA",
+        "amountContent": 22.23,
+        "unitMeasure": "mcg/0,5ml"
+       }
+      ],
+      "pharmaceuticalForm": {
+       "label": "Dispositivo Prellenado"
+      },
+      "unitContent": 1,
+      "saleCondition": {
+       "value": "simpleRecipe"
+      },
+      "storageCondition": "Refrigerado, entre 2º y 8ºC",
+      "attributes": {
+       "isRefrigerated": true,
+       "isOutOfStock": false,
+       "isBioequivalent": false,
+       "hasDelivery": true,
+       "hasStore": true
+      },
+      "stock": 100,
+      "normalPrice": 253790,
+      "offerPrice": 201990,
+      "imageURLs": [
+       "/products/a8fquCRJTxZ4dftrQ/images/1.webp"
+      ],
+      "tags": [
+       "Fertilidad",
+       "Refrigerados",
+       "Especial Fertilidad"
+      ],
+      "subTags": [],
+      "description_len": 0,
+      "description": null,
+      "metaTitle": "Gonal 300ui/0.5ml FOLITROPINA ALFA RECOMBINANTE HUMANA",
+      "metaDescription": "Encuentra Gonal 300Ui/0.5ml. Confía en Cofar, especialistas en medicamentos crónicos y expertos en cadena de frío. Entregas en 24h en RM o retiro presencial"
+     }
+    }
+   }
+  },
+  {
+   "sku": "012510044",
+   "nombre": "Depurol Retard 75mg 30 Cap.",
+   "grupo": "Salud mental",
+   "por_que": "Categoría con 12% de descripción.",
+   "url_publica": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap",
+   "miradas": {
+    "paciente": {
+     "fuente": "evidencia/dom/product_012510044.html",
+     "capa": "DOM · Chrome 153 headless · --dump-dom",
+     "campos": {
+      "nombre": {
+       "valor": "Depurol Retard 75mg 30 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "precio_normal": {
+       "valor": "$26.690",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "precio_oferta": {
+       "valor": "$24.990",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "laboratorio": {
+       "valor": "Megalabs",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "principio_activo": {
+       "valor": "VENLAFAXINA",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "concentracion": {
+       "valor": "75 mgr",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "forma_contenido": {
+       "valor": "30 Cápsulas",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      },
+      "condicion_venta": {
+       "valor": "Rec. Med. Simple",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html",
+       "nota": "Producto requiere presentación de receta médica simple"
+      },
+      "refrigeracion": {
+       "valor": "Lugar seco, no más de 25ºC",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html",
+       "nota": "Sin etiqueta \"Refrigerado\"."
+      },
+      "descripcion": {
+       "valor": "Bioequivalente",
+       "estado": "degradado",
+       "fuente": "evidencia/dom/product_012510044.html",
+       "nota": "14 caracteres. Es todo lo que dice la ficha."
+      },
+      "imagen": {
+       "valor": "5 imagenes de producto",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html",
+       "nota": "/products/GprgyFTRXB58qDH2E/images/1.webp · /products/f9BSwpAmQLaX5bnni/images/1.webp · /products/XaWBjABsGgB8zvE3z/images/1.webp · /products/CqnLF5u6TqEqqBouo/images/1.webp · /products/rfXKFg8X2xfk5tRhJ/images/1.webp"
+      },
+      "compra": {
+       "valor": "Envío disponible · Retiro en tienda · Botón Comprar",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_012510044.html"
+      }
+     }
+    },
+    "bot": {
+     "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+     "capa": "raw · curl sin JavaScript · UA RelevoStudio-Audit/1.0",
+     "bytes": 194565,
+     "campos": {
+      "titulo": {
+       "valor": "Depurol Retard 75mg 30 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html"
+      },
+      "meta_description": {
+       "valor": "Venlafaxina 75 mg Antidepresivo dual para depresión y ansiedad. Envío a domicilio y retiro en tienda.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html"
+      },
+      "canonical": {
+       "valor": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html"
+      },
+      "precio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "Ningún precio en el HTML del servidor."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "No está en el HTML ni en el payload de Next.js."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "Solo si la meta description lo menciona de pasada."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "La ficha llega vacía; el texto se carga después con JavaScript."
+      },
+      "imagen": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "18 <img> en el HTML y todas son logo o íconos."
+      },
+      "open_graph": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "Sin og:* ni twitter:*. Una vista previa de WhatsApp o LinkedIn no tiene imagen ni precio."
+      },
+      "json_ld": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "Cero bloques ld+json en el HTML del servidor."
+      },
+      "payload_next": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_012510044_depurol-retard-75mg-30-cap.html",
+       "nota": "El payload self.__next_f tampoco trae precio ni atributos."
+      }
+     }
+    },
+    "jsonld": {
+     "fuente": "evidencia/p2/jsonld_dom.json",
+     "fuente_dom": "evidencia/dom/product_012510044.html",
+     "capa": "DOM · script ld+json inyectado por JavaScript · no existe en raw",
+     "bloque": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "description": "Bioequivalente",
+      "name": "Depurol Retard 75mg 30 Cap.",
+      "url": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap",
+      "image": "https://product-img.cofar.cl/products/GprgyFTRXB58qDH2E/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": "Marca no disponible"
+      },
+      "sku": "012510044",
+      "category": "Salud mental",
+      "offers": {
+       "@type": "Offer",
+       "price": 24990,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     },
+     "campos": {
+      "name": {
+       "valor": "Depurol Retard 75mg 30 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "sku": {
+       "valor": "012510044",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "brand": {
+       "valor": "\"Marca no disponible\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Placeholder fijo en el código. La API trae laboratory.label = \"Megalabs\"."
+      },
+      "description": {
+       "valor": "\"Bioequivalente\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "14 caracteres."
+      },
+      "image": {
+       "valor": "https://product-img.cofar.cl/products/GprgyFTRXB58qDH2E/images/1.webp",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "category": {
+       "valor": "Salud mental",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Primer tag del producto, no la categoría clínica."
+      },
+      "price": {
+       "valor": "24990 CLP",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Es el precio de oferta. El precio normal no se declara."
+      },
+      "availability": {
+       "valor": "\"InStock\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Fijo en el código para las 21 fichas; sin prefijo https://schema.org/. Aquí coincide con el stock real, pero no lo lee de la API."
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera. El campo no existe en la API."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "condicion_venta": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "refrigeracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      }
+     }
+    },
+    "api": {
+     "fuente": "evidencia/api/catalogo_completo.json",
+     "capa": "API · GET services.cofar.cl/products/2.0 · volcado del 2026-09-12 · generado en build, sin llamadas en vivo",
+     "bloque": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Depurol Retard 75mg 30 Cap.",
+      "sku": "012510044",
+      "url": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap",
+      "image": [
+       "https://product-img.cofar.cl/products/GprgyFTRXB58qDH2E/images/1.webp"
+      ],
+      "brand": {
+       "@type": "Brand",
+       "name": "Megalabs"
+      },
+      "category": "Salud mental > Seguro Complementario > Antidepresivos",
+      "description": "Bioequivalente",
+      "additionalProperty": [
+       {
+        "@type": "PropertyValue",
+        "name": "Principio activo",
+        "value": "VENLAFAXINA"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Concentración",
+        "value": "75 mgr"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Forma farmacéutica",
+        "value": "Cápsulas"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Cantidad por envase",
+        "value": "30"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Condición de venta",
+        "value": "Receta médica simple"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Almacenamiento",
+        "value": "Lugar seco, no más de 25ºC"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Refrigerado",
+        "value": "No"
+       }
+      ],
+      "offers": {
+       "@type": "Offer",
+       "url": "https://cofar.cl/product/012510044/depurol-retard-75mg-30-cap",
+       "price": 24990,
+       "priceCurrency": "CLP",
+       "availability": "https://schema.org/InStock",
+       "availableDeliveryMethod": [
+        "https://schema.org/ParcelService",
+        "https://schema.org/OnSitePickup"
+       ],
+       "priceSpecification": [
+        {
+         "@type": "UnitPriceSpecification",
+         "priceType": "https://schema.org/ListPrice",
+         "price": 26690,
+         "priceCurrency": "CLP"
+        },
+        {
+         "@type": "UnitPriceSpecification",
+         "priceType": "https://schema.org/SalePrice",
+         "price": 24990,
+         "priceCurrency": "CLP"
+        }
+       ]
+      }
+     },
+     "campos": {
+      "nombre": {
+       "valor": "Depurol Retard 75mg 30 Cap.",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_normal": {
+       "valor": "$26.690",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_oferta": {
+       "valor": "$24.990",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Se declara como SalePrice junto al ListPrice."
+      },
+      "laboratorio": {
+       "valor": "Megalabs",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "laboratory.label"
+      },
+      "principio_activo": {
+       "valor": "VENLAFAXINA",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "activePrinciples[0].name"
+      },
+      "concentracion": {
+       "valor": "75 mgr",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "forma_contenido": {
+       "valor": "30 Cápsulas",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "unitContent + pharmaceuticalForm.label"
+      },
+      "condicion_venta": {
+       "valor": "Receta médica simple",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "saleCondition.value = simpleRecipe"
+      },
+      "refrigeracion": {
+       "valor": "No refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Lugar seco, no más de 25ºC"
+      },
+      "disponibilidad": {
+       "valor": "InStock (stock real)",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "stock = 100 · isOutOfStock = false"
+      },
+      "descripcion": {
+       "valor": "\"Bioequivalente\"",
+       "estado": "degradado",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "14 caracteres en la API. Es lo que hay; no se inventa."
+      },
+      "imagen": {
+       "valor": "1 imagen",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "/products/GprgyFTRXB58qDH2E/images/1.webp"
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "No existe en la API. No se inventa."
+      }
+     },
+     "api": {
+      "sku": "012510044",
+      "productName": "Depurol Retard 75mg 30 Cap.",
+      "productType": "Medicament",
+      "laboratory": {
+       "label": "Megalabs"
+      },
+      "brand": null,
+      "activePrinciples": [
+       {
+        "name": "VENLAFAXINA",
+        "amountContent": 75,
+        "unitMeasure": "mgr"
+       }
+      ],
+      "pharmaceuticalForm": {
+       "label": "Cápsulas"
+      },
+      "unitContent": 30,
+      "saleCondition": {
+       "value": "simpleRecipe"
+      },
+      "storageCondition": "Lugar seco, no más de 25ºC",
+      "attributes": {
+       "isRefrigerated": false,
+       "isOutOfStock": false,
+       "isBioequivalent": true,
+       "hasDelivery": true,
+       "hasStore": true
+      },
+      "stock": 100,
+      "normalPrice": 26690,
+      "offerPrice": 24990,
+      "imageURLs": [
+       "/products/GprgyFTRXB58qDH2E/images/1.webp"
+      ],
+      "tags": [
+       "Salud mental",
+       "Seguro Complementario"
+      ],
+      "subTags": [
+       "Antidepresivos"
+      ],
+      "description_len": 14,
+      "description": "Bioequivalente",
+      "metaTitle": "Depurol Retard Venlafaxina 75 mg 30 cápsulas",
+      "metaDescription": "Venlafaxina 75 mg Antidepresivo dual para depresión y ansiedad. Envío a domicilio y retiro en tienda."
+     }
+    }
+   }
+  },
+  {
+   "sku": "015970047",
+   "nombre": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+   "grupo": "Dermocosmética · control",
+   "por_que": "Control: la categoría mejor descrita del catálogo (69%).",
+   "url_publica": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml",
+   "miradas": {
+    "paciente": {
+     "fuente": "evidencia/dom/product_015970047.html",
+     "capa": "DOM · Chrome 153 headless · --dump-dom",
+     "campos": {
+      "nombre": {
+       "valor": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html"
+      },
+      "precio_normal": {
+       "valor": "$42.190",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html"
+      },
+      "precio_oferta": {
+       "valor": null,
+       "estado": "no_aplica",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "La ficha muestra un solo precio; no hay oferta visible."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "La ficha no muestra laboratorio ni marca como dato."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "No aparece \"Principio Activo\" en la ficha."
+      },
+      "concentracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/dom/product_015970047.html"
+      },
+      "forma_contenido": {
+       "valor": "20 ml Serum",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html"
+      },
+      "condicion_venta": {
+       "valor": "Venta directa",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "Venta directa"
+      },
+      "refrigeracion": {
+       "valor": "Lugar seco, no más de 25ºC",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "Sin etiqueta \"Refrigerado\"."
+      },
+      "descripcion": {
+       "valor": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de la vitamina C con un complejo antioxidante que incluye polifenoles y vitamina E, logrando potenciar la luminosidad y uni…",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "1.738 caracteres."
+      },
+      "imagen": {
+       "valor": "12 imagenes de producto",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html",
+       "nota": "/products/bR7N32C3aXKignMnW/images/1.webp · /products/bR7N32C3aXKignMnW/images/3.webp · /products/3BmLwx9vGG2sh6MHD/images/1.webp · /products/3hnMEu4GCCbtYn74v/images/1.webp · /products/45roRr2wiwEEAb3oR/images/0.webp · /products/4iD8uiNbZSoZL4Hu5/images/1.webp · /products/577dzBANAfszvbxHu/images/1.webp · /products/57TkabvP4FNFiPAQy/images/1.webp · /products/6PdWDoSyZFePEYAjY/images/1.webp · /products/6W9RQt6TyzjJsKpgv/images/1.webp · /products/6sSHi64pC8KKqyN68/images/1.webp · /products/7Xn6XqrMjF7RyDQLt/images/0.png"
+      },
+      "compra": {
+       "valor": "Envío disponible · Retiro en tienda · Botón Comprar",
+       "estado": "presente",
+       "fuente": "evidencia/dom/product_015970047.html"
+      }
+     }
+    },
+    "bot": {
+     "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+     "capa": "raw · curl sin JavaScript · UA RelevoStudio-Audit/1.0",
+     "bytes": 194707,
+     "campos": {
+      "titulo": {
+       "valor": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html"
+      },
+      "meta_description": {
+       "valor": "Vichy Liftactiv Supreme Vit C Serum 20ml. Somos especialistas en dermocosmética. Entregas en menos de 24H en RM o retiro presencial.",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html"
+      },
+      "canonical": {
+       "valor": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml",
+       "estado": "presente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html"
+      },
+      "precio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "Ningún precio en el HTML del servidor."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "No está en el HTML ni en el payload de Next.js."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "Solo si la meta description lo menciona de pasada."
+      },
+      "descripcion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "La ficha llega vacía; el texto se carga después con JavaScript."
+      },
+      "imagen": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "18 <img> en el HTML y todas son logo o íconos."
+      },
+      "open_graph": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "Sin og:* ni twitter:*. Una vista previa de WhatsApp o LinkedIn no tiene imagen ni precio."
+      },
+      "json_ld": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "Cero bloques ld+json en el HTML del servidor."
+      },
+      "payload_next": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/fichas/product_015970047_vichy-liftactiv-supreme-vit-c-serum-20ml.html",
+       "nota": "El payload self.__next_f tampoco trae precio ni atributos."
+      }
+     }
+    },
+    "jsonld": {
+     "fuente": "evidencia/p2/jsonld_dom.json",
+     "fuente_dom": "evidencia/dom/product_015970047.html",
+     "capa": "DOM · script ld+json inyectado por JavaScript · no existe en raw",
+     "bloque": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "description": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de la vitamina C con un complejo antioxidante que incluye polifenoles y vitamina E, logrando potenciar la luminosidad y uniformidad de la piel.\nSu fórmula hipoalergénica, sin perfume y con solo 11 ingredientes está diseñada para reducir la aparición de signos de fatiga y promover una piel más radiante y fresca.\nBeneficios del uso de vitamina C en la piel\nEsta vitamina se conoce por sus múltiples beneficios para la piel, entre ellos:\nActúa como antioxidante, protegiendo la piel contra los radicales libres.\nPromueve la producción de colágeno, mejorando la firmeza.\nAyuda a disminuir la apariencia de manchas y uniforma el tono.\nMejora la luminosidad, dando un aspecto más saludable y radiante.\nEs por ello que el uso regular del sérum Vichy con vitamina C contribuye a la mejora visible de la piel, aportando un tono más uniforme y un aspecto rejuvenecido.\nResultados probados clínicamente\nEl Liftactiv sérum vitamina C ha sido probado clínicamente, demostrando resultados visibles tras 10 días de uso:\nPiel más radiante y tez más fresca.\nLa piel parece más suave y con una textura mejorada.\nModo de uso\n1.Aplicar unas gotas sobre el rostro limpio y seco.\n2.Usar de preferencia por la mañana, antes del protector solar.\n3.Evitar la zona del contorno de ojos.\nAdquiera este producto de alta calidad y aproveche los beneficios que ofrece la vitamina C para su piel.\nEn Cofar somos su farmacia de especialidades centrada en el paciente. Tenemos disponible este sérum con despacho a domicilio en Chile continental. Llame para comprar o retire su producto en nuestras instalaciones.",
+      "name": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+      "url": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml",
+      "image": "https://product-img.cofar.cl/products/bR7N32C3aXKignMnW/images/1.webp",
+      "brand": {
+       "@type": "Brand",
+       "name": {
+        "label": "Vichy",
+        "value": "cmVhY3Rpb24vYnJhbmQ6TUVNYUJ2cW9qQUxyUEFQY2I="
+       }
+      },
+      "sku": "015970047",
+      "category": "Rostro",
+      "offers": {
+       "@type": "Offer",
+       "price": 42190,
+       "priceCurrency": "CLP",
+       "availability": "InStock"
+      }
+     },
+     "campos": {
+      "name": {
+       "valor": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "sku": {
+       "valor": "015970047",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "brand": {
+       "valor": "{\"label\":\"Vichy\",\"value\":\"cmVhY3Rpb24vYnJhbmQ6TUVNYUJ2cW9qQUxyUEFQY2I=\"}",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Un objeto {label, value} donde schema.org espera texto."
+      },
+      "description": {
+       "valor": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de …",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "1.738 caracteres."
+      },
+      "image": {
+       "valor": "https://product-img.cofar.cl/products/bR7N32C3aXKignMnW/images/1.webp",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "category": {
+       "valor": "Rostro",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Primer tag del producto, no la categoría clínica."
+      },
+      "price": {
+       "valor": "42190 CLP",
+       "estado": "presente",
+       "fuente": "evidencia/p2/jsonld_dom.json"
+      },
+      "availability": {
+       "valor": "\"InStock\"",
+       "estado": "degradado",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "Fijo en el código para las 21 fichas; sin prefijo https://schema.org/. Aquí coincide con el stock real, pero no lo lee de la API."
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera. El campo no existe en la API."
+      },
+      "laboratorio": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "condicion_venta": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      },
+      "refrigeracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/p2/jsonld_dom.json",
+       "nota": "No se genera aunque la API lo trae."
+      }
+     }
+    },
+    "api": {
+     "fuente": "evidencia/api/catalogo_completo.json",
+     "capa": "API · GET services.cofar.cl/products/2.0 · volcado del 2026-09-12 · generado en build, sin llamadas en vivo",
+     "bloque": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+      "sku": "015970047",
+      "url": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml",
+      "image": [
+       "https://product-img.cofar.cl/products/bR7N32C3aXKignMnW/images/1.webp",
+       "https://product-img.cofar.cl/products/bR7N32C3aXKignMnW/images/3.webp"
+      ],
+      "brand": {
+       "@type": "Brand",
+       "name": "Vichy"
+      },
+      "category": "Rostro > Serum",
+      "description": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de la vitamina C con un complejo antioxidante que incluye polifenoles y vitamina E, logrando potenciar la luminosidad y uniformidad de la piel.\nSu fórmula hipoalergénica, sin perfume y con solo 11 ingredientes está diseñada para reducir la aparición de signos de fatiga y promover una piel más radiante y fresca.\nBeneficios del uso de vitamina C en la piel\nEsta vitamina se conoce por sus múltiples beneficios para la piel, entre ellos:\nActúa como antioxidante, protegiendo la piel contra los radicales libres.\nPromueve la producción de colágeno, mejorando la firmeza.\nAyuda a disminuir la apariencia de manchas y uniforma el tono.\nMejora la luminosidad, dando un aspecto más saludable y radiante.\nEs por ello que el uso regular del sérum Vichy con vitamina C contribuye a la mejora visible de la piel, aportando un tono más uniforme y un aspecto rejuvenecido.\nResultados probados clínicamente\nEl Liftactiv sérum vitamina C ha sido probado clínicamente, demostrando resultados visibles tras 10 días de uso:\nPiel más radiante y tez más fresca.\nLa piel parece más suave y con una textura mejorada.\nModo de uso\n1.Aplicar unas gotas sobre el rostro limpio y seco.\n2.Usar de preferencia por la mañana, antes del protector solar.\n3.Evitar la zona del contorno de ojos.\nAdquiera este producto de alta calidad y aproveche los beneficios que ofrece la vitamina C para su piel.\nEn Cofar somos su farmacia de especialidades centrada en el paciente. Tenemos disponible este sérum con despacho a domicilio en Chile continental. Llame para comprar o retire su producto en nuestras instalaciones.",
+      "additionalProperty": [
+       {
+        "@type": "PropertyValue",
+        "name": "Forma farmacéutica",
+        "value": "ml Serum"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Cantidad por envase",
+        "value": "20"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Condición de venta",
+        "value": "Venta directa"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Almacenamiento",
+        "value": "Lugar seco, no más de 25ºC"
+       },
+       {
+        "@type": "PropertyValue",
+        "name": "Refrigerado",
+        "value": "No"
+       }
+      ],
+      "offers": {
+       "@type": "Offer",
+       "url": "https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml",
+       "price": 42190,
+       "priceCurrency": "CLP",
+       "availability": "https://schema.org/InStock",
+       "availableDeliveryMethod": [
+        "https://schema.org/ParcelService",
+        "https://schema.org/OnSitePickup"
+       ]
+      }
+     },
+     "campos": {
+      "nombre": {
+       "valor": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_normal": {
+       "valor": "$42.190",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "precio_oferta": {
+       "valor": null,
+       "estado": "no_aplica",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "offerPrice es null en el volcado."
+      },
+      "laboratorio": {
+       "valor": "Vichy",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "brand.label (dermocosmética: sin campo laboratorio)."
+      },
+      "principio_activo": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "activePrinciples viene vacío en la API."
+      },
+      "concentracion": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json"
+      },
+      "forma_contenido": {
+       "valor": "20 ml Serum",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "unitContent + pharmaceuticalForm.label"
+      },
+      "condicion_venta": {
+       "valor": "Venta directa",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "saleCondition.value = noPrescription"
+      },
+      "refrigeracion": {
+       "valor": "No refrigerado",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "Lugar seco, no más de 25ºC"
+      },
+      "disponibilidad": {
+       "valor": "InStock (stock real)",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "stock = 100 · isOutOfStock = false"
+      },
+      "descripcion": {
+       "valor": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de …",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "1.738 caracteres."
+      },
+      "imagen": {
+       "valor": "2 imagenes",
+       "estado": "presente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "/products/bR7N32C3aXKignMnW/images/1.webp · /products/bR7N32C3aXKignMnW/images/3.webp"
+      },
+      "gtin": {
+       "valor": null,
+       "estado": "ausente",
+       "fuente": "evidencia/api/catalogo_completo.json",
+       "nota": "No existe en la API. No se inventa."
+      }
+     },
+     "api": {
+      "sku": "015970047",
+      "productName": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+      "productType": "Dermocosmetic",
+      "laboratory": null,
+      "brand": {
+       "label": "Vichy"
+      },
+      "activePrinciples": [],
+      "pharmaceuticalForm": {
+       "label": "ml Serum"
+      },
+      "unitContent": 20,
+      "saleCondition": {
+       "value": "noPrescription"
+      },
+      "storageCondition": "Lugar seco, no más de 25ºC",
+      "attributes": {
+       "isRefrigerated": false,
+       "isOutOfStock": false,
+       "isBioequivalent": false,
+       "hasDelivery": true,
+       "hasStore": true
+      },
+      "stock": 100,
+      "normalPrice": 42190,
+      "offerPrice": null,
+      "imageURLs": [
+       "/products/bR7N32C3aXKignMnW/images/1.webp",
+       "/products/bR7N32C3aXKignMnW/images/3.webp"
+      ],
+      "tags": [
+       "Rostro"
+      ],
+      "subTags": [
+       "Serum"
+      ],
+      "description_len": 1738,
+      "description": "El Liftactiv sérum vitamina C de Vichy es un tratamiento para el cuidado de la piel formulado con un 15 % de vitamina C pura.\nEste sérum combina la potencia de la vitamina C con un complejo antioxidante que incluye polifenoles y vitamina E, logrando potenciar la luminosidad y uniformidad de la piel.\nSu fórmula hipoalergénica, sin perfume y con solo 11 ingredientes está diseñada para reducir la aparición de signos de fatiga y promover una piel más radiante y fresca.\nBeneficios del uso de vitamina C en la piel\nEsta vitamina se conoce por sus múltiples beneficios para la piel, entre ellos:\nActúa como antioxidante, protegiendo la piel contra los radicales libres.\nPromueve la producción de colágeno, mejorando la firmeza.\nAyuda a disminuir la apariencia de manchas y uniforma el tono.\nMejora la luminosidad, dando un aspecto más saludable y radiante.\nEs por ello que el uso regular del sérum Vichy con vitamina C contribuye a la mejora visible de la piel, aportando un tono más uniforme y un aspecto rejuvenecido.\nResultados probados clínicamente\nEl Liftactiv sérum vitamina C ha sido probado clínicamente, demostrando resultados visibles tras 10 días de uso:\nPiel más radiante y tez más fresca.\nLa piel parece más suave y con una textura mejorada.\nModo de uso\n1.Aplicar unas gotas sobre el rostro limpio y seco.\n2.Usar de preferencia por la mañana, antes del protector solar.\n3.Evitar la zona del contorno de ojos.\nAdquiera este producto de alta calidad y aproveche los beneficios que ofrece la vitamina C para su piel.\nEn Cofar somos su farmacia de especialidades centrada en el paciente. Tenemos disponible este sérum con despacho a domicilio en Chile continental. Llame para comprar o retire su producto en nuestras instalaciones.",
+      "metaTitle": "Vichy Liftactiv Supreme Vit C Serum 20ml",
+      "metaDescription": "Vichy Liftactiv Supreme Vit C Serum 20ml. Somos especialistas en dermocosmética. Entregas en menos de 24H en RM o retiro presencial."
+     }
+    }
+   }
+  }
+ ]
+}
