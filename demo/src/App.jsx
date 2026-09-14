@@ -27,34 +27,37 @@ function useReveal() {
   }, []);
 }
 
+const FUENTE = 'Fuente: auditoría del 12 de septiembre de 2026';
+
+function Fuente({ detalle }) {
+  return (
+    <p className="fuente-linea" title={detalle}>
+      {FUENTE}
+    </p>
+  );
+}
+
 const ESTADOS = {
-  presente: { ico: '✓', txt: 'presente' },
-  ausente: { ico: '✕', txt: 'ausente' },
-  degradado: { ico: '!', txt: 'degradado' },
-  no_aplica: { ico: '–', txt: 'no aplica' },
+  presente: 'está',
+  ausente: 'no está',
+  degradado: 'está, pero mal',
+  no_aplica: 'no aplica',
 };
 
 function Estado({ estado }) {
-  const e = ESTADOS[estado] || ESTADOS.no_aplica;
   return (
     <span className={`estado ${estado}`}>
-      <span className="ico" aria-hidden="true">
-        {e.ico}
-      </span>
-      {e.txt}
+      <i aria-hidden="true" />
+      {ESTADOS[estado] || ESTADOS.no_aplica}
     </span>
   );
 }
 
 function Fila({ label, campo }) {
   const vacio = campo.valor == null || campo.valor === '';
-  const texto = vacio
-    ? campo.estado === 'no_aplica'
-      ? 'No aplica'
-      : 'No está'
-    : String(campo.valor);
+  const texto = vacio ? (campo.estado === 'no_aplica' ? 'No aplica a este producto' : 'No está') : String(campo.valor);
   return (
-    <li>
+    <li title={campo.fuente}>
       <span className="lbl">{label}</span>
       <Estado estado={campo.estado} />
       <span className={`val${vacio ? ' faded' : ''}`}>{texto}</span>
@@ -63,46 +66,29 @@ function Fila({ label, campo }) {
   );
 }
 
-function Score({ campos }) {
-  const estados = Object.values(campos).map((c) => c.estado);
-  return (
-    <div className="score" aria-hidden="true">
-      {estados.map((e, i) => (
-        <i key={i} className={e} />
-      ))}
-    </div>
-  );
-}
-
-function Mirada({ n, titulo, mirada, labels, dark }) {
+function Columna({ n, titulo, bajada, mirada, labels, dark }) {
   const campos = mirada.campos;
   const total = Object.keys(campos).length;
   const ok = Object.values(campos).filter((c) => c.estado === 'presente').length;
   return (
-    <article className={`mirada${dark ? ' dark' : ''}`}>
+    <article className={`mirada${dark ? ' dark' : ''}`} title={`${mirada.capa} · ${mirada.fuente}`}>
       <div className="head">
         <div className="n">
-          Mirada {n} · {ok} de {total} presentes
+          {n} · {ok} de {total} campos
         </div>
         <h4>{titulo}</h4>
-        <div className="capa">{mirada.capa}</div>
-        <Score campos={campos} />
+        <div className="capa">{bajada}</div>
       </div>
       <ul>
         {Object.entries(labels).map(([k, label]) =>
           campos[k] ? <Fila key={k} label={label} campo={campos[k]} /> : null
         )}
       </ul>
-      <div className="fuente">
-        <span className="mono">
-          {mirada.fuente}
-          {mirada.fuente_dom ? ` · ${mirada.fuente_dom}` : ''}
-        </span>
-      </div>
     </article>
   );
 }
 
+/* Etiquetas en lenguaje de la persona; el nombre técnico va entre paréntesis. */
 const LABELS = {
   paciente: {
     nombre: 'Nombre',
@@ -119,28 +105,28 @@ const LABELS = {
     compra: 'Compra',
   },
   bot: {
-    titulo: 'Etiqueta <title>',
-    meta_description: 'Meta description',
-    canonical: 'Canonical',
+    titulo: 'Título de la página',
+    meta_description: 'Frase de resumen (meta description)',
+    canonical: 'Dirección de la ficha',
     precio: 'Precio',
     laboratorio: 'Laboratorio',
     principio_activo: 'Principio activo',
     descripcion: 'Descripción',
     imagen: 'Imagen de producto',
-    open_graph: 'Open Graph',
-    json_ld: 'JSON-LD',
-    payload_next: 'Payload de Next.js',
+    open_graph: 'Tarjeta de vista previa (Open Graph)',
+    json_ld: 'Ficha para máquinas (JSON-LD)',
+    payload_next: 'Datos precargados en la página',
   },
   jsonld: {
-    name: 'name',
-    sku: 'sku',
-    brand: 'brand.name',
-    description: 'description',
-    image: 'image',
-    category: 'category',
-    price: 'offers.price',
-    availability: 'offers.availability',
-    gtin: 'gtin',
+    name: 'Nombre',
+    sku: 'Código interno (sku)',
+    brand: 'Marca',
+    description: 'Descripción',
+    image: 'Imagen',
+    category: 'Categoría',
+    price: 'Precio',
+    availability: 'Disponibilidad',
+    gtin: 'Código de barras (gtin)',
     laboratorio: 'Laboratorio',
     principio_activo: 'Principio activo',
     condicion_venta: 'Condición de venta',
@@ -159,7 +145,7 @@ const LABELS = {
     disponibilidad: 'Disponibilidad',
     descripcion: 'Descripción',
     imagen: 'Imagen',
-    gtin: 'GTIN',
+    gtin: 'Código de barras (gtin)',
   },
 };
 
@@ -226,6 +212,9 @@ function Codigo({ titulo, capa, obj, mejor }) {
   );
 }
 
+const clp = (n) => (n == null ? null : '$' + Number(n).toLocaleString('es-CL'));
+const sinComillas = (s) => (typeof s === 'string' ? s.replace(/^"|"$/g, '') : s);
+
 /* ------------------------------------------------------------------ */
 /* página                                                              */
 /* ------------------------------------------------------------------ */
@@ -246,6 +235,59 @@ export default function App() {
   const a = contexto.asistente;
   const nombreCorto = (f) => f.nombre.split(' ').slice(0, 2).join(' ');
 
+  /* Cifras de contexto. Los valores 3.024 y "0 de 60" vienen del JSON generado.
+     "0 de 28" sale de hallazgos.json · cobertura_atributos · VIH (n = 28, descripcion_40+ = 0.0). */
+  const cifras = [
+    {
+      valor: contexto.cifras[0].valor,
+      titulo: 'productos en la base de Cofar',
+      bajada: 'Principio activo, laboratorio, forma, receta y refrigeración están cargados en casi todos los medicamentos.',
+      fuente: contexto.cifras[0].fuente + ' · ' + contexto.cifras[0].detalle,
+      color: 'teal',
+    },
+    {
+      valor: contexto.cifras[1].valor,
+      titulo: 'fichas que le entregan esos datos a una máquina',
+      bajada: 'Revisamos 60 fichas. Ninguna trae precio, laboratorio ni descripción hasta que un navegador los va a buscar aparte.',
+      fuente: contexto.cifras[1].fuente + ' · ' + contexto.cifras[1].detalle,
+      color: 'coral',
+    },
+    {
+      valor: '0 de 28',
+      titulo: 'fichas de VIH que tienen descripción escrita',
+      bajada: 'En dermocosmética la tienen 7 de cada 10. Lo que Cofar vende como especialidad es lo que menos explica.',
+      fuente: 'hallazgos.json · cobertura_atributos · VIH n=28, descripción 0,0% · Dermocosméticos 69,3% · ' + contexto.cifras[2].detalle,
+      color: 'coral',
+    },
+  ];
+
+  /* Tabla de la sección "lado a lado": valores reales del SKU elegido. */
+  const jl = ficha.miradas.jsonld;
+  const ap = ficha.miradas.api;
+  const marcaHoy = jl.campos.brand.estado === 'presente' ? sinComillas(jl.campos.brand.valor) : jl.campos.brand.estado === 'degradado' && /Marca no disponible/.test(jl.campos.brand.valor) ? 'Marca no disponible' : 'Un objeto en vez de un nombre';
+  const marcaApi = ap.campos.laboratorio.valor || 'Tampoco está en la API';
+  const precioHoy = clp(jl.bloque.offers.price);
+  const precioApi = ap.campos.precio_oferta.valor
+    ? `${ap.campos.precio_normal.valor} normal y ${ap.campos.precio_oferta.valor} oferta`
+    : ap.campos.precio_normal.valor;
+  const dispApi = /InStock/.test(ap.campos.disponibilidad.valor) ? 'La real, según tu API: en stock' : 'La real, según tu API: sin stock';
+  const diferencias = [
+    { campo: 'Marca', hoy: marcaHoy, api: marcaApi, tec: 'brand.name', igual: marcaHoy === marcaApi, nota: jl.campos.brand.nota },
+    { campo: 'Disponibilidad', hoy: 'En stock, siempre', api: dispApi, tec: 'offers.availability', igual: false, nota: jl.campos.availability.nota + ' ' + (ap.campos.disponibilidad.nota || '') },
+    { campo: 'Precio', hoy: precioHoy, api: precioApi, tec: 'offers.price', igual: precioHoy === precioApi, nota: ap.campos.precio_oferta.nota || jl.campos.price.nota || '' },
+    { campo: 'Código de barras', hoy: 'No está', api: 'No está', tec: 'gtin', igual: true, nota: ap.campos.gtin.nota },
+  ];
+  const nDif = diferencias.filter((d) => !d.igual).length;
+  const tituloDif = nDif === 3 ? 'Tres campos separan uno del otro.' : nDif === 2 ? 'Dos campos separan uno del otro.' : `${nDif} campos separan uno del otro.`;
+
+  const piezas = [
+    { para: 'La tarjeta de vista previa', sirve: 'Que un link compartido en WhatsApp o redes muestre foto y precio.', tec: 'Open Graph / Twitter Card' },
+    { para: 'El archivo de catálogo', sirve: 'Que Google y Meta puedan armar anuncios con tus productos.', tec: 'feed de productos' },
+    { para: 'La ficha para máquinas, desde el servidor', sirve: 'Que te lean sin tener que renderizar.', tec: 'JSON-LD Product en el HTML del servidor' },
+    { para: 'Los datos de la empresa', sirve: 'Que Google sepa quién eres, no solo qué vendes.', tec: 'JSON-LD Organization' },
+    { para: 'El código de barras', sirve: 'Identificar el producto en cualquier plataforma.', tec: 'GTIN' },
+  ].map((p, i) => ({ ...p, ...contexto.campanas.faltantes[i] }));
+
   return (
     <>
       <header className="site-header">
@@ -261,9 +303,7 @@ export default function App() {
             </span>
             <span className="wm-sub">studio</span>
           </a>
-          <div className="header-tag">
-            Cofar Salud · cuatro miradas a la misma ficha · datos del {fecha}
-          </div>
+          <div className="header-tag">Cofar Salud · cuatro miradas a la misma ficha · datos del {fecha}</div>
         </div>
       </header>
 
@@ -275,32 +315,32 @@ export default function App() {
             El catálogo está completo. <span className="accent">La ficha no lo muestra.</span>
           </h1>
           <p className="body sub reveal">
-            Tu backend tiene principio activo, laboratorio, condición de venta, refrigeración y precio para casi
-            todos los medicamentos. El paciente lo ve en pantalla. Google sin render, ChatGPT y una vista previa de
-            WhatsApp reciben solo un título y una frase.
+            Cofar tiene guardado el principio activo, el laboratorio, el precio y si el remedio va refrigerado, para
+            casi todo su catálogo. El paciente lo ve completo en pantalla. Un asistente de IA, o la vista previa de un
+            link en WhatsApp, recibe solo el nombre del remedio y una frase.
           </p>
 
           {/* 2 · tres cifras */}
           <div className="metrics">
-            {contexto.cifras.map((c, i) => (
-              <div className="metric reveal" key={i}>
-                <div className={`num ${i === 0 ? 'teal' : 'coral'}`}>{c.valor}</div>
+            {cifras.map((c, i) => (
+              <div className="metric reveal" key={i} title={c.fuente}>
+                <div className={`num ${c.color}`}>{c.valor}</div>
                 <div className="ttl">{c.titulo}</div>
-                <div className="det">{c.detalle}</div>
-                <span className="mono">{c.fuente}</span>
+                <div className="det">{c.bajada}</div>
               </div>
             ))}
           </div>
+          <Fuente detalle="hallazgos.json · cobertura_atributos, H01, H03 · evidencia/api/cobertura_atributos.txt · evidencia/fichas/analisis_fichas.txt" />
         </section>
 
         {/* 3 · comparador */}
         <section className="section container" id="comparador" ref={compRef}>
           <div className="overline reveal">El comparador</div>
-          <h2 className="reveal">Seis fichas reales, cuatro maneras de leerlas.</h2>
+          <h2 className="reveal">Seis fichas reales, cuatro lectores distintos.</h2>
           <p className="body lead reveal">
-            Elige un producto. La primera columna es lo que ve una persona en el navegador. Las otras tres son lo
-            que recibe una máquina: un bot sin JavaScript, el JSON-LD que hoy inyecta tu sitio y el mismo bloque
-            generado desde tu propia API, sin agregar ningún dato nuevo.
+            Toda ficha de producto tiene dos versiones: la que lee la persona y una versión resumida, oculta en la
+            página, escrita en un formato estándar que Google y los asistentes entienden. Estas cuatro columnas
+            muestran qué recibe cada lector.
           </p>
 
           <div className="pills reveal" role="tablist" aria-label="Productos">
@@ -327,24 +367,50 @@ export default function App() {
                 <p className="why">{ficha.por_que}</p>
               </div>
               <div className="sku">
-                SKU {ficha.sku} · {ficha.grupo}
+                Código {ficha.sku} · {ficha.grupo}
               </div>
             </div>
 
             <div className="leyenda" aria-label="Leyenda">
-              <Estado estado="presente" /> el dato está
-              <Estado estado="ausente" /> no está
-              <Estado estado="degradado" /> está, pero mal o incompleto
-              <Estado estado="no_aplica" /> no corresponde a este producto
+              <Estado estado="presente" />
+              <Estado estado="ausente" />
+              <Estado estado="degradado" />
+              <Estado estado="no_aplica" />
             </div>
 
             <div className="miradas">
-              <Mirada n="1" titulo="Lo que ve el paciente" mirada={ficha.miradas.paciente} labels={LABELS.paciente} />
-              <Mirada n="2" titulo="Lo que ve un bot sin JavaScript" mirada={ficha.miradas.bot} labels={LABELS.bot} />
-              <Mirada n="3" titulo="Lo que dice el JSON-LD actual" mirada={ficha.miradas.jsonld} labels={LABELS.jsonld} />
-              <Mirada n="4" titulo="Lo que diría desde tu propia API" mirada={ficha.miradas.api} labels={LABELS.api} dark />
+              <Columna
+                n="1"
+                titulo="Lo que ve el paciente"
+                bajada="La ficha en pantalla, completa."
+                mirada={ficha.miradas.paciente}
+                labels={LABELS.paciente}
+              />
+              <Columna
+                n="2"
+                titulo="Lo que recibe una máquina que no renderiza"
+                bajada="El nombre y una frase."
+                mirada={ficha.miradas.bot}
+                labels={LABELS.bot}
+              />
+              <Columna
+                n="3"
+                titulo="La ficha para máquinas que tienes hoy"
+                bajada="Existe, pero la escribe el navegador y sale con la marca en blanco."
+                mirada={ficha.miradas.jsonld}
+                labels={LABELS.jsonld}
+              />
+              <Columna
+                n="4"
+                titulo="La misma ficha, llenada con tus datos"
+                bajada="Misma estructura, con el laboratorio y la disponibilidad que ya están en tu API."
+                mirada={ficha.miradas.api}
+                labels={LABELS.api}
+                dark
+              />
             </div>
           </div>
+          <Fuente detalle="Columna 1: evidencia/dom (Chrome headless). Columna 2: evidencia/fichas (curl sin JavaScript). Columna 3: evidencia/p2/jsonld_dom.json. Columna 4: evidencia/api/catalogo_completo.json, construido en build." />
         </section>
 
         {/* 4 · asistente */}
@@ -353,8 +419,8 @@ export default function App() {
             <div className="overline">Qué contesta un asistente hoy</div>
             <h2>Encuentra tu sitio, describe bien el producto y se equivoca en el precio.</h2>
             <p className="body lead">
-              Observación puntual del {a.fecha}, hecha una sola vez desde el chat. No es una medición ni una
-              posición: es lo que salió ese día.
+              Observación puntual del {a.fecha}, hecha una sola vez desde el chat. No es una medición ni una posición:
+              es lo que salió ese día.
             </p>
 
             <div className="asistente">
@@ -373,17 +439,17 @@ export default function App() {
                     <div className="v">{a.api_precio_normal}</div>
                   </div>
                   <div className="precio bien">
-                    <div className="k">Oferta en la API ese día</div>
+                    <div className="k">Oferta en tu API ese día</div>
                     <div className="v">{a.api_precio_oferta}</div>
                   </div>
                 </div>
                 <div className="aviso">
                   {a.oferta_activa_en_volcado
-                    ? `En el volcado del ${a.fecha} la oferta sigue activa: normal ${a.api_precio_normal}, oferta ${a.api_precio_oferta}.`
-                    : 'En el volcado la oferta ya no está activa.'}{' '}
+                    ? `Ese día la oferta estaba activa: ${a.api_precio_normal} normal, ${a.api_precio_oferta} oferta.`
+                    : 'En la captura de ese día la oferta ya no estaba activa.'}{' '}
                   {a.transcripcion_literal
                     ? 'Transcripción literal más abajo.'
-                    : `Resumen tomado de ${a.fuente_resumen}. La transcripción literal no está en la carpeta de evidencia.`}
+                    : 'Este bloque resume lo observado; la transcripción literal no está en la evidencia.'}
                 </div>
               </div>
 
@@ -398,59 +464,59 @@ export default function App() {
                   </div>
                 ))}
                 <div className="aviso">
-                  Índice orientado a EE. UU., una consulta por producto. En las dos donde Cofar aparece, el resumen
-                  no usó su precio. Fuente: {a.busquedas_web.fuente}.
+                  Buscador orientado a EE. UU., una consulta por producto. En las dos donde Cofar aparece, el resumen
+                  no usó su precio.
                 </div>
               </div>
             </div>
+            <Fuente detalle="BRIEF-DEMO.md §4 (resumen de la consulta a ChatGPT) · evidencia/p2/busquedas_web.md · evidencia/api/catalogo_completo.json" />
           </div>
         </section>
 
         {/* 5 · el bloque lado a lado */}
         <section className="section container">
-          <div className="overline reveal">El bloque, lado a lado</div>
-          <h2 className="reveal">El JSON-LD que tienes y el que saldría de tu API.</h2>
+          <div className="overline reveal">La ficha para máquinas, lado a lado</div>
+          <h2 className="reveal">{tituloDif}</h2>
           <p className="body lead reveal">
-            Mismo producto ({ficha.nombre}). A la izquierda, el bloque que tu sitio inyecta hoy con JavaScript. A
-            la derecha, uno construido solo con los campos que ya devuelve tu API. Nada se inventa: donde no hay
-            descripción ni GTIN, el campo se omite.
+            Mismo producto, misma estructura. Lo único que cambia es que el segundo lee los campos que tu API ya
+            devuelve.
           </p>
-          <div className="codigos reveal">
-            <Codigo
-              titulo="Actual · lo que inyecta el sitio"
-              capa={`${ficha.miradas.jsonld.fuente_dom} · solo en DOM`}
-              obj={ficha.miradas.jsonld.bloque}
-            />
-            <Codigo
-              titulo="Generado · desde tu propia API"
-              capa={`${ficha.miradas.api.fuente} · construido en build`}
-              obj={ficha.miradas.api.bloque}
-              mejor
-            />
+
+          <div className="tabla-wrap dif swap" key={`dif-${ficha.sku}`}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Campo</th>
+                  <th>La ficha que tienes hoy</th>
+                  <th>Llenada con tus datos</th>
+                </tr>
+              </thead>
+              <tbody>
+                {diferencias.map((d) => (
+                  <tr key={d.campo} className={d.igual ? 'igual' : ''} title={d.nota}>
+                    <td>
+                      <b>{d.campo}</b>
+                      <span className="tec">{d.tec}</span>
+                    </td>
+                    <td className={d.igual ? '' : 'hoy'}>{d.hoy}</td>
+                    <td className={d.igual ? '' : 'api'}>
+                      {d.api}
+                      {d.igual ? <span className="tec">igual en los dos</span> : null}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-          <div className="cambios reveal">
-            <div className="cambio">
-              <b>Marca real</b>
-              {ficha.miradas.api.campos.laboratorio.valor
-                ? `brand.name pasa de "Marca no disponible" a "${ficha.miradas.api.campos.laboratorio.valor}", que ya está en laboratory.label.`
-                : 'La API tampoco tiene laboratorio para este producto; el campo se omite.'}
+
+          <details className="detalle reveal">
+            <summary>Ver el bloque completo</summary>
+            <div className="codigos">
+              <Codigo titulo="La ficha que tienes hoy" capa="Tal como la escribe el navegador en tu sitio" obj={jl.bloque} />
+              <Codigo titulo="Llenada con tus datos" capa="Construida solo con lo que devuelve tu API" obj={ap.bloque} mejor />
             </div>
-            <div className="cambio">
-              <b>Disponibilidad real</b>
-              availability deja de ser un texto fijo y sale de la bandera de stock: {ficha.miradas.api.campos.disponibilidad.nota}.
-            </div>
-            <div className="cambio">
-              <b>Precio normal y oferta</b>
-              {ficha.miradas.api.campos.precio_oferta.valor
-                ? `ListPrice ${ficha.miradas.api.campos.precio_normal.valor} y SalePrice ${ficha.miradas.api.campos.precio_oferta.valor}, en vez de un solo número.`
-                : 'Sin oferta activa: un solo precio, igual que hoy.'}
-            </div>
-            <div className="cambio">
-              <b>Atributos farmacéuticos</b>
-              Principio activo, concentración, forma, condición de venta y almacenamiento como additionalProperty.
-              Están en la API en el 94% al 100% de los medicamentos.
-            </div>
-          </div>
+          </details>
+          <Fuente detalle="evidencia/p2/jsonld_dom.json (bloque actual) · evidencia/api/catalogo_completo.json (bloque generado en build)" />
         </section>
 
         {/* 6 · campañas */}
@@ -458,54 +524,51 @@ export default function App() {
           <div className="overline reveal">Qué falta para campañas</div>
           <h2 className="reveal">Las herramientas están cargadas. El dato de producto, no.</h2>
           <div className="campanas">
+            <div className="lista reveal">
+              <h4>Lo que sí está cargado</h4>
+              <ul>
+                {contexto.campanas.herramientas.map((h, i) => (
+                  <li key={i} title={h.donde}>
+                    <span className="ico" aria-hidden="true">
+                      ✓
+                    </span>
+                    <span>{h.nombre}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="punto">
+                Píxel, etiquetas y Merchant ID esperan un catálogo con marca, precio y disponibilidad. Hoy no existe
+                ninguno en el servidor.
+              </div>
+            </div>
             <div className="tabla-wrap reveal">
               <table>
                 <thead>
                   <tr>
-                    <th>Pieza</th>
-                    <th>Estado observado</th>
-                    <th>Detalle</th>
+                    <th>Lo que falta</th>
+                    <th>Para qué sirve</th>
+                    <th>Hoy</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {contexto.campanas.faltantes.map((f, i) => (
-                    <tr key={i}>
+                  {piezas.map((p, i) => (
+                    <tr key={i} title={`${p.fuente}${p.cifra ? ' · ' + p.cifra : ''}`}>
                       <td>
-                        <b>{f.pieza}</b>
+                        <b>{p.para}</b>
+                        <span className="tec">{p.tec}</span>
                       </td>
+                      <td>{p.sirve}</td>
                       <td>
-                        <Estado estado="ausente" /> <span style={{ display: 'block', marginTop: 6 }}>{f.estado}</span>
-                      </td>
-                      <td>
-                        {f.detalle}
-                        <span className="mono">{f.fuente}</span>
+                        <Estado estado="ausente" />
+                        <span className="det">{p.detalle}</span>
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <div className="lista reveal">
-              <h4>Lo que sí está cargado</h4>
-              <ul>
-                {contexto.campanas.herramientas.map((h, i) => (
-                  <li key={i}>
-                    <span className="ico" aria-hidden="true">
-                      ✓
-                    </span>
-                    <span>
-                      {h.nombre}
-                      <small>{h.donde}</small>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <div className="punto">
-                Píxel, etiquetas y Merchant ID esperan un feed o un JSON-LD con marca, precio y disponibilidad. Hoy
-                no hay ninguno de los dos en el servidor.
-              </div>
-            </div>
           </div>
+          <Fuente detalle="hallazgos-p2.json · H14, H15, H16 · evidencia/p2/senales_meta_google.md · evidencia/p2/feeds_log.txt" />
         </section>
       </main>
 
@@ -519,8 +582,8 @@ export default function App() {
               auditoría. Los precios, atributos y bloques mostrados son los de ese día y pueden haber cambiado.
             </p>
             <p>
-              Relevo Studio no tiene relación comercial con Cofar Salud. Los nombres de producto y datos son
-              públicos; no se usa el logo ni la identidad visual de Cofar. Página fuera de índices (noindex).
+              Relevo Studio no tiene relación comercial con Cofar Salud. Los nombres de producto y datos son públicos;
+              no se usa el logo ni la identidad visual de Cofar. Página fuera de índices (noindex).
             </p>
           </div>
           <a className="wordmark" href="https://relevostudio.com" rel="noreferrer">
