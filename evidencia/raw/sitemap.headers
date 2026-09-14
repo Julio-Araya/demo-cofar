@@ -1,0 +1,12 @@
+HTTP/2 200 
+content-type: application/xml
+date: Wed, 09 Sep 2026 22:30:45 GMT
+x-nextjs-cache: HIT
+cache-control: s-maxage=31536000
+x-cache: Hit from cloudfront
+via: 1.1 a78b883f23f1e844073a5e759e24430c.cloudfront.net (CloudFront)
+x-amz-cf-pop: SCL51-P2
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: Q4XP6w5LwIIwiRofyhNAq4NeT65qNpJxt1YHEPbqDAe3nIkUOZh3ng==
+age: 225379
+

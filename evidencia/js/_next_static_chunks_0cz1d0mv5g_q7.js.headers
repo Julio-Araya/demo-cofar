@@ -1,0 +1,15 @@
+Content-Type: text/javascript
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Thu, 10 Sep 2026 17:25:18 GMT
+Content-Encoding: gzip
+ETag: W/"846118c33b2c0e922d7b3a7676f81f6f"
+Cache-Control: public, max-age=31536000, immutable
+Last-Modified: Tue, 08 Sep 2026 01:34:58 GMT
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 ac7539c801ec1fecf6990ce0e54cdeae.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: bDX-U7wkoGE3A9wBFZSqVdki3NBxl_w9NKq_J8fi5veNMS_IjA3yuQ==
+Age: 157577

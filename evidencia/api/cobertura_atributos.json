@@ -1,0 +1,242 @@
+[
+ {
+  "subcategoria": "Diabetes y obesidad",
+  "n": 115,
+  "atributos": {
+   "principio_activo": 96.5,
+   "concentracion_estructurada": 96.5,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 27.0,
+   "meta_description": 86.1,
+   "2+_imagenes": 21.7
+  }
+ },
+ {
+  "subcategoria": "Oncológicos (subTag)",
+  "n": 142,
+  "atributos": {
+   "principio_activo": 99.3,
+   "concentracion_estructurada": 99.3,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 4.2,
+   "meta_description": 88.7,
+   "2+_imagenes": 40.8
+  }
+ },
+ {
+  "subcategoria": "VIH",
+  "n": 28,
+  "atributos": {
+   "principio_activo": 96.4,
+   "concentracion_estructurada": 96.4,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 0.0,
+   "meta_description": 82.1,
+   "2+_imagenes": 21.4
+  }
+ },
+ {
+  "subcategoria": "Fertilidad",
+  "n": 19,
+  "atributos": {
+   "principio_activo": 94.7,
+   "concentracion_estructurada": 94.7,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 94.7,
+   "descripcion_40+": 36.8,
+   "meta_description": 63.2,
+   "2+_imagenes": 5.3
+  }
+ },
+ {
+  "subcategoria": "Salud mental",
+  "n": 462,
+  "atributos": {
+   "principio_activo": 97.4,
+   "concentracion_estructurada": 97.4,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 12.1,
+   "meta_description": 99.6,
+   "2+_imagenes": 53.7
+  }
+ },
+ {
+  "subcategoria": "Refrigerados",
+  "n": 148,
+  "atributos": {
+   "principio_activo": 97.3,
+   "concentracion_estructurada": 97.3,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 6.8,
+   "meta_description": 99.3,
+   "2+_imagenes": 2.0
+  }
+ },
+ {
+  "subcategoria": "Hormona del crecimiento",
+  "n": 5,
+  "atributos": {
+   "principio_activo": 100.0,
+   "concentracion_estructurada": 100.0,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 0.0,
+   "meta_description": 100.0,
+   "2+_imagenes": 0.0
+  }
+ },
+ {
+  "subcategoria": "Cardiovascular",
+  "n": 341,
+  "atributos": {
+   "principio_activo": 98.2,
+   "concentracion_estructurada": 98.2,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 4.1,
+   "meta_description": 96.5,
+   "2+_imagenes": 30.5
+  }
+ },
+ {
+  "subcategoria": "Antiinfecciosos",
+  "n": 191,
+  "atributos": {
+   "principio_activo": 96.9,
+   "concentracion_estructurada": 96.9,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 5.8,
+   "meta_description": 99.5,
+   "2+_imagenes": 36.1
+  }
+ },
+ {
+  "subcategoria": "Dolor y analgésicos",
+  "n": 247,
+  "atributos": {
+   "principio_activo": 94.3,
+   "concentracion_estructurada": 94.3,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 99.6,
+   "descripcion_40+": 33.6,
+   "meta_description": 96.0,
+   "2+_imagenes": 30.0
+  }
+ },
+ {
+  "subcategoria": "Vitaminas y suplementos (tipo)",
+  "n": 203,
+  "atributos": {
+   "principio_activo": 21.2,
+   "concentracion_estructurada": 21.2,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 99.5,
+   "descripcion_40+": 67.0,
+   "meta_description": 69.5,
+   "2+_imagenes": 68.5
+  }
+ },
+ {
+  "subcategoria": "Dermocosméticos (tipo)",
+  "n": 75,
+  "atributos": {
+   "principio_activo": 0.0,
+   "concentracion_estructurada": 0.0,
+   "laboratorio": 1.3,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 69.3,
+   "meta_description": 86.7,
+   "2+_imagenes": 56.0
+  }
+ },
+ {
+  "subcategoria": "Accesorios (tipo)",
+  "n": 15,
+  "atributos": {
+   "principio_activo": 0.0,
+   "concentracion_estructurada": 0.0,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 100.0,
+   "descripcion_40+": 26.7,
+   "meta_description": 93.3,
+   "2+_imagenes": 13.3
+  }
+ },
+ {
+  "subcategoria": "TODO el catálogo",
+  "n": 3024,
+  "atributos": {
+   "principio_activo": 86.5,
+   "concentracion_estructurada": 86.5,
+   "laboratorio": 97.6,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 99.9,
+   "descripcion_40+": 20.6,
+   "meta_description": 93.9,
+   "2+_imagenes": 38.4
+  }
+ },
+ {
+  "subcategoria": "Solo medicamentos",
+  "n": 2731,
+  "atributos": {
+   "principio_activo": 94.2,
+   "concentracion_estructurada": 94.2,
+   "laboratorio": 100.0,
+   "forma_farmaceutica": 100.0,
+   "cantidad_por_envase_estructurada": 100.0,
+   "condicion_venta": 100.0,
+   "condicion_almacenamiento": 99.9,
+   "descripcion_40+": 15.8,
+   "meta_description": 95.9,
+   "2+_imagenes": 35.8
+  }
+ }
+]

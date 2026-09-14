@@ -1,0 +1,17 @@
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 12 Sep 2026 13:08:48 GMT
+ETag: "utfhclhecr4f32"
+Content-Encoding: gzip
+x-nextjs-cache: STALE
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js
+Cache-Control: no-store
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 a78b883f23f1e844073a5e759e24430c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: gsN5xk6Ms2KPIDeVwTM-FhXPf97WjxbPjhS9GQsFmFFLec3FD67CVA==

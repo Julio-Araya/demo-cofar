@@ -1,0 +1,80 @@
+== JSON-LD Product en DOM (capa DOM, Chrome headless pasada 1)
+   stock 0 en API pero availability= InStock -> 011050004 Biocare Probióticos y Vitamina D3 Biomelts 28 Sobres
+fichas con Product: 21; brand placeholder "Marca no disponible": 19; brand como objeto (label/value): 2; description placeholder: 7; availability InStock: 21; de esas con stock 0 en API: 1; image absoluta: 21; gtin: 0; priceCurrency CLP: 21; price == API (oferta o normal): 21
+claves Offer: ['@type', 'availability', 'price', 'priceCurrency']
+claves Product: ['@context', '@type', 'brand', 'category', 'description', 'image', 'name', 'offers', 'sku', 'url']
+tipos en home DOM: []
+cat_diabetes-y-obesidad.html: @type='ItemsList' clave=itemsListElement numberOfItems=21 items=21 ej={"@type": "Product", "name": "Glaupax XR 1000mg 30 Comp.Lp.", "description": "Bioequivalente", "url": "https://cofar.cl/product/012501226/glaupax-xr-1000mg-30-complp", "image": "https://product-img.cofar.cl/products/2TyDcwZdQGFpy8cLG/images/1.webp", "brand": {"@type": "Brand", "name": {"label": "Pas
+cat_receta-cheque.html: @type='ItemsList' clave=itemsListElement numberOfItems=13 items=13 ej={"@type": "Product", "name": "Concerta 54mg 30 Comp.", "description": "Descripcion no disponible", "url": "https://cofar.cl/product/030360059/concerta-54mg-30-comp", "image": "https://product-img.cofar.cl/products/2EBpzYjDfb7AQEp3v/images/1.webp", "brand": {"@type": "Brand", "name": {"label": "Janss
+
+== LADO A LADO: qué recibe un crawler sin JS (raw, pasada 1) en VIH vs dermocosmética
+
+VIH · Ziagen 300mg (011000228)
+   title            'Ziagen 300mg 60 Comp.'
+   meta_description 'Ziagen 300mg con Abacavir. Cofar Asegura Confidencialidad. Somos expertos en medicamentos de especialidad crónicos. Entregas en menos de 24H en RM o retiro presencial.'
+   canonical        'https://cofar.cl/product/011000228/ziagen-300mg-60-comp'
+   og_tags          []
+   jsonld           0
+   img_total        18
+   img_producto     0
+   chars_texto      1338
+   tiene_precio     False
+   tiene_sku        False
+   h1               []
+
+VIH · Juluca (011000023)
+   title            'Juluca 52,6mg/27,5mg 30 Comp.Rec.'
+   meta_description 'Juluca 52, 6mg con Dolutegravir\xa0/Rilpivirina, Comprimido Recubierto. Cofar Asegura Confidencialidad. Entregas en menos de 24H en RM o retiro presencial.'
+   canonical        'https://cofar.cl/product/011000023/juluca-526mg275mg-30-comprec'
+   og_tags          []
+   jsonld           0
+   img_total        18
+   img_producto     0
+   chars_texto      1350
+   tiene_precio     False
+   tiene_sku        False
+   h1               []
+
+Oncológico · Sutent 50mg (082560020)
+   title            'Sutent 50mg 28 Cap.'
+   meta_description 'Sutent 50mg con Sunitinib, Cápsulas. Confía en Cofar, somos expertos en medicamentos de especialidad crónicos. Entregas en menos de 24H en RM o retiro presencial.'
+   canonical        'https://cofar.cl/product/082560020/sutent-50mg-28-cap'
+   og_tags          []
+   jsonld           0
+   img_total        18
+   img_producto     0
+   chars_texto      1336
+   tiene_precio     False
+   tiene_sku        False
+   h1               []
+
+Dermocosmética · Vichy Liftactiv (015970047)
+   title            'Vichy Liftactiv Supreme Vit C Serum 20ml'
+   meta_description 'Vichy Liftactiv Supreme Vit C Serum 20ml. Somos especialistas en dermocosmética. Entregas en menos de 24H en RM o retiro presencial.'
+   canonical        'https://cofar.cl/product/015970047/vichy-liftactiv-supreme-vit-c-serum-20ml'
+   og_tags          []
+   jsonld           0
+   img_total        18
+   img_producto     0
+   chars_texto      1357
+   tiene_precio     False
+   tiene_sku        False
+   h1               []
+
+Dermocosmética · Cetaphil (010076601)
+   title            'Cetaphil Loción Limpieza 237ml'
+   meta_description 'Cetaphil Loción Limpieza 237ml. Somos especialistas en dermocosmética. Entregas en menos de 24H en RM o retiro presencial.'
+   canonical        'https://cofar.cl/product/010076601/cetaphil-locin-limpieza-237ml'
+   og_tags          []
+   jsonld           0
+   img_total        18
+   img_producto     0
+   chars_texto      1347
+   tiene_precio     False
+   tiene_sku        False
+   h1               []
+
+== mismas fichas en DOM (pasada 1, Chrome headless) y en API
+VIH · Ziagen: API precio=600890/None lab=GlaxoSmithKline pa=['ABACAVIR'] desc_len=0 imgs=1 | DOM JSON-LD: sí brand=Marca no disponible desc='Descripcion no disponible'
+Oncológico · Sutent: API precio=4289990/None lab=Pfizer pa=['SUNITINIB'] desc_len=0 imgs=1 | DOM JSON-LD: sí brand=Marca no disponible desc='Descripcion no disponible'
+Dermocosmética · Vichy: API precio=42190/None lab=None pa=[] desc_len=1738 imgs=2 | DOM JSON-LD: sí brand={'label': 'Vichy', 'value': 'cmVhY3Rpb24vYnJhbmQ6TUVNYUJ2cW9qQUxyUEFQY2I='} desc='El Liftactiv sérum vitamina C '

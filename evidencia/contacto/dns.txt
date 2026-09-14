@@ -1,0 +1,6 @@
+cofar.cl: 18.164.32.63 18.164.32.98 18.164.32.68 18.164.32.3 
+www.cofar.cl: d25fqse7rt6bap.cloudfront.net. 18.164.32.98 18.164.32.63 18.164.32.68 18.164.32.3 
+services.cofar.cl: 11ivwc89.up.railway.app. 69.46.46.7 
+product-img.cofar.cl: 3.162.221.105 3.162.221.64 3.162.221.22 3.162.221.91 
+blog.cofar.cl: 147.93.64.253 
+cofar.mediclic.cl: 104.26.15.139 172.67.75.77 104.26.14.139 

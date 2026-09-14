@@ -1,0 +1,10 @@
+200 final=https://www.instagram.com/farmaciascofar/ redirects=0
+200 final=https://www.facebook.com/people/Farmacias-Cofar/100048404963840/ redirects=2
+200 final=https://blog.cofar.cl/ redirects=0
+200 final=https://cofar.mediclic.cl/login redirects=0
+200 final=https://www.google.com/maps/place/Farmacia+Cofar.cl/@-33.4110649,-70.5763908,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cff4e6e3dcd1:0x8840c95f162be7de!8m2!3d-33.4110649!4d-70.5763908!16s%2Fg%2F11s17scp_2?entry=tts&g_ep=EgoyMDI1MTExMi4wIPu8ASoASAFQAw%3D%3D&skid=a585a674-f827-416e-b30d-39d3de533c7d redirects=1
+200 final=https://cituc.uc.cl/cituc-asistrencial/cituc-toxicologico/ redirects=0
+200 final=https://blog.cofar.cl/2025/08/20/entendiendo-la-diabetes-tipos-y-causas/ redirects=1
+200 final=https://blog.cofar.cl/2025/09/16/descubre-la-fertilidad-femenina-3-claves/ redirects=1
+200 final=https://blog.cofar.cl/2025/10/17/que-es-la-salud-mental-y-su-importancia/ redirects=1
+200 final=https://www.ispch.cl/ redirects=0

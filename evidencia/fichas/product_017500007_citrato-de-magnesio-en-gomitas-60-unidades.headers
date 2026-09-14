@@ -1,0 +1,14 @@
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 12 Sep 2026 13:20:27 GMT
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Link: </_next/static/media/043b82ab31bba5a4-s.p.0c6mydv295izq.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/47fe1b7cd6e6ed85-s.p.3bh2vc0w-r-ll.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/4b766aa38fdaaae3-s.p.11-gljxdt344a.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/829ba4228c966254-s.p.2mm3nq9i83l-m.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/8e6fa89aa22d24ec-s.p.2o7m9ogm38dql.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/a218039a3287bcfd-s.p.43zbiuwnnoiok.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/c7d9ca68f9942779-s.p.38ww0mi76nb30.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/c875c6f5d3e977ac-s.p.1h18_wedhzk4h.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/e2334d715941921e-s.p.3o_v2fun1jzxk.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+x-powered-by: Next.js
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 06dc9004cd7e55186ce5399843d6cc28.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SCL51-P2
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: -Y3wn3xcBRp9Z4_qWrU5hQCgJXJcmSv25Zf9FTVuSgHvsYVh8LResg==

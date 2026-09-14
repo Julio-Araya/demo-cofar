@@ -1,0 +1,2 @@
+"\"v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:dmarc@cofar.cl,mailto:admin@cofar.cl;"
+"ruf=mailto:dmarc@cofar.cl,mailto:admin@cofar.cl; adkim=s; aspf=s; ri=86400; fo=1; rf=afrf; pct=100\""

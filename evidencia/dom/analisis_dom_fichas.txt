@@ -1,0 +1,14 @@
+fichas DOM analizadas 23 | en API 21
+precio normal API presente en DOM: 21 / 21
+precio oferta API presente en DOM: 8 / 8
+laboratorio en DOM: 19 | principio activo en DOM: 17 | SKU en DOM: 21
+descripción (API>=40) en DOM: 4 / 4
+botón Comprar en DOM: 19 | isCheck sin Comprar: [('030170006', False), ('032830002', False)]
+stock 0 en API: [('011050004', True, True)]
+refrigerado coincide: 21 / 21
+discrepancias de precio: []
+fichas sin datos en DOM (chars<1500): [('010239998', 1420), ('32973', 1420)]
+solo-sitemap en DOM: [('010239998', 1420, ' Farmacia Cofar'), ('32973', 1420, ' Farmacia Cofar')]
+ ej: 010290329 ['Rec. Med. Simple'] ['28 Comprimidos Atributos'] ['$36.299', '$31.762', '$27.224', '$28.358']
+ ej: 010290330 ['Rec. Med. Simple'] ['56 Comprimidos Atributos'] ['$61.407', '$53.731', '$46.055', '$47.974']
+ ej: 010690003 ['Venta directa'] ['4 g de crema precio: $10.490 1 Comprar '] ['$10.490', '$18.990', '$13.190', '$35.890']

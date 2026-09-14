@@ -1,0 +1,5 @@
+"google-site-verification=CIOnxdoc9FZm1a4gaLgtg41fCMFZrUqnrpnQOrZP4Dg"
+"google-site-verification=UFIRvYlUYzdppWQvYS20yaEVfGqez72bW6nlncoBErk"
+"v=spf1 include:_spf.google.com include:spf.ipzmarketing.com include:amazonses.com a mx ~all"
+"anthropic-domain-verification-k01gga=02CwAZK9VFpO2WE2ayUsQNxve"
+"facebook-domain-verification=fyl6fbjjeu4cdd59wi7v4ta1ptdlbt"

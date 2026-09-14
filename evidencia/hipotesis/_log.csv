@@ -1,0 +1,15 @@
+url,status,final_url,redirects,bytes,file,content_type
+https://cofar.cl/product/012522017,404,https://cofar.cl/product/012522017,,187289,product_012522017.html,text/html; charset=utf-8
+https://cofar.cl/product/012522017/ozempic-2mg-1-5ml-1-disp-prell,200,https://cofar.cl/product/012522017/ozempic-2mg-1-5ml-1-disp-prell,,194849,product_012522017_ozempic-2mg-1-5ml-1-disp-prell.html,text/html; charset=utf-8
+https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispprell,200,https://cofar.cl/product/012522017/ozempic-semaglutida-2mg15ml-1-dispprell,,194867,product_012522017_ozempic-semaglutida-2mg15ml-1-dispprell.html,text/html; charset=utf-8
+https://cofar.cl/product/012522017/ozempic-semaglutida-2mg-1-5ml-1-disp-prell,200,https://cofar.cl/product/012522017/ozempic-semaglutida-2mg-1-5ml-1-disp-prell,,194873,product_012522017_ozempic-semaglutida-2mg-1-5ml-1-disp-prell.html,text/html; charset=utf-8
+https://cofar.cl/product/012522017/prueba,200,https://cofar.cl/product/012522017/prueba,,194788,product_012522017_prueba.html,text/html; charset=utf-8
+https://cofar.cl/product/102520002,404,https://cofar.cl/product/102520002,,187245,product_102520002.html,text/html; charset=utf-8
+https://cofar.cl/product/102520002/ozempic-semaglutida-4mg3ml-1-dispositivo-prellenado-multidosis,200,https://cofar.cl/product/102520002/ozempic-semaglutida-4mg3ml-1-dispositivo-prellenado-multidosis,,194907,product_102520002_ozempic-semaglutida-4mg3ml-1-dispositivo-prellenado-multidosis.html,text/html; charset=utf-8
+https://cofar.cl/product/102520002/prueba-relevo,200,https://cofar.cl/product/102520002/prueba-relevo,,194796,product_102520002_prueba-relevo.html,text/html; charset=utf-8
+https://cofar.cl/product/999999999/no-existe,200,https://cofar.cl/product/999999999/no-existe,,194182,product_999999999_no-existe.html,text/html; charset=utf-8
+https://cofar.cl/programas/ozempic.html,404,https://cofar.cl/programas/ozempic.html,,187233,programas_ozempic.html.html,text/html; charset=utf-8
+https://cofar.cl/medicamentos/diabetes/ozempic,301,https://cofar.cl/medicamentos/diabetes/ozempic,/category/medicamentos/diabetes-y-obesidad/ozempic,0,medicamentos_diabetes_ozempic.html,application/json
+https://cofar.cl/medicamentos/diabetes-y-obesidad/ozempic,301,https://cofar.cl/medicamentos/diabetes-y-obesidad/ozempic,/category/medicamentos/diabetes-y-obesidad/ozempic,0,medicamentos_diabetes-y-obesidad_ozempic.html,application/json
+https://cofar.cl/programas,404,https://cofar.cl/programas,,187239,programas.html,text/html; charset=utf-8
+https://cofar.cl/medicamentos,301,https://cofar.cl/medicamentos,/category/medicamentos,0,medicamentos.html,application/json

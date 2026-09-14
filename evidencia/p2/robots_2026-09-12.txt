@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /profile/*
+Disallow: /checkout/*
+
+Sitemap: https://cofar.cl/sitemap.xml
